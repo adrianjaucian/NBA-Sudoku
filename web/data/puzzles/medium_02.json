@@ -1,0 +1,290 @@
+{
+  "difficulty": "medium",
+  "seed": 20340777,
+  "clue_count": 6,
+  "grid_size": 4,
+  "box_size": 2,
+  "clues": [
+    null,
+    null,
+    {
+      "id": "morrima03",
+      "name": "Marcus Morris",
+      "team_count": 8,
+      "first_season": "2011-12",
+      "last_season": "2023-24"
+    },
+    {
+      "id": "couside01",
+      "name": "DeMarcus Cousins",
+      "team_count": 7,
+      "first_season": "2010-11",
+      "last_season": "2021-22"
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      "id": "martike04",
+      "name": "KJ Martin",
+      "team_count": 4,
+      "first_season": "2020-21",
+      "last_season": "2024-25"
+    },
+    {
+      "id": "georgpa01",
+      "name": "Paul George",
+      "team_count": 4,
+      "first_season": "2010-11",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "tuckepj01",
+      "name": "P.J. Tucker",
+      "team_count": 8,
+      "first_season": "2006-07",
+      "last_season": "2024-25"
+    },
+    {
+      "id": "batumni01",
+      "name": "Nicolas Batum",
+      "team_count": 4,
+      "first_season": "2008-09",
+      "last_season": "2025-26"
+    },
+    null,
+    null
+  ],
+  "solution": [
+    {
+      "id": "portibo01",
+      "name": "Bobby Portis",
+      "team_count": 4,
+      "first_season": "2015-16",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "walljo01",
+      "name": "John Wall",
+      "team_count": 3,
+      "first_season": "2010-11",
+      "last_season": "2022-23"
+    },
+    {
+      "id": "morrima03",
+      "name": "Marcus Morris",
+      "team_count": 8,
+      "first_season": "2011-12",
+      "last_season": "2023-24"
+    },
+    {
+      "id": "couside01",
+      "name": "DeMarcus Cousins",
+      "team_count": 7,
+      "first_season": "2010-11",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "riverau01",
+      "name": "Austin Rivers",
+      "team_count": 7,
+      "first_season": "2012-13",
+      "last_season": "2022-23"
+    },
+    {
+      "id": "bealbr01",
+      "name": "Bradley Beal",
+      "team_count": 3,
+      "first_season": "2012-13",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "houseda01",
+      "name": "Danuel House Jr.",
+      "team_count": 6,
+      "first_season": "2016-17",
+      "last_season": "2023-24"
+    },
+    {
+      "id": "gordoer01",
+      "name": "Eric Gordon",
+      "team_count": 5,
+      "first_season": "2008-09",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "beverpa01",
+      "name": "Patrick Beverley",
+      "team_count": 7,
+      "first_season": "2012-13",
+      "last_season": "2023-24"
+    },
+    {
+      "id": "zubaciv01",
+      "name": "Ivica Zubac",
+      "team_count": 3,
+      "first_season": "2016-17",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "martike04",
+      "name": "KJ Martin",
+      "team_count": 4,
+      "first_season": "2020-21",
+      "last_season": "2024-25"
+    },
+    {
+      "id": "georgpa01",
+      "name": "Paul George",
+      "team_count": 4,
+      "first_season": "2010-11",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "tuckepj01",
+      "name": "P.J. Tucker",
+      "team_count": 8,
+      "first_season": "2006-07",
+      "last_season": "2024-25"
+    },
+    {
+      "id": "batumni01",
+      "name": "Nicolas Batum",
+      "team_count": 4,
+      "first_season": "2008-09",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "theisda01",
+      "name": "Daniel Theis",
+      "team_count": 6,
+      "first_season": "2017-18",
+      "last_season": "2024-25"
+    },
+    {
+      "id": "hylanbo01",
+      "name": "Bones Hyland",
+      "team_count": 3,
+      "first_season": "2021-22",
+      "last_season": "2025-26"
+    }
+  ],
+  "bank": [
+    {
+      "id": "morrima03",
+      "name": "Marcus Morris",
+      "team_count": 8,
+      "first_season": "2011-12",
+      "last_season": "2023-24"
+    },
+    {
+      "id": "georgpa01",
+      "name": "Paul George",
+      "team_count": 4,
+      "first_season": "2010-11",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "martike04",
+      "name": "KJ Martin",
+      "team_count": 4,
+      "first_season": "2020-21",
+      "last_season": "2024-25"
+    },
+    {
+      "id": "portibo01",
+      "name": "Bobby Portis",
+      "team_count": 4,
+      "first_season": "2015-16",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "tuckepj01",
+      "name": "P.J. Tucker",
+      "team_count": 8,
+      "first_season": "2006-07",
+      "last_season": "2024-25"
+    },
+    {
+      "id": "houseda01",
+      "name": "Danuel House Jr.",
+      "team_count": 6,
+      "first_season": "2016-17",
+      "last_season": "2023-24"
+    },
+    {
+      "id": "bealbr01",
+      "name": "Bradley Beal",
+      "team_count": 3,
+      "first_season": "2012-13",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "zubaciv01",
+      "name": "Ivica Zubac",
+      "team_count": 3,
+      "first_season": "2016-17",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "batumni01",
+      "name": "Nicolas Batum",
+      "team_count": 4,
+      "first_season": "2008-09",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "walljo01",
+      "name": "John Wall",
+      "team_count": 3,
+      "first_season": "2010-11",
+      "last_season": "2022-23"
+    },
+    {
+      "id": "theisda01",
+      "name": "Daniel Theis",
+      "team_count": 6,
+      "first_season": "2017-18",
+      "last_season": "2024-25"
+    },
+    {
+      "id": "gordoer01",
+      "name": "Eric Gordon",
+      "team_count": 5,
+      "first_season": "2008-09",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "couside01",
+      "name": "DeMarcus Cousins",
+      "team_count": 7,
+      "first_season": "2010-11",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "hylanbo01",
+      "name": "Bones Hyland",
+      "team_count": 3,
+      "first_season": "2021-22",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "riverau01",
+      "name": "Austin Rivers",
+      "team_count": 7,
+      "first_season": "2012-13",
+      "last_season": "2022-23"
+    },
+    {
+      "id": "beverpa01",
+      "name": "Patrick Beverley",
+      "team_count": 7,
+      "first_season": "2012-13",
+      "last_season": "2023-24"
+    }
+  ],
+  "rules": "Place each bank player once. Every pair of players in the same row, column, or 2\u00d72 box must have been NBA teammates (same franchise, same season) at least once."
+}

@@ -1,0 +1,272 @@
+{
+  "difficulty": "expert",
+  "seed": 20275009,
+  "clue_count": 3,
+  "grid_size": 4,
+  "box_size": 2,
+  "clues": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      "id": "vanhoke01",
+      "name": "Keith Van Horn",
+      "team_count": 5,
+      "first_season": "1997-98",
+      "last_season": "2005-06"
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      "id": "smithjo02",
+      "name": "Joe Smith",
+      "team_count": 12,
+      "first_season": "1995-96",
+      "last_season": "2010-11"
+    },
+    null,
+    null,
+    {
+      "id": "thomati01",
+      "name": "Tim Thomas",
+      "team_count": 7,
+      "first_season": "1997-98",
+      "last_season": "2009-10"
+    }
+  ],
+  "solution": [
+    {
+      "id": "colemde01",
+      "name": "Derrick Coleman",
+      "team_count": 4,
+      "first_season": "1990-91",
+      "last_season": "2004-05"
+    },
+    {
+      "id": "harrilu01",
+      "name": "Lucious Harris",
+      "team_count": 4,
+      "first_season": "1993-94",
+      "last_season": "2004-05"
+    },
+    {
+      "id": "brownch01",
+      "name": "Chucky Brown",
+      "team_count": 12,
+      "first_season": "1989-90",
+      "last_season": "2001-02"
+    },
+    {
+      "id": "jacksji01",
+      "name": "Jim Jackson",
+      "team_count": 12,
+      "first_season": "1992-93",
+      "last_season": "2005-06"
+    },
+    {
+      "id": "stackje01",
+      "name": "Jerry Stackhouse",
+      "team_count": 8,
+      "first_season": "1995-96",
+      "last_season": "2012-13"
+    },
+    {
+      "id": "vanhoke01",
+      "name": "Keith Van Horn",
+      "team_count": 5,
+      "first_season": "1997-98",
+      "last_season": "2005-06"
+    },
+    {
+      "id": "johnsan02",
+      "name": "Anthony Johnson",
+      "team_count": 7,
+      "first_season": "1997-98",
+      "last_season": "2009-10"
+    },
+    {
+      "id": "knighbr01",
+      "name": "Brevin Knight",
+      "team_count": 9,
+      "first_season": "1997-98",
+      "last_season": "2008-09"
+    },
+    {
+      "id": "goldwan01",
+      "name": "Anthony Goldwire",
+      "team_count": 9,
+      "first_season": "1995-96",
+      "last_season": "2005-06"
+    },
+    {
+      "id": "collija04",
+      "name": "Jason Collins",
+      "team_count": 6,
+      "first_season": "2001-02",
+      "last_season": "2013-14"
+    },
+    {
+      "id": "kiddja01",
+      "name": "Jason Kidd",
+      "team_count": 4,
+      "first_season": "1994-95",
+      "last_season": "2012-13"
+    },
+    {
+      "id": "houseed01",
+      "name": "Eddie House",
+      "team_count": 9,
+      "first_season": "2000-01",
+      "last_season": "2010-11"
+    },
+    {
+      "id": "smithjo02",
+      "name": "Joe Smith",
+      "team_count": 12,
+      "first_season": "1995-96",
+      "last_season": "2010-11"
+    },
+    {
+      "id": "overtdo01",
+      "name": "Doug Overton",
+      "team_count": 8,
+      "first_season": "1992-93",
+      "last_season": "2003-04"
+    },
+    {
+      "id": "gatlich01",
+      "name": "Chris Gatling",
+      "team_count": 8,
+      "first_season": "1991-92",
+      "last_season": "2001-02"
+    },
+    {
+      "id": "thomati01",
+      "name": "Tim Thomas",
+      "team_count": 7,
+      "first_season": "1997-98",
+      "last_season": "2009-10"
+    }
+  ],
+  "bank": [
+    {
+      "id": "brownch01",
+      "name": "Chucky Brown",
+      "team_count": 12,
+      "first_season": "1989-90",
+      "last_season": "2001-02"
+    },
+    {
+      "id": "gatlich01",
+      "name": "Chris Gatling",
+      "team_count": 8,
+      "first_season": "1991-92",
+      "last_season": "2001-02"
+    },
+    {
+      "id": "houseed01",
+      "name": "Eddie House",
+      "team_count": 9,
+      "first_season": "2000-01",
+      "last_season": "2010-11"
+    },
+    {
+      "id": "jacksji01",
+      "name": "Jim Jackson",
+      "team_count": 12,
+      "first_season": "1992-93",
+      "last_season": "2005-06"
+    },
+    {
+      "id": "harrilu01",
+      "name": "Lucious Harris",
+      "team_count": 4,
+      "first_season": "1993-94",
+      "last_season": "2004-05"
+    },
+    {
+      "id": "knighbr01",
+      "name": "Brevin Knight",
+      "team_count": 9,
+      "first_season": "1997-98",
+      "last_season": "2008-09"
+    },
+    {
+      "id": "thomati01",
+      "name": "Tim Thomas",
+      "team_count": 7,
+      "first_season": "1997-98",
+      "last_season": "2009-10"
+    },
+    {
+      "id": "stackje01",
+      "name": "Jerry Stackhouse",
+      "team_count": 8,
+      "first_season": "1995-96",
+      "last_season": "2012-13"
+    },
+    {
+      "id": "vanhoke01",
+      "name": "Keith Van Horn",
+      "team_count": 5,
+      "first_season": "1997-98",
+      "last_season": "2005-06"
+    },
+    {
+      "id": "overtdo01",
+      "name": "Doug Overton",
+      "team_count": 8,
+      "first_season": "1992-93",
+      "last_season": "2003-04"
+    },
+    {
+      "id": "collija04",
+      "name": "Jason Collins",
+      "team_count": 6,
+      "first_season": "2001-02",
+      "last_season": "2013-14"
+    },
+    {
+      "id": "johnsan02",
+      "name": "Anthony Johnson",
+      "team_count": 7,
+      "first_season": "1997-98",
+      "last_season": "2009-10"
+    },
+    {
+      "id": "smithjo02",
+      "name": "Joe Smith",
+      "team_count": 12,
+      "first_season": "1995-96",
+      "last_season": "2010-11"
+    },
+    {
+      "id": "goldwan01",
+      "name": "Anthony Goldwire",
+      "team_count": 9,
+      "first_season": "1995-96",
+      "last_season": "2005-06"
+    },
+    {
+      "id": "kiddja01",
+      "name": "Jason Kidd",
+      "team_count": 4,
+      "first_season": "1994-95",
+      "last_season": "2012-13"
+    },
+    {
+      "id": "colemde01",
+      "name": "Derrick Coleman",
+      "team_count": 4,
+      "first_season": "1990-91",
+      "last_season": "2004-05"
+    }
+  ],
+  "rules": "Place each bank player once. Every pair of players in the same row, column, or 2\u00d72 box must have been NBA teammates (same franchise, same season) at least once."
+}

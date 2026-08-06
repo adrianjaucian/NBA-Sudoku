@@ -1,0 +1,278 @@
+{
+  "difficulty": "hard",
+  "seed": 20347113,
+  "clue_count": 4,
+  "grid_size": 4,
+  "box_size": 2,
+  "clues": [
+    null,
+    null,
+    null,
+    {
+      "id": "riverau01",
+      "name": "Austin Rivers",
+      "team_count": 7,
+      "first_season": "2012-13",
+      "last_season": "2022-23"
+    },
+    null,
+    null,
+    {
+      "id": "anthoca01",
+      "name": "Carmelo Anthony",
+      "team_count": 6,
+      "first_season": "2003-04",
+      "last_season": "2021-22"
+    },
+    null,
+    {
+      "id": "mohamna01",
+      "name": "Nazr Mohammed",
+      "team_count": 8,
+      "first_season": "1998-99",
+      "last_season": "2015-16"
+    },
+    {
+      "id": "greenje02",
+      "name": "Jeff Green",
+      "team_count": 11,
+      "first_season": "2007-08",
+      "last_season": "2025-26"
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "solution": [
+    {
+      "id": "mcguido01",
+      "name": "Dominic McGuire",
+      "team_count": 7,
+      "first_season": "2007-08",
+      "last_season": "2012-13"
+    },
+    {
+      "id": "anderry01",
+      "name": "Ryan Anderson",
+      "team_count": 6,
+      "first_season": "2008-09",
+      "last_season": "2019-20"
+    },
+    {
+      "id": "greenge01",
+      "name": "Gerald Green",
+      "team_count": 8,
+      "first_season": "2005-06",
+      "last_season": "2018-19"
+    },
+    {
+      "id": "riverau01",
+      "name": "Austin Rivers",
+      "team_count": 7,
+      "first_season": "2012-13",
+      "last_season": "2022-23"
+    },
+    {
+      "id": "amundlo01",
+      "name": "Lou Amundson",
+      "team_count": 10,
+      "first_season": "2006-07",
+      "last_season": "2015-16"
+    },
+    {
+      "id": "smithja02",
+      "name": "Jason Smith",
+      "team_count": 6,
+      "first_season": "2007-08",
+      "last_season": "2018-19"
+    },
+    {
+      "id": "anthoca01",
+      "name": "Carmelo Anthony",
+      "team_count": 6,
+      "first_season": "2003-04",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "gordoer01",
+      "name": "Eric Gordon",
+      "team_count": 5,
+      "first_season": "2008-09",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "mohamna01",
+      "name": "Nazr Mohammed",
+      "team_count": 8,
+      "first_season": "1998-99",
+      "last_season": "2015-16"
+    },
+    {
+      "id": "greenje02",
+      "name": "Jeff Green",
+      "team_count": 11,
+      "first_season": "2007-08",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "hardeja01",
+      "name": "James Harden",
+      "team_count": 6,
+      "first_season": "2009-10",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "westbru01",
+      "name": "Russell Westbrook",
+      "team_count": 7,
+      "first_season": "2008-09",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "robinna01",
+      "name": "Nate Robinson",
+      "team_count": 8,
+      "first_season": "2005-06",
+      "last_season": "2015-16"
+    },
+    {
+      "id": "arizatr01",
+      "name": "Trevor Ariza",
+      "team_count": 10,
+      "first_season": "2004-05",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "bradlav01",
+      "name": "Avery Bradley",
+      "team_count": 7,
+      "first_season": "2010-11",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "jordade01",
+      "name": "DeAndre Jordan",
+      "team_count": 8,
+      "first_season": "2008-09",
+      "last_season": "2025-26"
+    }
+  ],
+  "bank": [
+    {
+      "id": "mcguido01",
+      "name": "Dominic McGuire",
+      "team_count": 7,
+      "first_season": "2007-08",
+      "last_season": "2012-13"
+    },
+    {
+      "id": "riverau01",
+      "name": "Austin Rivers",
+      "team_count": 7,
+      "first_season": "2012-13",
+      "last_season": "2022-23"
+    },
+    {
+      "id": "robinna01",
+      "name": "Nate Robinson",
+      "team_count": 8,
+      "first_season": "2005-06",
+      "last_season": "2015-16"
+    },
+    {
+      "id": "mohamna01",
+      "name": "Nazr Mohammed",
+      "team_count": 8,
+      "first_season": "1998-99",
+      "last_season": "2015-16"
+    },
+    {
+      "id": "arizatr01",
+      "name": "Trevor Ariza",
+      "team_count": 10,
+      "first_season": "2004-05",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "westbru01",
+      "name": "Russell Westbrook",
+      "team_count": 7,
+      "first_season": "2008-09",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "amundlo01",
+      "name": "Lou Amundson",
+      "team_count": 10,
+      "first_season": "2006-07",
+      "last_season": "2015-16"
+    },
+    {
+      "id": "greenge01",
+      "name": "Gerald Green",
+      "team_count": 8,
+      "first_season": "2005-06",
+      "last_season": "2018-19"
+    },
+    {
+      "id": "bradlav01",
+      "name": "Avery Bradley",
+      "team_count": 7,
+      "first_season": "2010-11",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "hardeja01",
+      "name": "James Harden",
+      "team_count": 6,
+      "first_season": "2009-10",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "anthoca01",
+      "name": "Carmelo Anthony",
+      "team_count": 6,
+      "first_season": "2003-04",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "greenje02",
+      "name": "Jeff Green",
+      "team_count": 11,
+      "first_season": "2007-08",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "jordade01",
+      "name": "DeAndre Jordan",
+      "team_count": 8,
+      "first_season": "2008-09",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "smithja02",
+      "name": "Jason Smith",
+      "team_count": 6,
+      "first_season": "2007-08",
+      "last_season": "2018-19"
+    },
+    {
+      "id": "anderry01",
+      "name": "Ryan Anderson",
+      "team_count": 6,
+      "first_season": "2008-09",
+      "last_season": "2019-20"
+    },
+    {
+      "id": "gordoer01",
+      "name": "Eric Gordon",
+      "team_count": 5,
+      "first_season": "2008-09",
+      "last_season": "2025-26"
+    }
+  ],
+  "rules": "Place each bank player once. Every pair of players in the same row, column, or 2\u00d72 box must have been NBA teammates (same franchise, same season) at least once."
+}

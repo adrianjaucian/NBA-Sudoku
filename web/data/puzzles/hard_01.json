@@ -1,0 +1,278 @@
+{
+  "difficulty": "hard",
+  "seed": 20347079,
+  "clue_count": 4,
+  "grid_size": 4,
+  "box_size": 2,
+  "clues": [
+    {
+      "id": "johnsjo02",
+      "name": "Joe Johnson",
+      "team_count": 7,
+      "first_season": "2001-02",
+      "last_season": "2021-22"
+    },
+    null,
+    null,
+    {
+      "id": "pargoja01",
+      "name": "Jannero Pargo",
+      "team_count": 7,
+      "first_season": "2002-03",
+      "last_season": "2014-15"
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      "id": "thornma01",
+      "name": "Marcus Thornton",
+      "team_count": 7,
+      "first_season": "2009-10",
+      "last_season": "2016-17"
+    },
+    {
+      "id": "holliry01",
+      "name": "Ryan Hollins",
+      "team_count": 9,
+      "first_season": "2006-07",
+      "last_season": "2015-16"
+    },
+    null,
+    null
+  ],
+  "solution": [
+    {
+      "id": "johnsjo02",
+      "name": "Joe Johnson",
+      "team_count": 7,
+      "first_season": "2001-02",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "crawfja01",
+      "name": "Jamal Crawford",
+      "team_count": 9,
+      "first_season": "2000-01",
+      "last_season": "2019-20"
+    },
+    {
+      "id": "paulch01",
+      "name": "Chris Paul",
+      "team_count": 7,
+      "first_season": "2005-06",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "pargoja01",
+      "name": "Jannero Pargo",
+      "team_count": 7,
+      "first_season": "2002-03",
+      "last_season": "2014-15"
+    },
+    {
+      "id": "mbahalu01",
+      "name": "Luc Mbah a Moute",
+      "team_count": 6,
+      "first_season": "2008-09",
+      "last_season": "2019-20"
+    },
+    {
+      "id": "wrighbr03",
+      "name": "Brandan Wright",
+      "team_count": 7,
+      "first_season": "2007-08",
+      "last_season": "2017-18"
+    },
+    {
+      "id": "chandty01",
+      "name": "Tyson Chandler",
+      "team_count": 8,
+      "first_season": "2001-02",
+      "last_season": "2019-20"
+    },
+    {
+      "id": "arizatr01",
+      "name": "Trevor Ariza",
+      "team_count": 10,
+      "first_season": "2004-05",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "greenge01",
+      "name": "Gerald Green",
+      "team_count": 8,
+      "first_season": "2005-06",
+      "last_season": "2018-19"
+    },
+    {
+      "id": "bullore01",
+      "name": "Reggie Bullock",
+      "team_count": 7,
+      "first_season": "2013-14",
+      "last_season": "2023-24"
+    },
+    {
+      "id": "tuckepj01",
+      "name": "P.J. Tucker",
+      "team_count": 8,
+      "first_season": "2006-07",
+      "last_season": "2024-25"
+    },
+    {
+      "id": "barroea01",
+      "name": "Earl Barron",
+      "team_count": 7,
+      "first_season": "2005-06",
+      "last_season": "2014-15"
+    },
+    {
+      "id": "thornma01",
+      "name": "Marcus Thornton",
+      "team_count": 7,
+      "first_season": "2009-10",
+      "last_season": "2016-17"
+    },
+    {
+      "id": "holliry01",
+      "name": "Ryan Hollins",
+      "team_count": 9,
+      "first_season": "2006-07",
+      "last_season": "2015-16"
+    },
+    {
+      "id": "dudleja01",
+      "name": "Jared Dudley",
+      "team_count": 7,
+      "first_season": "2007-08",
+      "last_season": "2020-21"
+    },
+    {
+      "id": "walljo01",
+      "name": "John Wall",
+      "team_count": 3,
+      "first_season": "2010-11",
+      "last_season": "2022-23"
+    }
+  ],
+  "bank": [
+    {
+      "id": "mbahalu01",
+      "name": "Luc Mbah a Moute",
+      "team_count": 6,
+      "first_season": "2008-09",
+      "last_season": "2019-20"
+    },
+    {
+      "id": "johnsjo02",
+      "name": "Joe Johnson",
+      "team_count": 7,
+      "first_season": "2001-02",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "dudleja01",
+      "name": "Jared Dudley",
+      "team_count": 7,
+      "first_season": "2007-08",
+      "last_season": "2020-21"
+    },
+    {
+      "id": "wrighbr03",
+      "name": "Brandan Wright",
+      "team_count": 7,
+      "first_season": "2007-08",
+      "last_season": "2017-18"
+    },
+    {
+      "id": "greenge01",
+      "name": "Gerald Green",
+      "team_count": 8,
+      "first_season": "2005-06",
+      "last_season": "2018-19"
+    },
+    {
+      "id": "pargoja01",
+      "name": "Jannero Pargo",
+      "team_count": 7,
+      "first_season": "2002-03",
+      "last_season": "2014-15"
+    },
+    {
+      "id": "thornma01",
+      "name": "Marcus Thornton",
+      "team_count": 7,
+      "first_season": "2009-10",
+      "last_season": "2016-17"
+    },
+    {
+      "id": "bullore01",
+      "name": "Reggie Bullock",
+      "team_count": 7,
+      "first_season": "2013-14",
+      "last_season": "2023-24"
+    },
+    {
+      "id": "arizatr01",
+      "name": "Trevor Ariza",
+      "team_count": 10,
+      "first_season": "2004-05",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "paulch01",
+      "name": "Chris Paul",
+      "team_count": 7,
+      "first_season": "2005-06",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "walljo01",
+      "name": "John Wall",
+      "team_count": 3,
+      "first_season": "2010-11",
+      "last_season": "2022-23"
+    },
+    {
+      "id": "barroea01",
+      "name": "Earl Barron",
+      "team_count": 7,
+      "first_season": "2005-06",
+      "last_season": "2014-15"
+    },
+    {
+      "id": "tuckepj01",
+      "name": "P.J. Tucker",
+      "team_count": 8,
+      "first_season": "2006-07",
+      "last_season": "2024-25"
+    },
+    {
+      "id": "crawfja01",
+      "name": "Jamal Crawford",
+      "team_count": 9,
+      "first_season": "2000-01",
+      "last_season": "2019-20"
+    },
+    {
+      "id": "holliry01",
+      "name": "Ryan Hollins",
+      "team_count": 9,
+      "first_season": "2006-07",
+      "last_season": "2015-16"
+    },
+    {
+      "id": "chandty01",
+      "name": "Tyson Chandler",
+      "team_count": 8,
+      "first_season": "2001-02",
+      "last_season": "2019-20"
+    }
+  ],
+  "rules": "Place each bank player once. Every pair of players in the same row, column, or 2\u00d72 box must have been NBA teammates (same franchise, same season) at least once."
+}

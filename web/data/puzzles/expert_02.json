@@ -1,0 +1,272 @@
+{
+  "difficulty": "expert",
+  "seed": 20274992,
+  "clue_count": 3,
+  "grid_size": 4,
+  "box_size": 2,
+  "clues": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      "id": "paulch01",
+      "name": "Chris Paul",
+      "team_count": 7,
+      "first_season": "2005-06",
+      "last_season": "2025-26"
+    },
+    null,
+    {
+      "id": "arizatr01",
+      "name": "Trevor Ariza",
+      "team_count": 10,
+      "first_season": "2004-05",
+      "last_season": "2021-22"
+    },
+    null,
+    null,
+    {
+      "id": "greenje02",
+      "name": "Jeff Green",
+      "team_count": 11,
+      "first_season": "2007-08",
+      "last_season": "2025-26"
+    },
+    null,
+    null,
+    null,
+    null
+  ],
+  "solution": [
+    {
+      "id": "aminual01",
+      "name": "Al-Farouq Aminu",
+      "team_count": 6,
+      "first_season": "2010-11",
+      "last_season": "2020-21"
+    },
+    {
+      "id": "griffbl01",
+      "name": "Blake Griffin",
+      "team_count": 4,
+      "first_season": "2010-11",
+      "last_season": "2022-23"
+    },
+    {
+      "id": "butlera01",
+      "name": "Rasual Butler",
+      "team_count": 8,
+      "first_season": "2002-03",
+      "last_season": "2015-16"
+    },
+    {
+      "id": "jordade01",
+      "name": "DeAndre Jordan",
+      "team_count": 8,
+      "first_season": "2008-09",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "riverau01",
+      "name": "Austin Rivers",
+      "team_count": 7,
+      "first_season": "2012-13",
+      "last_season": "2022-23"
+    },
+    {
+      "id": "ennisja01",
+      "name": "James Ennis III",
+      "team_count": 10,
+      "first_season": "2014-15",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "paulch01",
+      "name": "Chris Paul",
+      "team_count": 7,
+      "first_season": "2005-06",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "stephla01",
+      "name": "Lance Stephenson",
+      "team_count": 8,
+      "first_season": "2010-11",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "arizatr01",
+      "name": "Trevor Ariza",
+      "team_count": 10,
+      "first_season": "2004-05",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "gordoer01",
+      "name": "Eric Gordon",
+      "team_count": 5,
+      "first_season": "2008-09",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "chandty01",
+      "name": "Tyson Chandler",
+      "team_count": 8,
+      "first_season": "2001-02",
+      "last_season": "2019-20"
+    },
+    {
+      "id": "greenje02",
+      "name": "Jeff Green",
+      "team_count": 11,
+      "first_season": "2007-08",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "davisan02",
+      "name": "Anthony Davis",
+      "team_count": 3,
+      "first_season": "2012-13",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "bradlav01",
+      "name": "Avery Bradley",
+      "team_count": 7,
+      "first_season": "2010-11",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "smithjr01",
+      "name": "J.R. Smith",
+      "team_count": 5,
+      "first_season": "2004-05",
+      "last_season": "2019-20"
+    },
+    {
+      "id": "rondora01",
+      "name": "Rajon Rondo",
+      "team_count": 9,
+      "first_season": "2006-07",
+      "last_season": "2021-22"
+    }
+  ],
+  "bank": [
+    {
+      "id": "bradlav01",
+      "name": "Avery Bradley",
+      "team_count": 7,
+      "first_season": "2010-11",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "davisan02",
+      "name": "Anthony Davis",
+      "team_count": 3,
+      "first_season": "2012-13",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "ennisja01",
+      "name": "James Ennis III",
+      "team_count": 10,
+      "first_season": "2014-15",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "arizatr01",
+      "name": "Trevor Ariza",
+      "team_count": 10,
+      "first_season": "2004-05",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "jordade01",
+      "name": "DeAndre Jordan",
+      "team_count": 8,
+      "first_season": "2008-09",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "aminual01",
+      "name": "Al-Farouq Aminu",
+      "team_count": 6,
+      "first_season": "2010-11",
+      "last_season": "2020-21"
+    },
+    {
+      "id": "chandty01",
+      "name": "Tyson Chandler",
+      "team_count": 8,
+      "first_season": "2001-02",
+      "last_season": "2019-20"
+    },
+    {
+      "id": "rondora01",
+      "name": "Rajon Rondo",
+      "team_count": 9,
+      "first_season": "2006-07",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "riverau01",
+      "name": "Austin Rivers",
+      "team_count": 7,
+      "first_season": "2012-13",
+      "last_season": "2022-23"
+    },
+    {
+      "id": "gordoer01",
+      "name": "Eric Gordon",
+      "team_count": 5,
+      "first_season": "2008-09",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "griffbl01",
+      "name": "Blake Griffin",
+      "team_count": 4,
+      "first_season": "2010-11",
+      "last_season": "2022-23"
+    },
+    {
+      "id": "smithjr01",
+      "name": "J.R. Smith",
+      "team_count": 5,
+      "first_season": "2004-05",
+      "last_season": "2019-20"
+    },
+    {
+      "id": "stephla01",
+      "name": "Lance Stephenson",
+      "team_count": 8,
+      "first_season": "2010-11",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "butlera01",
+      "name": "Rasual Butler",
+      "team_count": 8,
+      "first_season": "2002-03",
+      "last_season": "2015-16"
+    },
+    {
+      "id": "greenje02",
+      "name": "Jeff Green",
+      "team_count": 11,
+      "first_season": "2007-08",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "paulch01",
+      "name": "Chris Paul",
+      "team_count": 7,
+      "first_season": "2005-06",
+      "last_season": "2025-26"
+    }
+  ],
+  "rules": "Place each bank player once. Every pair of players in the same row, column, or 2\u00d72 box must have been NBA teammates (same franchise, same season) at least once."
+}

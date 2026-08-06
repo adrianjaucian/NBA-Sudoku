@@ -1,0 +1,290 @@
+{
+  "difficulty": "medium",
+  "seed": 20340809,
+  "clue_count": 6,
+  "grid_size": 4,
+  "box_size": 2,
+  "clues": [
+    null,
+    null,
+    {
+      "id": "humphkr01",
+      "name": "Kris Humphries",
+      "team_count": 8,
+      "first_season": "2004-05",
+      "last_season": "2016-17"
+    },
+    null,
+    {
+      "id": "redicjj01",
+      "name": "JJ Redick",
+      "team_count": 6,
+      "first_season": "2006-07",
+      "last_season": "2020-21"
+    },
+    null,
+    null,
+    null,
+    null,
+    {
+      "id": "princta01",
+      "name": "Tayshaun Prince",
+      "team_count": 4,
+      "first_season": "2002-03",
+      "last_season": "2015-16"
+    },
+    {
+      "id": "rondora01",
+      "name": "Rajon Rondo",
+      "team_count": 9,
+      "first_season": "2006-07",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "garneke01",
+      "name": "Kevin Garnett",
+      "team_count": 3,
+      "first_season": "1995-96",
+      "last_season": "2015-16"
+    },
+    null,
+    {
+      "id": "randosh01",
+      "name": "Shavlik Randolph",
+      "team_count": 5,
+      "first_season": "2005-06",
+      "last_season": "2014-15"
+    },
+    null,
+    null
+  ],
+  "solution": [
+    {
+      "id": "boganke01",
+      "name": "Keith Bogans",
+      "team_count": 8,
+      "first_season": "2003-04",
+      "last_season": "2013-14"
+    },
+    {
+      "id": "bayleje01",
+      "name": "Jerryd Bayless",
+      "team_count": 8,
+      "first_season": "2008-09",
+      "last_season": "2018-19"
+    },
+    {
+      "id": "humphkr01",
+      "name": "Kris Humphries",
+      "team_count": 8,
+      "first_season": "2004-05",
+      "last_season": "2016-17"
+    },
+    {
+      "id": "evansre01",
+      "name": "Reggie Evans",
+      "team_count": 7,
+      "first_season": "2002-03",
+      "last_season": "2014-15"
+    },
+    {
+      "id": "redicjj01",
+      "name": "JJ Redick",
+      "team_count": 6,
+      "first_season": "2006-07",
+      "last_season": "2020-21"
+    },
+    {
+      "id": "bassbr01",
+      "name": "Brandon Bass",
+      "team_count": 6,
+      "first_season": "2005-06",
+      "last_season": "2016-17"
+    },
+    {
+      "id": "holliry01",
+      "name": "Ryan Hollins",
+      "team_count": 9,
+      "first_season": "2006-07",
+      "last_season": "2015-16"
+    },
+    {
+      "id": "piercpa01",
+      "name": "Paul Pierce",
+      "team_count": 4,
+      "first_season": "1998-99",
+      "last_season": "2016-17"
+    },
+    {
+      "id": "arroyca01",
+      "name": "Carlos Arroyo",
+      "team_count": 7,
+      "first_season": "2001-02",
+      "last_season": "2010-11"
+    },
+    {
+      "id": "princta01",
+      "name": "Tayshaun Prince",
+      "team_count": 4,
+      "first_season": "2002-03",
+      "last_season": "2015-16"
+    },
+    {
+      "id": "rondora01",
+      "name": "Rajon Rondo",
+      "team_count": 9,
+      "first_season": "2006-07",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "garneke01",
+      "name": "Kevin Garnett",
+      "team_count": 3,
+      "first_season": "1995-96",
+      "last_season": "2015-16"
+    },
+    {
+      "id": "milicda01",
+      "name": "Darko Mili\u010di\u0107",
+      "team_count": 6,
+      "first_season": "2003-04",
+      "last_season": "2012-13"
+    },
+    {
+      "id": "randosh01",
+      "name": "Shavlik Randolph",
+      "team_count": 5,
+      "first_season": "2005-06",
+      "last_season": "2014-15"
+    },
+    {
+      "id": "terryja01",
+      "name": "Jason Terry",
+      "team_count": 6,
+      "first_season": "1999-00",
+      "last_season": "2017-18"
+    },
+    {
+      "id": "barbole01",
+      "name": "Leandro Barbosa",
+      "team_count": 5,
+      "first_season": "2003-04",
+      "last_season": "2016-17"
+    }
+  ],
+  "bank": [
+    {
+      "id": "holliry01",
+      "name": "Ryan Hollins",
+      "team_count": 9,
+      "first_season": "2006-07",
+      "last_season": "2015-16"
+    },
+    {
+      "id": "milicda01",
+      "name": "Darko Mili\u010di\u0107",
+      "team_count": 6,
+      "first_season": "2003-04",
+      "last_season": "2012-13"
+    },
+    {
+      "id": "randosh01",
+      "name": "Shavlik Randolph",
+      "team_count": 5,
+      "first_season": "2005-06",
+      "last_season": "2014-15"
+    },
+    {
+      "id": "garneke01",
+      "name": "Kevin Garnett",
+      "team_count": 3,
+      "first_season": "1995-96",
+      "last_season": "2015-16"
+    },
+    {
+      "id": "bayleje01",
+      "name": "Jerryd Bayless",
+      "team_count": 8,
+      "first_season": "2008-09",
+      "last_season": "2018-19"
+    },
+    {
+      "id": "terryja01",
+      "name": "Jason Terry",
+      "team_count": 6,
+      "first_season": "1999-00",
+      "last_season": "2017-18"
+    },
+    {
+      "id": "rondora01",
+      "name": "Rajon Rondo",
+      "team_count": 9,
+      "first_season": "2006-07",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "redicjj01",
+      "name": "JJ Redick",
+      "team_count": 6,
+      "first_season": "2006-07",
+      "last_season": "2020-21"
+    },
+    {
+      "id": "piercpa01",
+      "name": "Paul Pierce",
+      "team_count": 4,
+      "first_season": "1998-99",
+      "last_season": "2016-17"
+    },
+    {
+      "id": "boganke01",
+      "name": "Keith Bogans",
+      "team_count": 8,
+      "first_season": "2003-04",
+      "last_season": "2013-14"
+    },
+    {
+      "id": "princta01",
+      "name": "Tayshaun Prince",
+      "team_count": 4,
+      "first_season": "2002-03",
+      "last_season": "2015-16"
+    },
+    {
+      "id": "humphkr01",
+      "name": "Kris Humphries",
+      "team_count": 8,
+      "first_season": "2004-05",
+      "last_season": "2016-17"
+    },
+    {
+      "id": "evansre01",
+      "name": "Reggie Evans",
+      "team_count": 7,
+      "first_season": "2002-03",
+      "last_season": "2014-15"
+    },
+    {
+      "id": "bassbr01",
+      "name": "Brandon Bass",
+      "team_count": 6,
+      "first_season": "2005-06",
+      "last_season": "2016-17"
+    },
+    {
+      "id": "arroyca01",
+      "name": "Carlos Arroyo",
+      "team_count": 7,
+      "first_season": "2001-02",
+      "last_season": "2010-11"
+    },
+    {
+      "id": "barbole01",
+      "name": "Leandro Barbosa",
+      "team_count": 5,
+      "first_season": "2003-04",
+      "last_season": "2016-17"
+    }
+  ],
+  "rules": "Place each bank player once. Every pair of players in the same row, column, or 2\u00d72 box must have been NBA teammates (same franchise, same season) at least once."
+}

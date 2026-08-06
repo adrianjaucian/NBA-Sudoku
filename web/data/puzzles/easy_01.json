@@ -1,0 +1,302 @@
+{
+  "difficulty": "easy",
+  "seed": 20353736,
+  "clue_count": 8,
+  "grid_size": 4,
+  "box_size": 2,
+  "clues": [
+    {
+      "id": "gallola01",
+      "name": "Langston Galloway",
+      "team_count": 7,
+      "first_season": "2014-15",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "craigto01",
+      "name": "Torrey Craig",
+      "team_count": 6,
+      "first_season": "2017-18",
+      "last_season": "2024-25"
+    },
+    {
+      "id": "johnsca02",
+      "name": "Cameron Johnson",
+      "team_count": 3,
+      "first_season": "2019-20",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "duranke01",
+      "name": "Kevin Durant",
+      "team_count": 5,
+      "first_season": "2007-08",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "crowdja01",
+      "name": "Jae Crowder",
+      "team_count": 9,
+      "first_season": "2012-13",
+      "last_season": "2024-25"
+    },
+    null,
+    null,
+    null,
+    {
+      "id": "bradlav01",
+      "name": "Avery Bradley",
+      "team_count": 7,
+      "first_season": "2010-11",
+      "last_season": "2021-22"
+    },
+    null,
+    null,
+    null,
+    {
+      "id": "tollian01",
+      "name": "Anthony Tolliver",
+      "team_count": 11,
+      "first_season": "2008-09",
+      "last_season": "2020-21"
+    },
+    null,
+    null,
+    {
+      "id": "smithis01",
+      "name": "Ish Smith",
+      "team_count": 13,
+      "first_season": "2010-11",
+      "last_season": "2023-24"
+    }
+  ],
+  "solution": [
+    {
+      "id": "gallola01",
+      "name": "Langston Galloway",
+      "team_count": 7,
+      "first_season": "2014-15",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "craigto01",
+      "name": "Torrey Craig",
+      "team_count": 6,
+      "first_season": "2017-18",
+      "last_season": "2024-25"
+    },
+    {
+      "id": "johnsca02",
+      "name": "Cameron Johnson",
+      "team_count": 3,
+      "first_season": "2019-20",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "duranke01",
+      "name": "Kevin Durant",
+      "team_count": 5,
+      "first_season": "2007-08",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "crowdja01",
+      "name": "Jae Crowder",
+      "team_count": 9,
+      "first_season": "2012-13",
+      "last_season": "2024-25"
+    },
+    {
+      "id": "payneca01",
+      "name": "Cameron Payne",
+      "team_count": 7,
+      "first_season": "2015-16",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "mcgeeja01",
+      "name": "JaVale McGee",
+      "team_count": 9,
+      "first_season": "2008-09",
+      "last_season": "2023-24"
+    },
+    {
+      "id": "holidaa01",
+      "name": "Aaron Holiday",
+      "team_count": 5,
+      "first_season": "2018-19",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "bradlav01",
+      "name": "Avery Bradley",
+      "team_count": 7,
+      "first_season": "2010-11",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "tuckepj01",
+      "name": "P.J. Tucker",
+      "team_count": 8,
+      "first_season": "2006-07",
+      "last_season": "2024-25"
+    },
+    {
+      "id": "morrima02",
+      "name": "Markieff Morris",
+      "team_count": 8,
+      "first_season": "2011-12",
+      "last_season": "2024-25"
+    },
+    {
+      "id": "greenje02",
+      "name": "Jeff Green",
+      "team_count": 11,
+      "first_season": "2007-08",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "tollian01",
+      "name": "Anthony Tolliver",
+      "team_count": 11,
+      "first_season": "2008-09",
+      "last_season": "2020-21"
+    },
+    {
+      "id": "augusdj01",
+      "name": "D.J. Augustin",
+      "team_count": 11,
+      "first_season": "2008-09",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "dinwisp01",
+      "name": "Spencer Dinwiddie",
+      "team_count": 5,
+      "first_season": "2014-15",
+      "last_season": "2024-25"
+    },
+    {
+      "id": "smithis01",
+      "name": "Ish Smith",
+      "team_count": 13,
+      "first_season": "2010-11",
+      "last_season": "2023-24"
+    }
+  ],
+  "bank": [
+    {
+      "id": "tuckepj01",
+      "name": "P.J. Tucker",
+      "team_count": 8,
+      "first_season": "2006-07",
+      "last_season": "2024-25"
+    },
+    {
+      "id": "greenje02",
+      "name": "Jeff Green",
+      "team_count": 11,
+      "first_season": "2007-08",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "crowdja01",
+      "name": "Jae Crowder",
+      "team_count": 9,
+      "first_season": "2012-13",
+      "last_season": "2024-25"
+    },
+    {
+      "id": "dinwisp01",
+      "name": "Spencer Dinwiddie",
+      "team_count": 5,
+      "first_season": "2014-15",
+      "last_season": "2024-25"
+    },
+    {
+      "id": "duranke01",
+      "name": "Kevin Durant",
+      "team_count": 5,
+      "first_season": "2007-08",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "payneca01",
+      "name": "Cameron Payne",
+      "team_count": 7,
+      "first_season": "2015-16",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "smithis01",
+      "name": "Ish Smith",
+      "team_count": 13,
+      "first_season": "2010-11",
+      "last_season": "2023-24"
+    },
+    {
+      "id": "holidaa01",
+      "name": "Aaron Holiday",
+      "team_count": 5,
+      "first_season": "2018-19",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "craigto01",
+      "name": "Torrey Craig",
+      "team_count": 6,
+      "first_season": "2017-18",
+      "last_season": "2024-25"
+    },
+    {
+      "id": "mcgeeja01",
+      "name": "JaVale McGee",
+      "team_count": 9,
+      "first_season": "2008-09",
+      "last_season": "2023-24"
+    },
+    {
+      "id": "morrima02",
+      "name": "Markieff Morris",
+      "team_count": 8,
+      "first_season": "2011-12",
+      "last_season": "2024-25"
+    },
+    {
+      "id": "augusdj01",
+      "name": "D.J. Augustin",
+      "team_count": 11,
+      "first_season": "2008-09",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "tollian01",
+      "name": "Anthony Tolliver",
+      "team_count": 11,
+      "first_season": "2008-09",
+      "last_season": "2020-21"
+    },
+    {
+      "id": "gallola01",
+      "name": "Langston Galloway",
+      "team_count": 7,
+      "first_season": "2014-15",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "johnsca02",
+      "name": "Cameron Johnson",
+      "team_count": 3,
+      "first_season": "2019-20",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "bradlav01",
+      "name": "Avery Bradley",
+      "team_count": 7,
+      "first_season": "2010-11",
+      "last_season": "2021-22"
+    }
+  ],
+  "rules": "Place each bank player once. Every pair of players in the same row, column, or 2\u00d72 box must have been NBA teammates (same franchise, same season) at least once."
+}

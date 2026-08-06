@@ -1,0 +1,302 @@
+{
+  "difficulty": "easy",
+  "seed": 20353749,
+  "clue_count": 8,
+  "grid_size": 4,
+  "box_size": 2,
+  "clues": [
+    null,
+    {
+      "id": "cookqu01",
+      "name": "Quinn Cook",
+      "team_count": 5,
+      "first_season": "2016-17",
+      "last_season": "2020-21"
+    },
+    null,
+    {
+      "id": "mcgeeja01",
+      "name": "JaVale McGee",
+      "team_count": 9,
+      "first_season": "2008-09",
+      "last_season": "2023-24"
+    },
+    null,
+    {
+      "id": "bradlav01",
+      "name": "Avery Bradley",
+      "team_count": 7,
+      "first_season": "2010-11",
+      "last_season": "2021-22"
+    },
+    null,
+    null,
+    {
+      "id": "thomais02",
+      "name": "Isaiah Thomas",
+      "team_count": 10,
+      "first_season": "2011-12",
+      "last_season": "2023-24"
+    },
+    null,
+    null,
+    null,
+    {
+      "id": "greenje02",
+      "name": "Jeff Green",
+      "team_count": 11,
+      "first_season": "2007-08",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "couside01",
+      "name": "DeMarcus Cousins",
+      "team_count": 7,
+      "first_season": "2010-11",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "augusdj01",
+      "name": "D.J. Augustin",
+      "team_count": 11,
+      "first_season": "2008-09",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "stephla01",
+      "name": "Lance Stephenson",
+      "team_count": 8,
+      "first_season": "2010-11",
+      "last_season": "2021-22"
+    }
+  ],
+  "solution": [
+    {
+      "id": "smithjr01",
+      "name": "J.R. Smith",
+      "team_count": 5,
+      "first_season": "2004-05",
+      "last_season": "2019-20"
+    },
+    {
+      "id": "cookqu01",
+      "name": "Quinn Cook",
+      "team_count": 5,
+      "first_season": "2016-17",
+      "last_season": "2020-21"
+    },
+    {
+      "id": "howardw01",
+      "name": "Dwight Howard",
+      "team_count": 7,
+      "first_season": "2004-05",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "mcgeeja01",
+      "name": "JaVale McGee",
+      "team_count": 9,
+      "first_season": "2008-09",
+      "last_season": "2023-24"
+    },
+    {
+      "id": "morrima02",
+      "name": "Markieff Morris",
+      "team_count": 8,
+      "first_season": "2011-12",
+      "last_season": "2024-25"
+    },
+    {
+      "id": "bradlav01",
+      "name": "Avery Bradley",
+      "team_count": 7,
+      "first_season": "2010-11",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "smithis01",
+      "name": "Ish Smith",
+      "team_count": 13,
+      "first_season": "2010-11",
+      "last_season": "2023-24"
+    },
+    {
+      "id": "caldwke01",
+      "name": "Kentavious Caldwell-Pope",
+      "team_count": 6,
+      "first_season": "2013-14",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "thomais02",
+      "name": "Isaiah Thomas",
+      "team_count": 10,
+      "first_season": "2011-12",
+      "last_season": "2023-24"
+    },
+    {
+      "id": "rondora01",
+      "name": "Rajon Rondo",
+      "team_count": 9,
+      "first_season": "2006-07",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "jordade01",
+      "name": "DeAndre Jordan",
+      "team_count": 8,
+      "first_season": "2008-09",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "jamesle01",
+      "name": "LeBron James",
+      "team_count": 3,
+      "first_season": "2003-04",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "greenje02",
+      "name": "Jeff Green",
+      "team_count": 11,
+      "first_season": "2007-08",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "couside01",
+      "name": "DeMarcus Cousins",
+      "team_count": 7,
+      "first_season": "2010-11",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "augusdj01",
+      "name": "D.J. Augustin",
+      "team_count": 11,
+      "first_season": "2008-09",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "stephla01",
+      "name": "Lance Stephenson",
+      "team_count": 8,
+      "first_season": "2010-11",
+      "last_season": "2021-22"
+    }
+  ],
+  "bank": [
+    {
+      "id": "couside01",
+      "name": "DeMarcus Cousins",
+      "team_count": 7,
+      "first_season": "2010-11",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "smithjr01",
+      "name": "J.R. Smith",
+      "team_count": 5,
+      "first_season": "2004-05",
+      "last_season": "2019-20"
+    },
+    {
+      "id": "cookqu01",
+      "name": "Quinn Cook",
+      "team_count": 5,
+      "first_season": "2016-17",
+      "last_season": "2020-21"
+    },
+    {
+      "id": "thomais02",
+      "name": "Isaiah Thomas",
+      "team_count": 10,
+      "first_season": "2011-12",
+      "last_season": "2023-24"
+    },
+    {
+      "id": "jamesle01",
+      "name": "LeBron James",
+      "team_count": 3,
+      "first_season": "2003-04",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "mcgeeja01",
+      "name": "JaVale McGee",
+      "team_count": 9,
+      "first_season": "2008-09",
+      "last_season": "2023-24"
+    },
+    {
+      "id": "smithis01",
+      "name": "Ish Smith",
+      "team_count": 13,
+      "first_season": "2010-11",
+      "last_season": "2023-24"
+    },
+    {
+      "id": "stephla01",
+      "name": "Lance Stephenson",
+      "team_count": 8,
+      "first_season": "2010-11",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "jordade01",
+      "name": "DeAndre Jordan",
+      "team_count": 8,
+      "first_season": "2008-09",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "morrima02",
+      "name": "Markieff Morris",
+      "team_count": 8,
+      "first_season": "2011-12",
+      "last_season": "2024-25"
+    },
+    {
+      "id": "rondora01",
+      "name": "Rajon Rondo",
+      "team_count": 9,
+      "first_season": "2006-07",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "caldwke01",
+      "name": "Kentavious Caldwell-Pope",
+      "team_count": 6,
+      "first_season": "2013-14",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "augusdj01",
+      "name": "D.J. Augustin",
+      "team_count": 11,
+      "first_season": "2008-09",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "bradlav01",
+      "name": "Avery Bradley",
+      "team_count": 7,
+      "first_season": "2010-11",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "greenje02",
+      "name": "Jeff Green",
+      "team_count": 11,
+      "first_season": "2007-08",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "howardw01",
+      "name": "Dwight Howard",
+      "team_count": 7,
+      "first_season": "2004-05",
+      "last_season": "2021-22"
+    }
+  ],
+  "rules": "Place each bank player once. Every pair of players in the same row, column, or 2\u00d72 box must have been NBA teammates (same franchise, same season) at least once."
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TEAMMATE — NBA Sudoku</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true"></div>
+
+  <header class="top">
+    <div class="brand-block">
+      <p class="eyebrow">NBA logic puzzle</p>
+      <h1 class="brand">TEAMMATE</h1>
+    </div>
+    <p class="tagline">Every pair in a row, column, or box must have been NBA teammates.</p>
+  </header>
+
+  <main class="layout">
+    <section class="board-panel" aria-label="Puzzle board">
+      <div class="toolbar">
+        <label class="field">
+          <span>Difficulty</span>
+          <select id="difficulty"></select>
+        </label>
+        <label class="field">
+          <span>Puzzle</span>
+          <select id="puzzle-select"></select>
+        </label>
+        <div class="toolbar-actions">
+          <button type="button" id="btn-check" class="btn">Check</button>
+          <button type="button" id="btn-hint" class="btn btn-ghost">Hint</button>
+          <button type="button" id="btn-reset" class="btn btn-ghost">Reset</button>
+          <button type="button" id="btn-solve" class="btn btn-ghost">Reveal</button>
+        </div>
+      </div>
+
+      <div id="status" class="status" role="status"></div>
+      <div id="board" class="board" role="grid" aria-label="4 by 4 teammate grid"></div>
+    </section>
+
+    <aside class="side-panel">
+      <section class="bank-section">
+        <h2>Player bank</h2>
+        <p class="side-copy">Place each name once. Click a cell, then a player — or click a bank chip to auto-place.</p>
+        <div id="bank" class="bank"></div>
+      </section>
+
+      <section class="rules-section">
+        <h2>Rules</h2>
+        <ul class="rules">
+          <li>Fill the <strong>4×4</strong> grid using every bank player exactly once.</li>
+          <li>In every <strong>row</strong>, <strong>column</strong>, and <strong>2×2 box</strong>, each pair must have been teammates (same franchise, same season).</li>
+          <li>Only players with <strong>3+ franchises</strong> appear — no one-team lifers.</li>
+          <li>Each puzzle has <strong>exactly one</strong> solution.</li>
+        </ul>
+        <p id="diff-blurb" class="diff-blurb"></p>
+      </section>
+
+      <section class="inspect-section">
+        <h2>Teammate check</h2>
+        <p class="side-copy">Select two filled cells to see shared seasons.</p>
+        <div id="inspect" class="inspect">Pick two players on the board.</div>
+      </section>
+    </aside>
+  </main>
+
+  <footer class="foot">
+    <span>Data from Basketball Reference · 1980–present · 3+ franchise players</span>
+  </footer>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>

@@ -9,3 +9,4 @@ data/raw_appearances.pkl
 *.egg-info/
 dist/
 build/
+.pytest_cache/

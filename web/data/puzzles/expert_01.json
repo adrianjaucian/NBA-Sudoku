@@ -1,0 +1,272 @@
+{
+  "difficulty": "expert",
+  "seed": 20274975,
+  "clue_count": 3,
+  "grid_size": 4,
+  "box_size": 2,
+  "clues": [
+    null,
+    null,
+    {
+      "id": "pelleno01",
+      "name": "Norvel Pelle",
+      "team_count": 5,
+      "first_season": "2019-20",
+      "last_season": "2021-22"
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      "id": "jonesma05",
+      "name": "Mason Jones",
+      "team_count": 4,
+      "first_season": "2020-21",
+      "last_season": "2024-25"
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      "id": "hardeja01",
+      "name": "James Harden",
+      "team_count": 6,
+      "first_season": "2009-10",
+      "last_season": "2025-26"
+    },
+    null
+  ],
+  "solution": [
+    {
+      "id": "brazdig01",
+      "name": "Ignas Brazdeikis",
+      "team_count": 3,
+      "first_season": "2019-20",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "ennisja01",
+      "name": "James Ennis III",
+      "team_count": 10,
+      "first_season": "2014-15",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "pelleno01",
+      "name": "Norvel Pelle",
+      "team_count": 5,
+      "first_season": "2019-20",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "riverau01",
+      "name": "Austin Rivers",
+      "team_count": 7,
+      "first_season": "2012-13",
+      "last_season": "2022-23"
+    },
+    {
+      "id": "curryse01",
+      "name": "Seth Curry",
+      "team_count": 10,
+      "first_season": "2013-14",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "tollian01",
+      "name": "Anthony Tolliver",
+      "team_count": 11,
+      "first_season": "2008-09",
+      "last_season": "2020-21"
+    },
+    {
+      "id": "harrito02",
+      "name": "Tobias Harris",
+      "team_count": 5,
+      "first_season": "2011-12",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "griffbl01",
+      "name": "Blake Griffin",
+      "team_count": 4,
+      "first_season": "2010-11",
+      "last_season": "2022-23"
+    },
+    {
+      "id": "jonesma05",
+      "name": "Mason Jones",
+      "team_count": 4,
+      "first_season": "2020-21",
+      "last_season": "2024-25"
+    },
+    {
+      "id": "anthoca01",
+      "name": "Carmelo Anthony",
+      "team_count": 6,
+      "first_season": "2003-04",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "jordade01",
+      "name": "DeAndre Jordan",
+      "team_count": 8,
+      "first_season": "2008-09",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "bradlav01",
+      "name": "Avery Bradley",
+      "team_count": 7,
+      "first_season": "2010-11",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "howardw01",
+      "name": "Dwight Howard",
+      "team_count": 7,
+      "first_season": "2004-05",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "augusdj01",
+      "name": "D.J. Augustin",
+      "team_count": 11,
+      "first_season": "2008-09",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "hardeja01",
+      "name": "James Harden",
+      "team_count": 6,
+      "first_season": "2009-10",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "greenje02",
+      "name": "Jeff Green",
+      "team_count": 11,
+      "first_season": "2007-08",
+      "last_season": "2025-26"
+    }
+  ],
+  "bank": [
+    {
+      "id": "ennisja01",
+      "name": "James Ennis III",
+      "team_count": 10,
+      "first_season": "2014-15",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "riverau01",
+      "name": "Austin Rivers",
+      "team_count": 7,
+      "first_season": "2012-13",
+      "last_season": "2022-23"
+    },
+    {
+      "id": "tollian01",
+      "name": "Anthony Tolliver",
+      "team_count": 11,
+      "first_season": "2008-09",
+      "last_season": "2020-21"
+    },
+    {
+      "id": "bradlav01",
+      "name": "Avery Bradley",
+      "team_count": 7,
+      "first_season": "2010-11",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "howardw01",
+      "name": "Dwight Howard",
+      "team_count": 7,
+      "first_season": "2004-05",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "curryse01",
+      "name": "Seth Curry",
+      "team_count": 10,
+      "first_season": "2013-14",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "augusdj01",
+      "name": "D.J. Augustin",
+      "team_count": 11,
+      "first_season": "2008-09",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "jordade01",
+      "name": "DeAndre Jordan",
+      "team_count": 8,
+      "first_season": "2008-09",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "jonesma05",
+      "name": "Mason Jones",
+      "team_count": 4,
+      "first_season": "2020-21",
+      "last_season": "2024-25"
+    },
+    {
+      "id": "harrito02",
+      "name": "Tobias Harris",
+      "team_count": 5,
+      "first_season": "2011-12",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "griffbl01",
+      "name": "Blake Griffin",
+      "team_count": 4,
+      "first_season": "2010-11",
+      "last_season": "2022-23"
+    },
+    {
+      "id": "brazdig01",
+      "name": "Ignas Brazdeikis",
+      "team_count": 3,
+      "first_season": "2019-20",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "hardeja01",
+      "name": "James Harden",
+      "team_count": 6,
+      "first_season": "2009-10",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "anthoca01",
+      "name": "Carmelo Anthony",
+      "team_count": 6,
+      "first_season": "2003-04",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "greenje02",
+      "name": "Jeff Green",
+      "team_count": 11,
+      "first_season": "2007-08",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "pelleno01",
+      "name": "Norvel Pelle",
+      "team_count": 5,
+      "first_season": "2019-20",
+      "last_season": "2021-22"
+    }
+  ],
+  "rules": "Place each bank player once. Every pair of players in the same row, column, or 2\u00d72 box must have been NBA teammates (same franchise, same season) at least once."
+}

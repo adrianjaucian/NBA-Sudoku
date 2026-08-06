@@ -1,0 +1,290 @@
+{
+  "difficulty": "medium",
+  "seed": 20340759,
+  "clue_count": 6,
+  "grid_size": 4,
+  "box_size": 2,
+  "clues": [
+    {
+      "id": "willisc01",
+      "name": "Scott Williams",
+      "team_count": 7,
+      "first_season": "1990-91",
+      "last_season": "2004-05"
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      "id": "jonesdw02",
+      "name": "Dwayne Jones",
+      "team_count": 4,
+      "first_season": "2005-06",
+      "last_season": "2009-10"
+    },
+    null,
+    {
+      "id": "przybjo01",
+      "name": "Joel Przybilla",
+      "team_count": 4,
+      "first_season": "2000-01",
+      "last_season": "2012-13"
+    },
+    null,
+    null,
+    {
+      "id": "thomaty01",
+      "name": "Tyrus Thomas",
+      "team_count": 3,
+      "first_season": "2006-07",
+      "last_season": "2014-15"
+    },
+    null,
+    {
+      "id": "augusdj01",
+      "name": "D.J. Augustin",
+      "team_count": 11,
+      "first_season": "2008-09",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "radmavl01",
+      "name": "Vladimir Radmanovi\u0107",
+      "team_count": 7,
+      "first_season": "2001-02",
+      "last_season": "2012-13"
+    },
+    null
+  ],
+  "solution": [
+    {
+      "id": "willisc01",
+      "name": "Scott Williams",
+      "team_count": 7,
+      "first_season": "1990-91",
+      "last_season": "2004-05"
+    },
+    {
+      "id": "diopde01",
+      "name": "DeSagana Diop",
+      "team_count": 4,
+      "first_season": "2001-02",
+      "last_season": "2012-13"
+    },
+    {
+      "id": "hughela01",
+      "name": "Larry Hughes",
+      "team_count": 8,
+      "first_season": "1998-99",
+      "last_season": "2011-12"
+    },
+    {
+      "id": "goodedr01",
+      "name": "Drew Gooden",
+      "team_count": 10,
+      "first_season": "2002-03",
+      "last_season": "2015-16"
+    },
+    {
+      "id": "howarju01",
+      "name": "Juwan Howard",
+      "team_count": 8,
+      "first_season": "1994-95",
+      "last_season": "2012-13"
+    },
+    {
+      "id": "jamesle01",
+      "name": "LeBron James",
+      "team_count": 3,
+      "first_season": "2003-04",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "jonesdw02",
+      "name": "Dwayne Jones",
+      "team_count": 4,
+      "first_season": "2005-06",
+      "last_season": "2009-10"
+    },
+    {
+      "id": "brownde02",
+      "name": "Devin Brown",
+      "team_count": 6,
+      "first_season": "2002-03",
+      "last_season": "2009-10"
+    },
+    {
+      "id": "przybjo01",
+      "name": "Joel Przybilla",
+      "team_count": 4,
+      "first_season": "2000-01",
+      "last_season": "2012-13"
+    },
+    {
+      "id": "murraro01",
+      "name": "Ronald Murray",
+      "team_count": 8,
+      "first_season": "2002-03",
+      "last_season": "2009-10"
+    },
+    {
+      "id": "diawbo01",
+      "name": "Boris Diaw",
+      "team_count": 5,
+      "first_season": "2003-04",
+      "last_season": "2016-17"
+    },
+    {
+      "id": "thomaty01",
+      "name": "Tyrus Thomas",
+      "team_count": 3,
+      "first_season": "2006-07",
+      "last_season": "2014-15"
+    },
+    {
+      "id": "mohamna01",
+      "name": "Nazr Mohammed",
+      "team_count": 8,
+      "first_season": "1998-99",
+      "last_season": "2015-16"
+    },
+    {
+      "id": "augusdj01",
+      "name": "D.J. Augustin",
+      "team_count": 11,
+      "first_season": "2008-09",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "radmavl01",
+      "name": "Vladimir Radmanovi\u0107",
+      "team_count": 7,
+      "first_season": "2001-02",
+      "last_season": "2012-13"
+    },
+    {
+      "id": "johnsli01",
+      "name": "Linton Johnson",
+      "team_count": 7,
+      "first_season": "2003-04",
+      "last_season": "2008-09"
+    }
+  ],
+  "bank": [
+    {
+      "id": "hughela01",
+      "name": "Larry Hughes",
+      "team_count": 8,
+      "first_season": "1998-99",
+      "last_season": "2011-12"
+    },
+    {
+      "id": "thomaty01",
+      "name": "Tyrus Thomas",
+      "team_count": 3,
+      "first_season": "2006-07",
+      "last_season": "2014-15"
+    },
+    {
+      "id": "murraro01",
+      "name": "Ronald Murray",
+      "team_count": 8,
+      "first_season": "2002-03",
+      "last_season": "2009-10"
+    },
+    {
+      "id": "howarju01",
+      "name": "Juwan Howard",
+      "team_count": 8,
+      "first_season": "1994-95",
+      "last_season": "2012-13"
+    },
+    {
+      "id": "jonesdw02",
+      "name": "Dwayne Jones",
+      "team_count": 4,
+      "first_season": "2005-06",
+      "last_season": "2009-10"
+    },
+    {
+      "id": "radmavl01",
+      "name": "Vladimir Radmanovi\u0107",
+      "team_count": 7,
+      "first_season": "2001-02",
+      "last_season": "2012-13"
+    },
+    {
+      "id": "diawbo01",
+      "name": "Boris Diaw",
+      "team_count": 5,
+      "first_season": "2003-04",
+      "last_season": "2016-17"
+    },
+    {
+      "id": "diopde01",
+      "name": "DeSagana Diop",
+      "team_count": 4,
+      "first_season": "2001-02",
+      "last_season": "2012-13"
+    },
+    {
+      "id": "johnsli01",
+      "name": "Linton Johnson",
+      "team_count": 7,
+      "first_season": "2003-04",
+      "last_season": "2008-09"
+    },
+    {
+      "id": "brownde02",
+      "name": "Devin Brown",
+      "team_count": 6,
+      "first_season": "2002-03",
+      "last_season": "2009-10"
+    },
+    {
+      "id": "jamesle01",
+      "name": "LeBron James",
+      "team_count": 3,
+      "first_season": "2003-04",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "przybjo01",
+      "name": "Joel Przybilla",
+      "team_count": 4,
+      "first_season": "2000-01",
+      "last_season": "2012-13"
+    },
+    {
+      "id": "augusdj01",
+      "name": "D.J. Augustin",
+      "team_count": 11,
+      "first_season": "2008-09",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "mohamna01",
+      "name": "Nazr Mohammed",
+      "team_count": 8,
+      "first_season": "1998-99",
+      "last_season": "2015-16"
+    },
+    {
+      "id": "goodedr01",
+      "name": "Drew Gooden",
+      "team_count": 10,
+      "first_season": "2002-03",
+      "last_season": "2015-16"
+    },
+    {
+      "id": "willisc01",
+      "name": "Scott Williams",
+      "team_count": 7,
+      "first_season": "1990-91",
+      "last_season": "2004-05"
+    }
+  ],
+  "rules": "Place each bank player once. Every pair of players in the same row, column, or 2\u00d72 box must have been NBA teammates (same franchise, same season) at least once."
+}

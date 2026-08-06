@@ -1,0 +1,278 @@
+{
+  "difficulty": "hard",
+  "seed": 20347096,
+  "clue_count": 4,
+  "grid_size": 4,
+  "box_size": 2,
+  "clues": [
+    null,
+    {
+      "id": "muscami01",
+      "name": "Mike Muscala",
+      "team_count": 7,
+      "first_season": "2013-14",
+      "last_season": "2023-24"
+    },
+    null,
+    null,
+    null,
+    null,
+    {
+      "id": "mbahalu01",
+      "name": "Luc Mbah a Moute",
+      "team_count": 6,
+      "first_season": "2008-09",
+      "last_season": "2019-20"
+    },
+    null,
+    null,
+    null,
+    {
+      "id": "thomais02",
+      "name": "Isaiah Thomas",
+      "team_count": 10,
+      "first_season": "2011-12",
+      "last_season": "2023-24"
+    },
+    null,
+    null,
+    null,
+    null,
+    {
+      "id": "bradlav01",
+      "name": "Avery Bradley",
+      "team_count": 7,
+      "first_season": "2010-11",
+      "last_season": "2021-22"
+    }
+  ],
+  "solution": [
+    {
+      "id": "carrode01",
+      "name": "DeMarre Carroll",
+      "team_count": 8,
+      "first_season": "2009-10",
+      "last_season": "2019-20"
+    },
+    {
+      "id": "muscami01",
+      "name": "Mike Muscala",
+      "team_count": 7,
+      "first_season": "2013-14",
+      "last_season": "2023-24"
+    },
+    {
+      "id": "cunnija01",
+      "name": "Jared Cunningham",
+      "team_count": 6,
+      "first_season": "2012-13",
+      "last_season": "2015-16"
+    },
+    {
+      "id": "willilo02",
+      "name": "Lou Williams",
+      "team_count": 6,
+      "first_season": "2005-06",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "chandty01",
+      "name": "Tyson Chandler",
+      "team_count": 8,
+      "first_season": "2001-02",
+      "last_season": "2019-20"
+    },
+    {
+      "id": "mcgeeja01",
+      "name": "JaVale McGee",
+      "team_count": 9,
+      "first_season": "2008-09",
+      "last_season": "2023-24"
+    },
+    {
+      "id": "mbahalu01",
+      "name": "Luc Mbah a Moute",
+      "team_count": 6,
+      "first_season": "2008-09",
+      "last_season": "2019-20"
+    },
+    {
+      "id": "riverau01",
+      "name": "Austin Rivers",
+      "team_count": 7,
+      "first_season": "2012-13",
+      "last_season": "2022-23"
+    },
+    {
+      "id": "westbru01",
+      "name": "Russell Westbrook",
+      "team_count": 7,
+      "first_season": "2008-09",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "breweco01",
+      "name": "Corey Brewer",
+      "team_count": 8,
+      "first_season": "2007-08",
+      "last_season": "2019-20"
+    },
+    {
+      "id": "thomais02",
+      "name": "Isaiah Thomas",
+      "team_count": 10,
+      "first_season": "2011-12",
+      "last_season": "2023-24"
+    },
+    {
+      "id": "arizatr01",
+      "name": "Trevor Ariza",
+      "team_count": 10,
+      "first_season": "2004-05",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "hardeja01",
+      "name": "James Harden",
+      "team_count": 6,
+      "first_season": "2009-10",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "howardw01",
+      "name": "Dwight Howard",
+      "team_count": 7,
+      "first_season": "2004-05",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "jordade01",
+      "name": "DeAndre Jordan",
+      "team_count": 8,
+      "first_season": "2008-09",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "bradlav01",
+      "name": "Avery Bradley",
+      "team_count": 7,
+      "first_season": "2010-11",
+      "last_season": "2021-22"
+    }
+  ],
+  "bank": [
+    {
+      "id": "riverau01",
+      "name": "Austin Rivers",
+      "team_count": 7,
+      "first_season": "2012-13",
+      "last_season": "2022-23"
+    },
+    {
+      "id": "bradlav01",
+      "name": "Avery Bradley",
+      "team_count": 7,
+      "first_season": "2010-11",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "howardw01",
+      "name": "Dwight Howard",
+      "team_count": 7,
+      "first_season": "2004-05",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "hardeja01",
+      "name": "James Harden",
+      "team_count": 6,
+      "first_season": "2009-10",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "willilo02",
+      "name": "Lou Williams",
+      "team_count": 6,
+      "first_season": "2005-06",
+      "last_season": "2021-22"
+    },
+    {
+      "id": "jordade01",
+      "name": "DeAndre Jordan",
+      "team_count": 8,
+      "first_season": "2008-09",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "mbahalu01",
+      "name": "Luc Mbah a Moute",
+      "team_count": 6,
+      "first_season": "2008-09",
+      "last_season": "2019-20"
+    },
+    {
+      "id": "westbru01",
+      "name": "Russell Westbrook",
+      "team_count": 7,
+      "first_season": "2008-09",
+      "last_season": "2025-26"
+    },
+    {
+      "id": "cunnija01",
+      "name": "Jared Cunningham",
+      "team_count": 6,
+      "first_season": "2012-13",
+      "last_season": "2015-16"
+    },
+    {
+      "id": "breweco01",
+      "name": "Corey Brewer",
+      "team_count": 8,
+      "first_season": "2007-08",
+      "last_season": "2019-20"
+    },
+    {
+      "id": "chandty01",
+      "name": "Tyson Chandler",
+      "team_count": 8,
+      "first_season": "2001-02",
+      "last_season": "2019-20"
+    },
+    {
+      "id": "thomais02",
+      "name": "Isaiah Thomas",
+      "team_count": 10,
+      "first_season": "2011-12",
+      "last_season": "2023-24"
+    },
+    {
+      "id": "muscami01",
+      "name": "Mike Muscala",
+      "team_count": 7,
+      "first_season": "2013-14",
+      "last_season": "2023-24"
+    },
+    {
+      "id": "mcgeeja01",
+      "name": "JaVale McGee",
+      "team_count": 9,
+      "first_season": "2008-09",
+      "last_season": "2023-24"
+    },
+    {
+      "id": "carrode01",
+      "name": "DeMarre Carroll",
+      "team_count": 8,
+      "first_season": "2009-10",
+      "last_season": "2019-20"
+    },
+    {
+      "id": "arizatr01",
+      "name": "Trevor Ariza",
+      "team_count": 10,
+      "first_season": "2004-05",
+      "last_season": "2021-22"
+    }
+  ],
+  "rules": "Place each bank player once. Every pair of players in the same row, column, or 2\u00d72 box must have been NBA teammates (same franchise, same season) at least once."
+}

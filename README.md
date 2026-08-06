@@ -1,63 +1,58 @@
-# NBA Player–Team Database
+# TEAMMATE — NBA Sudoku
 
-Database of NBA players who have played for **3 or more franchises** in the regular season from the **1979–80** season through the present.
+A **4×4 Sudoku-style logic puzzle** where every pair of players in the same row, column, or 2×2 box must have been **NBA teammates** (same franchise, same season).
 
-Data is scraped from [Basketball Reference](https://www.basketball-reference.com/) season totals pages.
+Only players who suited up for **3+ franchises** (1980–present) are used, so the graph stays rich with journeymen instead of one-team lifers.
 
-## What's included
-
-| File | Description |
-|------|-------------|
-| `data/nba_players.sqlite` | SQLite database (players, teams, player_teams, appearances) |
-| `data/players_3plus_teams.json` | Full JSON export with nested team history |
-| `data/players_3plus_teams.csv` | One row per player |
-| `data/player_teams.csv` | One row per player–franchise stint |
-
-### Filters
-
-- **Era:** seasons ending 1980 → current NBA season
-- **Minimum teams:** 3 distinct franchises
-- **Franchise continuity:** relocations/rebrands count as one team (e.g. SEA→OKC, NJN→BKN, VAN→MEM, NOH→NOP)
-- **Aggregate rows** (`TOT`, `2TM`, …) are excluded; individual team rows are kept
-
-## Rebuild
+## Play
 
 ```bash
 pip install -r requirements.txt
+# regenerate data/puzzles if needed:
+python scripts/generate_puzzles.py --per-difficulty 3
+
+cd web && python3 -m http.server 8080
+```
+
+Open `http://localhost:8080`.
+
+## Rules
+
+1. Place each **bank** player exactly once on the board.
+2. In every row, column, and 2×2 box, **every pair** must have been teammates.
+3. Each generated puzzle has **exactly one** solution (verified by exhaustive search over the 16-player bank).
+
+## Difficulty
+
+| Level  | Clues | Pool |
+|--------|------:|------|
+| Easy   | 8 | Mostly modern (2000+) |
+| Medium | 6 | Mix of eras |
+| Hard   | 4 | Prefers journeymen (6–10 teams) |
+| Expert | 3 | Full teammate graph |
+
+> Expert targets **3** clues. Truly unique **2**-clue puzzles are vanishingly rare for a fixed 16-player bank (every 2-clue pattern was tested on many grids).
+
+## Database
+
+| File | Description |
+|------|-------------|
+| `data/nba_players.sqlite` | Players with ≥3 franchises + season appearances |
+| `web/data/teammate_graph.json` | Same-season teammate edges for the browser |
+| `web/data/puzzles/*.json` | Pre-generated unique puzzles |
+| `web/data/catalog.json` | Difficulty index |
+
+Rebuild player DB from Basketball Reference:
+
+```bash
 python scripts/build_database.py
+python scripts/generate_puzzles.py
 ```
 
-Useful flags:
+## How uniqueness works
 
-```bash
-python scripts/build_database.py --use-cache          # reuse last scrape
-python scripts/build_database.py --start-year 1980 --end-year 2026
-python scripts/build_database.py --min-teams 3
-```
+1. Search the teammate graph for a complete valid 4×4 grid (16 distinct players).
+2. Remove clues while `count_solutions(clues, bank) == 1`.
+3. Ship only puzzles that survive that check.
 
-Respect Basketball Reference's rate limits (default ~3.5s between requests).
-
-## Query examples
-
-```bash
-sqlite3 data/nba_players.sqlite \
-  "SELECT player_name, team_count FROM players ORDER BY team_count DESC LIMIT 10;"
-```
-
-```bash
-sqlite3 data/nba_players.sqlite \
-  "SELECT p.player_name, t.franchise_name
-   FROM player_teams pt
-   JOIN players p USING (player_id)
-   JOIN teams t USING (franchise_key)
-   WHERE p.player_name = 'James Harden'
-   ORDER BY pt.first_season;"
-```
-
-## Schema
-
-- `players` — id, name, first/last season, team_count  
-- `teams` — franchise_key, franchise_name  
-- `player_teams` — player ↔ franchise with seasons and abbreviations used  
-- `appearances` — season-level player–team rows (filtered players only)  
-- `meta` — build provenance  
+Teammates are defined from the appearances table: two players share an edge if they appear for the same franchise in the same season.
