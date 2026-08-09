@@ -1,42 +1,39 @@
 {
   "grid_size": 4,
   "box_size": 2,
+  "mode": "team_labels",
   "difficulties": {
     "easy": {
-      "clues": 8,
       "puzzles": [
         "puzzles/easy_01.json",
         "puzzles/easy_02.json",
         "puzzles/easy_03.json"
       ],
-      "description": "8 clues \u00b7 mostly modern players (2000+)"
+      "description": "Team labels only \u00b7 mostly modern players \u00b7 tighter cells"
     },
     "medium": {
-      "clues": 6,
       "puzzles": [
         "puzzles/medium_01.json",
         "puzzles/medium_02.json",
         "puzzles/medium_03.json"
       ],
-      "description": "6 clues \u00b7 mix of eras"
+      "description": "Team labels only \u00b7 mix of eras"
     },
     "hard": {
-      "clues": 4,
       "puzzles": [
         "puzzles/hard_01.json",
         "puzzles/hard_02.json",
         "puzzles/hard_03.json"
       ],
-      "description": "4 clues \u00b7 journeymen with 6\u201310 teams"
+      "description": "Team labels only \u00b7 obscure teams \u00b7 journeymen"
     },
     "expert": {
-      "clues": 3,
       "puzzles": [
         "puzzles/expert_01.json",
         "puzzles/expert_02.json",
         "puzzles/expert_03.json"
       ],
-      "description": "3 clues \u00b7 full teammate graph"
+      "description": "Team labels only \u00b7 highest ambiguity still unique"
     }
   }
 }

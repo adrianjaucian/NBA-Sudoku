@@ -1,302 +1,623 @@
 {
   "difficulty": "easy",
-  "seed": 20353766,
-  "clue_count": 8,
+  "seed": 20261646,
   "grid_size": 4,
   "box_size": 2,
+  "mode": "team_labels",
+  "row_teams": [
+    {
+      "key": "GSW",
+      "name": "Golden State Warriors",
+      "abbr": "GSW"
+    },
+    {
+      "key": "DAL",
+      "name": "Dallas Mavericks",
+      "abbr": "DAL"
+    },
+    {
+      "key": "HOU",
+      "name": "Houston Rockets",
+      "abbr": "HOU"
+    },
+    {
+      "key": "CHI",
+      "name": "Chicago Bulls",
+      "abbr": "CHI"
+    }
+  ],
+  "col_teams": [
+    {
+      "key": "DEN",
+      "name": "Denver Nuggets",
+      "abbr": "DEN"
+    },
+    {
+      "key": "DET",
+      "name": "Detroit Pistons",
+      "abbr": "DET"
+    },
+    {
+      "key": "BKN",
+      "name": "Brooklyn Nets",
+      "abbr": "BKN"
+    },
+    {
+      "key": "ATL",
+      "name": "Atlanta Hawks",
+      "abbr": "ATL"
+    }
+  ],
+  "box_teams": [
+    {
+      "key": "PHI",
+      "name": "Philadelphia 76ers",
+      "abbr": "PHI"
+    },
+    {
+      "key": "LAC",
+      "name": "LA Clippers",
+      "abbr": "LAC"
+    },
+    {
+      "key": "LAL",
+      "name": "Los Angeles Lakers",
+      "abbr": "LAL"
+    },
+    {
+      "key": "NYK",
+      "name": "New York Knicks",
+      "abbr": "NYK"
+    }
+  ],
   "clues": [
     null,
     null,
-    {
-      "id": "smithjr01",
-      "name": "J.R. Smith",
-      "team_count": 5,
-      "first_season": "2004-05",
-      "last_season": "2019-20"
-    },
     null,
-    {
-      "id": "howarju01",
-      "name": "Juwan Howard",
-      "team_count": 8,
-      "first_season": "1994-95",
-      "last_season": "2012-13"
-    },
     null,
-    {
-      "id": "cartean01",
-      "name": "Anthony Carter",
-      "team_count": 6,
-      "first_season": "1999-00",
-      "last_season": "2011-12"
-    },
-    {
-      "id": "billuch01",
-      "name": "Chauncey Billups",
-      "team_count": 7,
-      "first_season": "1997-98",
-      "last_season": "2013-14"
-    },
     null,
-    {
-      "id": "breweco01",
-      "name": "Corey Brewer",
-      "team_count": 8,
-      "first_season": "2007-08",
-      "last_season": "2019-20"
-    },
     null,
-    {
-      "id": "gallida01",
-      "name": "Danilo Gallinari",
-      "team_count": 8,
-      "first_season": "2008-09",
-      "last_season": "2023-24"
-    },
     null,
-    {
-      "id": "shumpim01",
-      "name": "Iman Shumpert",
-      "team_count": 5,
-      "first_season": "2011-12",
-      "last_season": "2020-21"
-    },
     null,
-    {
-      "id": "mozgoti01",
-      "name": "Timofey Mozgov",
-      "team_count": 5,
-      "first_season": "2010-11",
-      "last_season": "2017-18"
-    }
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
   ],
   "solution": [
     {
-      "id": "harrejo01",
-      "name": "Josh Harrellson",
-      "team_count": 3,
-      "first_season": "2011-12",
-      "last_season": "2013-14"
+      "id": "saricda01",
+      "name": "Dario \u0160ari\u0107",
+      "team_count": 7,
+      "first_season": "2016-17",
+      "last_season": "2025-26",
+      "teams": [
+        "DEN",
+        "GSW",
+        "MIN",
+        "OKC",
+        "PHI",
+        "PHX",
+        "SAC"
+      ]
     },
     {
-      "id": "novakst01",
-      "name": "Steve Novak",
-      "team_count": 9,
-      "first_season": "2006-07",
-      "last_season": "2016-17"
-    },
-    {
-      "id": "smithjr01",
-      "name": "J.R. Smith",
-      "team_count": 5,
-      "first_season": "2004-05",
-      "last_season": "2019-20"
-    },
-    {
-      "id": "stoudam01",
-      "name": "Amar'e Stoudemire",
-      "team_count": 4,
-      "first_season": "2002-03",
-      "last_season": "2015-16"
-    },
-    {
-      "id": "howarju01",
-      "name": "Juwan Howard",
+      "id": "burksal01",
+      "name": "Alec Burks",
       "team_count": 8,
-      "first_season": "1994-95",
-      "last_season": "2012-13"
+      "first_season": "2011-12",
+      "last_season": "2024-25",
+      "teams": [
+        "CLE",
+        "DET",
+        "GSW",
+        "MIA",
+        "NYK",
+        "PHI",
+        "SAC",
+        "UTA"
+      ]
+    },
+    {
+      "id": "masseto01",
+      "name": "Tony Massenburg",
+      "team_count": 12,
+      "first_season": "1990-91",
+      "last_season": "2004-05",
+      "teams": [
+        "BKN",
+        "BOS",
+        "CHA",
+        "GSW",
+        "HOU",
+        "LAC",
+        "MEM",
+        "PHI",
+        "SAC",
+        "SAS",
+        "TOR",
+        "UTA"
+      ]
+    },
+    {
+      "id": "livinra01",
+      "name": "Randy Livingston",
+      "team_count": 9,
+      "first_season": "1996-97",
+      "last_season": "2006-07",
+      "teams": [
+        "ATL",
+        "CHI",
+        "GSW",
+        "HOU",
+        "LAC",
+        "NOP",
+        "OKC",
+        "PHX",
+        "UTA"
+      ]
+    },
+    {
+      "id": "buckngr01",
+      "name": "Greg Buckner",
+      "team_count": 5,
+      "first_season": "1999-00",
+      "last_season": "2008-09",
+      "teams": [
+        "DAL",
+        "DEN",
+        "MEM",
+        "MIN",
+        "PHI"
+      ]
+    },
+    {
+      "id": "marjabo01",
+      "name": "Boban Marjanovi\u0107",
+      "team_count": 6,
+      "first_season": "2015-16",
+      "last_season": "2023-24",
+      "teams": [
+        "DAL",
+        "DET",
+        "HOU",
+        "LAC",
+        "PHI",
+        "SAS"
+      ]
+    },
+    {
+      "id": "cassesa01",
+      "name": "Sam Cassell",
+      "team_count": 8,
+      "first_season": "1993-94",
+      "last_season": "2007-08",
+      "teams": [
+        "BKN",
+        "BOS",
+        "DAL",
+        "HOU",
+        "LAC",
+        "MIL",
+        "MIN",
+        "PHX"
+      ]
+    },
+    {
+      "id": "rooksse01",
+      "name": "Sean Rooks",
+      "team_count": 7,
+      "first_season": "1992-93",
+      "last_season": "2003-04",
+      "teams": [
+        "ATL",
+        "DAL",
+        "LAC",
+        "LAL",
+        "MIN",
+        "NOP",
+        "ORL"
+      ]
     },
     {
       "id": "anthoca01",
       "name": "Carmelo Anthony",
       "team_count": 6,
       "first_season": "2003-04",
-      "last_season": "2021-22"
+      "last_season": "2021-22",
+      "teams": [
+        "DEN",
+        "HOU",
+        "LAL",
+        "NYK",
+        "OKC",
+        "POR"
+      ]
     },
     {
-      "id": "cartean01",
-      "name": "Anthony Carter",
-      "team_count": 6,
-      "first_season": "1999-00",
-      "last_season": "2011-12"
-    },
-    {
-      "id": "billuch01",
-      "name": "Chauncey Billups",
+      "id": "bullore01",
+      "name": "Reggie Bullock",
       "team_count": 7,
-      "first_season": "1997-98",
-      "last_season": "2013-14"
-    },
-    {
-      "id": "anderch01",
-      "name": "Chris Andersen",
-      "team_count": 5,
-      "first_season": "2001-02",
-      "last_season": "2016-17"
-    },
-    {
-      "id": "breweco01",
-      "name": "Corey Brewer",
-      "team_count": 8,
-      "first_season": "2007-08",
-      "last_season": "2019-20"
-    },
-    {
-      "id": "millean02",
-      "name": "Andre Miller",
-      "team_count": 9,
-      "first_season": "1999-00",
-      "last_season": "2015-16"
-    },
-    {
-      "id": "gallida01",
-      "name": "Danilo Gallinari",
-      "team_count": 8,
-      "first_season": "2008-09",
-      "last_season": "2023-24"
-    },
-    {
-      "id": "millemi01",
-      "name": "Mike Miller",
-      "team_count": 7,
-      "first_season": "2000-01",
-      "last_season": "2016-17"
+      "first_season": "2013-14",
+      "last_season": "2023-24",
+      "teams": [
+        "DAL",
+        "DET",
+        "HOU",
+        "LAC",
+        "LAL",
+        "NYK",
+        "PHX"
+      ]
     },
     {
       "id": "shumpim01",
       "name": "Iman Shumpert",
       "team_count": 5,
       "first_season": "2011-12",
-      "last_season": "2020-21"
+      "last_season": "2020-21",
+      "teams": [
+        "BKN",
+        "CLE",
+        "HOU",
+        "NYK",
+        "SAC"
+      ]
     },
     {
-      "id": "koufoko01",
-      "name": "Kosta Koufos",
-      "team_count": 5,
-      "first_season": "2008-09",
-      "last_season": "2018-19"
+      "id": "mcgratr01",
+      "name": "Tracy McGrady",
+      "team_count": 6,
+      "first_season": "1997-98",
+      "last_season": "2011-12",
+      "teams": [
+        "ATL",
+        "DET",
+        "HOU",
+        "NYK",
+        "ORL",
+        "TOR"
+      ]
     },
     {
-      "id": "mozgoti01",
-      "name": "Timofey Mozgov",
+      "id": "smithjo02",
+      "name": "Joe Smith",
+      "team_count": 12,
+      "first_season": "1995-96",
+      "last_season": "2010-11",
+      "teams": [
+        "ATL",
+        "BKN",
+        "CHI",
+        "CLE",
+        "DEN",
+        "DET",
+        "GSW",
+        "LAL",
+        "MIL",
+        "MIN",
+        "OKC",
+        "PHI"
+      ]
+    },
+    {
+      "id": "hunteli01",
+      "name": "Lindsey Hunter",
       "team_count": 5,
-      "first_season": "2010-11",
-      "last_season": "2017-18"
+      "first_season": "1993-94",
+      "last_season": "2009-10",
+      "teams": [
+        "CHI",
+        "DET",
+        "LAL",
+        "MIL",
+        "TOR"
+      ]
+    },
+    {
+      "id": "vonleno01",
+      "name": "Noah Vonleh",
+      "team_count": 8,
+      "first_season": "2014-15",
+      "last_season": "2022-23",
+      "teams": [
+        "BKN",
+        "BOS",
+        "CHA",
+        "CHI",
+        "DEN",
+        "MIN",
+        "NYK",
+        "POR"
+      ]
+    },
+    {
+      "id": "mohamna01",
+      "name": "Nazr Mohammed",
+      "team_count": 8,
+      "first_season": "1998-99",
+      "last_season": "2015-16",
+      "teams": [
+        "ATL",
+        "CHA",
+        "CHI",
+        "DET",
+        "NYK",
+        "OKC",
+        "PHI",
+        "SAS"
+      ]
     }
   ],
   "bank": [
     {
-      "id": "harrejo01",
-      "name": "Josh Harrellson",
-      "team_count": 3,
-      "first_season": "2011-12",
-      "last_season": "2013-14"
+      "id": "smithjo02",
+      "name": "Joe Smith",
+      "team_count": 12,
+      "first_season": "1995-96",
+      "last_season": "2010-11",
+      "teams": [
+        "ATL",
+        "BKN",
+        "CHI",
+        "CLE",
+        "DEN",
+        "DET",
+        "GSW",
+        "LAL",
+        "MIL",
+        "MIN",
+        "OKC",
+        "PHI"
+      ]
     },
     {
-      "id": "stoudam01",
-      "name": "Amar'e Stoudemire",
-      "team_count": 4,
-      "first_season": "2002-03",
-      "last_season": "2015-16"
-    },
-    {
-      "id": "billuch01",
-      "name": "Chauncey Billups",
-      "team_count": 7,
-      "first_season": "1997-98",
-      "last_season": "2013-14"
-    },
-    {
-      "id": "mozgoti01",
-      "name": "Timofey Mozgov",
-      "team_count": 5,
-      "first_season": "2010-11",
-      "last_season": "2017-18"
-    },
-    {
-      "id": "smithjr01",
-      "name": "J.R. Smith",
-      "team_count": 5,
-      "first_season": "2004-05",
-      "last_season": "2019-20"
-    },
-    {
-      "id": "millean02",
-      "name": "Andre Miller",
-      "team_count": 9,
-      "first_season": "1999-00",
-      "last_season": "2015-16"
-    },
-    {
-      "id": "gallida01",
-      "name": "Danilo Gallinari",
+      "id": "vonleno01",
+      "name": "Noah Vonleh",
       "team_count": 8,
-      "first_season": "2008-09",
-      "last_season": "2023-24"
-    },
-    {
-      "id": "koufoko01",
-      "name": "Kosta Koufos",
-      "team_count": 5,
-      "first_season": "2008-09",
-      "last_season": "2018-19"
-    },
-    {
-      "id": "breweco01",
-      "name": "Corey Brewer",
-      "team_count": 8,
-      "first_season": "2007-08",
-      "last_season": "2019-20"
-    },
-    {
-      "id": "cartean01",
-      "name": "Anthony Carter",
-      "team_count": 6,
-      "first_season": "1999-00",
-      "last_season": "2011-12"
-    },
-    {
-      "id": "anthoca01",
-      "name": "Carmelo Anthony",
-      "team_count": 6,
-      "first_season": "2003-04",
-      "last_season": "2021-22"
-    },
-    {
-      "id": "howarju01",
-      "name": "Juwan Howard",
-      "team_count": 8,
-      "first_season": "1994-95",
-      "last_season": "2012-13"
-    },
-    {
-      "id": "millemi01",
-      "name": "Mike Miller",
-      "team_count": 7,
-      "first_season": "2000-01",
-      "last_season": "2016-17"
-    },
-    {
-      "id": "novakst01",
-      "name": "Steve Novak",
-      "team_count": 9,
-      "first_season": "2006-07",
-      "last_season": "2016-17"
+      "first_season": "2014-15",
+      "last_season": "2022-23",
+      "teams": [
+        "BKN",
+        "BOS",
+        "CHA",
+        "CHI",
+        "DEN",
+        "MIN",
+        "NYK",
+        "POR"
+      ]
     },
     {
       "id": "shumpim01",
       "name": "Iman Shumpert",
       "team_count": 5,
       "first_season": "2011-12",
-      "last_season": "2020-21"
+      "last_season": "2020-21",
+      "teams": [
+        "BKN",
+        "CLE",
+        "HOU",
+        "NYK",
+        "SAC"
+      ]
     },
     {
-      "id": "anderch01",
-      "name": "Chris Andersen",
+      "id": "buckngr01",
+      "name": "Greg Buckner",
       "team_count": 5,
-      "first_season": "2001-02",
-      "last_season": "2016-17"
+      "first_season": "1999-00",
+      "last_season": "2008-09",
+      "teams": [
+        "DAL",
+        "DEN",
+        "MEM",
+        "MIN",
+        "PHI"
+      ]
+    },
+    {
+      "id": "livinra01",
+      "name": "Randy Livingston",
+      "team_count": 9,
+      "first_season": "1996-97",
+      "last_season": "2006-07",
+      "teams": [
+        "ATL",
+        "CHI",
+        "GSW",
+        "HOU",
+        "LAC",
+        "NOP",
+        "OKC",
+        "PHX",
+        "UTA"
+      ]
+    },
+    {
+      "id": "hunteli01",
+      "name": "Lindsey Hunter",
+      "team_count": 5,
+      "first_season": "1993-94",
+      "last_season": "2009-10",
+      "teams": [
+        "CHI",
+        "DET",
+        "LAL",
+        "MIL",
+        "TOR"
+      ]
+    },
+    {
+      "id": "saricda01",
+      "name": "Dario \u0160ari\u0107",
+      "team_count": 7,
+      "first_season": "2016-17",
+      "last_season": "2025-26",
+      "teams": [
+        "DEN",
+        "GSW",
+        "MIN",
+        "OKC",
+        "PHI",
+        "PHX",
+        "SAC"
+      ]
+    },
+    {
+      "id": "cassesa01",
+      "name": "Sam Cassell",
+      "team_count": 8,
+      "first_season": "1993-94",
+      "last_season": "2007-08",
+      "teams": [
+        "BKN",
+        "BOS",
+        "DAL",
+        "HOU",
+        "LAC",
+        "MIL",
+        "MIN",
+        "PHX"
+      ]
+    },
+    {
+      "id": "rooksse01",
+      "name": "Sean Rooks",
+      "team_count": 7,
+      "first_season": "1992-93",
+      "last_season": "2003-04",
+      "teams": [
+        "ATL",
+        "DAL",
+        "LAC",
+        "LAL",
+        "MIN",
+        "NOP",
+        "ORL"
+      ]
+    },
+    {
+      "id": "mohamna01",
+      "name": "Nazr Mohammed",
+      "team_count": 8,
+      "first_season": "1998-99",
+      "last_season": "2015-16",
+      "teams": [
+        "ATL",
+        "CHA",
+        "CHI",
+        "DET",
+        "NYK",
+        "OKC",
+        "PHI",
+        "SAS"
+      ]
+    },
+    {
+      "id": "burksal01",
+      "name": "Alec Burks",
+      "team_count": 8,
+      "first_season": "2011-12",
+      "last_season": "2024-25",
+      "teams": [
+        "CLE",
+        "DET",
+        "GSW",
+        "MIA",
+        "NYK",
+        "PHI",
+        "SAC",
+        "UTA"
+      ]
+    },
+    {
+      "id": "anthoca01",
+      "name": "Carmelo Anthony",
+      "team_count": 6,
+      "first_season": "2003-04",
+      "last_season": "2021-22",
+      "teams": [
+        "DEN",
+        "HOU",
+        "LAL",
+        "NYK",
+        "OKC",
+        "POR"
+      ]
+    },
+    {
+      "id": "marjabo01",
+      "name": "Boban Marjanovi\u0107",
+      "team_count": 6,
+      "first_season": "2015-16",
+      "last_season": "2023-24",
+      "teams": [
+        "DAL",
+        "DET",
+        "HOU",
+        "LAC",
+        "PHI",
+        "SAS"
+      ]
+    },
+    {
+      "id": "mcgratr01",
+      "name": "Tracy McGrady",
+      "team_count": 6,
+      "first_season": "1997-98",
+      "last_season": "2011-12",
+      "teams": [
+        "ATL",
+        "DET",
+        "HOU",
+        "NYK",
+        "ORL",
+        "TOR"
+      ]
+    },
+    {
+      "id": "bullore01",
+      "name": "Reggie Bullock",
+      "team_count": 7,
+      "first_season": "2013-14",
+      "last_season": "2023-24",
+      "teams": [
+        "DAL",
+        "DET",
+        "HOU",
+        "LAC",
+        "LAL",
+        "NYK",
+        "PHX"
+      ]
+    },
+    {
+      "id": "masseto01",
+      "name": "Tony Massenburg",
+      "team_count": 12,
+      "first_season": "1990-91",
+      "last_season": "2004-05",
+      "teams": [
+        "BKN",
+        "BOS",
+        "CHA",
+        "GSW",
+        "HOU",
+        "LAC",
+        "MEM",
+        "PHI",
+        "SAC",
+        "SAS",
+        "TOR",
+        "UTA"
+      ]
     }
   ],
-  "rules": "Place each bank player once. Every pair of players in the same row, column, or 2\u00d72 box must have been NBA teammates (same franchise, same season) at least once."
+  "mean_flexibility": 1.188,
+  "rules": "Team labels on each row, column, and 2\u00d72 box are the only clues. A player belongs in a cell only if they played for that cell's row team, column team, and box team. Use each bank player once. Each puzzle has exactly one solution."
 }

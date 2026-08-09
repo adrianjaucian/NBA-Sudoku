@@ -1,36 +1,16 @@
 const SIZE = 4;
 const BOX = 2;
 
-const ROWS = Array.from({ length: SIZE }, (_, r) =>
-  Array.from({ length: SIZE }, (_, c) => r * SIZE + c)
-);
-const COLS = Array.from({ length: SIZE }, (_, c) =>
-  Array.from({ length: SIZE }, (_, r) => r * SIZE + c)
-);
-const BOXES = [];
-for (let br = 0; br < SIZE / BOX; br++) {
-  for (let bc = 0; bc < SIZE / BOX; bc++) {
-    const box = [];
-    for (let r = 0; r < BOX; r++) {
-      for (let c = 0; c < BOX; c++) {
-        box.push((br * BOX + r) * SIZE + (bc * BOX + c));
-      }
-    }
-    BOXES.push(box);
-  }
+function boxIndex(r, c) {
+  return Math.floor(r / BOX) * (SIZE / BOX) + Math.floor(c / BOX);
 }
-const GROUPS = [...ROWS, ...COLS, ...BOXES];
 
 const state = {
   catalog: null,
-  graph: null, // Map id -> Set of teammate ids
-  players: null, // Map id -> player meta from graph
   puzzle: null,
-  grid: [], // (player object|null)[]
-  given: [], // boolean[]
+  grid: [], // (player|null)[]
   selectedCell: null,
   selectedBankId: null,
-  inspect: [],
 };
 
 const els = {
@@ -41,6 +21,9 @@ const els = {
   status: document.getElementById("status"),
   diffBlurb: document.getElementById("diff-blurb"),
   inspect: document.getElementById("inspect"),
+  colLabels: document.getElementById("col-labels"),
+  rowLabels: document.getElementById("row-labels"),
+  boxLabels: document.getElementById("box-labels"),
   btnCheck: document.getElementById("btn-check"),
   btnHint: document.getElementById("btn-hint"),
   btnReset: document.getElementById("btn-reset"),
@@ -53,86 +36,110 @@ async function loadJson(path) {
   return res.json();
 }
 
-function buildGraphIndex(payload) {
-  const adj = new Map();
-  const players = new Map();
-  for (const p of payload.players) {
-    players.set(p.id, p);
-    adj.set(p.id, new Set());
-  }
-  for (const [a, b] of payload.edges) {
-    adj.get(a)?.add(b);
-    adj.get(b)?.add(a);
-  }
-  return { adj, players };
-}
-
-function areTeammates(a, b) {
-  if (!a || !b || a === b) return false;
-  return state.graph.get(a)?.has(b) ?? false;
-}
-
-function groupConflictIndices(grid) {
-  const bad = new Set();
-  for (const group of GROUPS) {
-    const filled = group
-      .map((i) => ({ i, id: grid[i]?.id }))
-      .filter((x) => x.id);
-    const ids = filled.map((x) => x.id);
-    if (new Set(ids).size !== ids.length) {
-      filled.forEach((x) => bad.add(x.i));
-      continue;
-    }
-    for (let a = 0; a < filled.length; a++) {
-      for (let b = a + 1; b < filled.length; b++) {
-        if (!areTeammates(filled[a].id, filled[b].id)) {
-          bad.add(filled[a].i);
-          bad.add(filled[b].i);
-        }
-      }
-    }
-  }
-  return bad;
+function setStatus(msg, kind = "") {
+  els.status.textContent = msg;
+  els.status.className = `status ${kind}`.trim();
 }
 
 function usedIds() {
   return new Set(state.grid.filter(Boolean).map((p) => p.id));
 }
 
-function setStatus(msg, kind = "") {
-  els.status.textContent = msg;
-  els.status.className = `status ${kind}`.trim();
+function cellTeams(index) {
+  const r = Math.floor(index / SIZE);
+  const c = index % SIZE;
+  const b = boxIndex(r, c);
+  return {
+    row: state.puzzle.row_teams[r],
+    col: state.puzzle.col_teams[c],
+    box: state.puzzle.box_teams[b],
+  };
+}
+
+function playerFits(player, index) {
+  const t = cellTeams(index);
+  const teams = new Set(player.teams || []);
+  return teams.has(t.row.key) && teams.has(t.col.key) && teams.has(t.box.key);
+}
+
+function conflictIndices() {
+  const bad = new Set();
+  const used = new Map();
+  state.grid.forEach((p, i) => {
+    if (!p) return;
+    if (used.has(p.id)) {
+      bad.add(i);
+      bad.add(used.get(p.id));
+    } else {
+      used.set(p.id, i);
+    }
+    if (!playerFits(p, i)) bad.add(i);
+  });
+  return bad;
+}
+
+function renderLabels() {
+  els.colLabels.innerHTML = "";
+  els.colLabels.appendChild(document.createElement("div")); // corner spacer
+  for (const team of state.puzzle.col_teams) {
+    const el = document.createElement("div");
+    el.className = "axis-label col";
+    el.innerHTML = `<span class="abbr">${team.abbr}</span><span class="full">${team.name}</span>`;
+    els.colLabels.appendChild(el);
+  }
+
+  els.rowLabels.innerHTML = "";
+  for (const team of state.puzzle.row_teams) {
+    const el = document.createElement("div");
+    el.className = "axis-label row";
+    el.innerHTML = `<span class="abbr">${team.abbr}</span><span class="full">${team.name}</span>`;
+    els.rowLabels.appendChild(el);
+  }
+
+  els.boxLabels.innerHTML = "";
+  state.puzzle.box_teams.forEach((team, i) => {
+    const el = document.createElement("div");
+    el.className = "axis-label box";
+    const br = Math.floor(i / 2);
+    const bc = i % 2;
+    el.innerHTML = `<span class="tag">Box ${br * 2 + bc + 1}</span><span class="abbr">${team.abbr}</span><span class="full">${team.name}</span>`;
+    els.boxLabels.appendChild(el);
+  });
 }
 
 function renderBoard() {
-  const conflicts = groupConflictIndices(state.grid);
+  const conflicts = conflictIndices();
   els.board.innerHTML = "";
   state.grid.forEach((player, i) => {
     const cell = document.createElement("button");
     cell.type = "button";
     cell.className = "cell";
-    cell.setAttribute("role", "gridcell");
     cell.dataset.index = String(i);
-    if (state.given[i]) cell.classList.add("clue");
     if (!player) cell.classList.add("empty");
     if (state.selectedCell === i) cell.classList.add("selected");
     if (conflicts.has(i)) cell.classList.add("conflict");
-    if (state.inspect[0] === i) cell.classList.add("inspect-a");
-    if (state.inspect[1] === i) cell.classList.add("inspect-b");
+
+    // Box label watermark on top-left of each 2x2
+    const r = Math.floor(i / SIZE);
+    const c = i % SIZE;
+    if (r % BOX === 0 && c % BOX === 0) {
+      const b = boxIndex(r, c);
+      const mark = document.createElement("div");
+      mark.className = "box-watermark";
+      mark.textContent = state.puzzle.box_teams[b].abbr;
+      cell.appendChild(mark);
+    }
 
     if (player) {
       const name = document.createElement("div");
       name.className = "name";
       name.textContent = player.name;
-      const meta = document.createElement("div");
-      meta.className = "meta";
-      meta.textContent = `${player.team_count} teams`;
-      cell.append(name, meta);
+      cell.appendChild(name);
     } else {
       const ph = document.createElement("div");
       ph.className = "placeholder";
       ph.textContent = "Empty";
-      cell.append(ph);
+      cell.appendChild(ph);
     }
 
     cell.addEventListener("click", () => onCellClick(i));
@@ -142,50 +149,67 @@ function renderBoard() {
 
 function renderBank() {
   const used = usedIds();
+  const selectedTeams =
+    state.selectedCell != null ? cellTeams(state.selectedCell) : null;
+
   els.bank.innerHTML = "";
   for (const player of state.puzzle.bank) {
     const chip = document.createElement("button");
     chip.type = "button";
     chip.className = "chip";
     chip.textContent = player.name;
-    chip.title = `${player.first_season}–${player.last_season} · ${player.team_count} franchises`;
-    if (used.has(player.id)) {
+    chip.title = `${player.teams.join(", ")} · ${player.team_count} franchises`;
+
+    const placed = used.has(player.id);
+    if (placed) {
       chip.disabled = true;
       chip.classList.add("used");
+    } else if (selectedTeams) {
+      const fits = playerFits(player, state.selectedCell);
+      if (fits) chip.classList.add("fits");
+      else chip.classList.add("nofit");
     }
     if (state.selectedBankId === player.id) chip.classList.add("selected");
+
     chip.addEventListener("click", () => onBankClick(player));
     els.bank.appendChild(chip);
   }
 }
 
+function renderInspect() {
+  if (state.selectedCell == null) {
+    els.inspect.textContent = "Select a cell.";
+    return;
+  }
+  const t = cellTeams(state.selectedCell);
+  const player = state.grid[state.selectedCell];
+  const fits = player ? playerFits(player, state.selectedCell) : null;
+  els.inspect.innerHTML = `
+    <div><strong>Row:</strong> ${t.row.name} (${t.row.abbr})</div>
+    <div><strong>Column:</strong> ${t.col.name} (${t.col.abbr})</div>
+    <div><strong>Box:</strong> ${t.box.name} (${t.box.abbr})</div>
+    ${
+      player
+        ? `<div class="${fits ? "ok" : "bad"}">${player.name} ${
+            fits ? "satisfies all three." : "does not satisfy all three."
+          }</div>`
+        : "<div>Place a bank player who suited up for all three.</div>"
+    }
+  `;
+}
+
 function renderAll() {
+  renderLabels();
   renderBoard();
   renderBank();
   renderInspect();
 }
 
 function onCellClick(i) {
-  if (state.given[i]) {
-    // Still allow inspect on clues
-    toggleInspect(i);
-    state.selectedCell = i;
-    renderAll();
-    return;
-  }
-
   if (state.selectedBankId) {
     placePlayer(i, state.selectedBankId);
     return;
   }
-
-  // Toggle inspect when clicking filled cells without a bank selection
-  if (state.grid[i] && state.selectedCell === i) {
-    toggleInspect(i);
-  } else if (state.grid[i] && state.inspect.length) {
-    toggleInspect(i);
-  }
-
   state.selectedCell = i;
   renderAll();
 }
@@ -194,71 +218,33 @@ function onBankClick(player) {
   const used = usedIds();
   if (used.has(player.id)) return;
 
-  if (state.selectedCell != null && !state.given[state.selectedCell]) {
+  if (state.selectedCell != null) {
     placePlayer(state.selectedCell, player.id);
     return;
   }
-
   state.selectedBankId =
     state.selectedBankId === player.id ? null : player.id;
   setStatus(
     state.selectedBankId
-      ? `Selected ${player.name} — click an empty cell.`
+      ? `Selected ${player.name} — tap a cell.`
       : ""
   );
   renderAll();
 }
 
 function placePlayer(index, playerId) {
-  if (state.given[index]) return;
   const player = state.puzzle.bank.find((p) => p.id === playerId);
   if (!player) return;
-
-  // If this player is already elsewhere (non-clue), move them
   state.grid = state.grid.map((p, i) => {
     if (i === index) return player;
-    if (p?.id === playerId && !state.given[i]) return null;
+    if (p?.id === playerId) return null;
     return p;
   });
-
   state.selectedBankId = null;
   state.selectedCell = index;
   setStatus(`Placed ${player.name}`);
   renderAll();
-  maybeAutoCheck();
-}
-
-function toggleInspect(i) {
-  if (!state.grid[i]) return;
-  const idx = state.inspect.indexOf(i);
-  if (idx >= 0) {
-    state.inspect.splice(idx, 1);
-  } else {
-    state.inspect.push(i);
-    if (state.inspect.length > 2) state.inspect.shift();
-  }
-}
-
-function renderInspect() {
-  if (state.inspect.length < 2) {
-    els.inspect.textContent = "Pick two players on the board.";
-    return;
-  }
-  const [a, b] = state.inspect.map((i) => state.grid[i]);
-  if (!a || !b) {
-    els.inspect.textContent = "Pick two filled cells.";
-    return;
-  }
-  const ok = areTeammates(a.id, b.id);
-  els.inspect.innerHTML = ok
-    ? `<strong>${a.name}</strong> and <strong>${b.name}</strong> were teammates at least once.`
-    : `<strong>${a.name}</strong> and <strong>${b.name}</strong> never overlapped on a roster in this dataset.`;
-}
-
-function maybeAutoCheck() {
-  if (state.grid.every(Boolean)) {
-    checkPuzzle(false);
-  }
+  if (state.grid.every(Boolean)) checkPuzzle(false);
 }
 
 function checkPuzzle(announceEmpty = true) {
@@ -267,56 +253,63 @@ function checkPuzzle(announceEmpty = true) {
     renderBoard();
     return false;
   }
-  const conflicts = groupConflictIndices(state.grid);
+  const conflicts = conflictIndices();
   if (conflicts.size) {
-    setStatus("Conflicts in a row, column, or box — every pair must be teammates.", "bad");
+    setStatus("Some players don’t match their row + column + box teams.", "bad");
     renderBoard();
     return false;
   }
-  // Unique solution guarantee: also match canonical solution order
   const solved = state.grid.every(
     (p, i) => p.id === state.puzzle.solution[i].id
   );
-  if (solved) {
-    setStatus("Solved — every unit is a teammate clique.", "ok");
-  } else {
-    // Valid alternate shouldn't exist; treat as incomplete logic path
-    setStatus("No row/box conflicts, but this isn't the unique solution.", "bad");
-  }
+  setStatus(
+    solved
+      ? "Solved — every cell matches its three team labels."
+      : "All placements are legal, but this isn’t the unique solution.",
+    solved ? "ok" : "bad"
+  );
   renderBoard();
   return solved;
 }
 
 function resetPuzzle() {
-  state.grid = state.puzzle.clues.map((c) => (c ? { ...c } : null));
-  state.given = state.puzzle.clues.map((c) => c != null);
+  state.grid = Array(SIZE * SIZE).fill(null);
   state.selectedCell = null;
   state.selectedBankId = null;
-  state.inspect = [];
-  setStatus(`Loaded ${state.puzzle.difficulty} · ${state.puzzle.clue_count} clues`);
+  setStatus("Team labels only — fill the grid from the bank.");
   renderAll();
 }
 
 function hint() {
   const empties = state.grid
     .map((p, i) => ({ p, i }))
-    .filter(({ p, i }) => !p && !state.given[i]);
+    .filter(({ p }) => !p);
   if (!empties.length) {
     setStatus("No empty cells left.");
     return;
   }
-  const pick = empties[Math.floor(Math.random() * empties.length)];
+  // Prefer a cell with few remaining legal bank options
+  const used = usedIds();
+  empties.sort((a, b) => {
+    const ca = state.puzzle.bank.filter(
+      (p) => !used.has(p.id) && playerFits(p, a.i)
+    ).length;
+    const cb = state.puzzle.bank.filter(
+      (p) => !used.has(p.id) && playerFits(p, b.i)
+    ).length;
+    return ca - cb;
+  });
+  const pick = empties[0];
   const correct = state.puzzle.solution[pick.i];
   state.grid[pick.i] = { ...correct };
-  state.given[pick.i] = true; // lock hint as a clue
   setStatus(`Hint: ${correct.name}`);
   state.selectedBankId = null;
+  state.selectedCell = pick.i;
   renderAll();
 }
 
 function reveal() {
   state.grid = state.puzzle.solution.map((p) => ({ ...p }));
-  state.given = state.grid.map(() => true);
   setStatus("Solution revealed.", "ok");
   renderAll();
 }
@@ -349,16 +342,8 @@ async function onDifficultyChange() {
 }
 
 async function boot() {
-  setStatus("Loading teammate graph…");
-  const [catalog, graphPayload] = await Promise.all([
-    loadJson("data/catalog.json"),
-    loadJson("data/teammate_graph.json"),
-  ]);
-  state.catalog = catalog;
-  const indexed = buildGraphIndex(graphPayload);
-  state.graph = indexed.adj;
-  state.players = indexed.players;
-
+  setStatus("Loading puzzles…");
+  state.catalog = await loadJson("data/catalog.json");
   fillDifficultySelect();
   fillPuzzleSelect();
   await loadPuzzle(els.puzzleSelect.value);

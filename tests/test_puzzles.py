@@ -1,50 +1,55 @@
-"""Smoke tests for teammate-Sudoku generation invariants."""
+"""Tests for team-label Sudoku generation."""
 
 from __future__ import annotations
 
 import json
+import sys
 import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-import sys
-
 sys.path.insert(0, str(ROOT / "src"))
 
-from nba_db.graph import TeammateGraph
-from nba_db.puzzle import GROUPS, PuzzleEngine
+from nba_db.puzzle import PuzzleEngine, box_index
 
 
-class PuzzleTests(unittest.TestCase):
+class TeamLabelPuzzleTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
-        cls.graph = TeammateGraph.from_sqlite(ROOT / "data" / "nba_players.sqlite")
-        cls.engine = PuzzleEngine(cls.graph)
+        cls.engine = PuzzleEngine(ROOT / "data" / "nba_players.sqlite")
 
-    def test_example_row_is_clique(self) -> None:
-        names = ["LeBron James", "Rajon Rondo", "Dwight Howard", "Carmelo Anthony"]
-        ids = []
-        for name in names:
-            match = [p for p in self.graph.players.values() if p.name == name]
-            self.assertTrue(match, name)
-            ids.append(match[0].player_id)
-        self.assertTrue(self.graph.is_clique(ids))
-
-    def test_shipped_puzzles_are_unique(self) -> None:
+    def test_shipped_puzzles_unique_and_consistent(self) -> None:
         puzzle_dir = ROOT / "web" / "data" / "puzzles"
         files = sorted(puzzle_dir.glob("*.json"))
         self.assertGreaterEqual(len(files), 4)
         for path in files:
             payload = json.loads(path.read_text())
-            clues = [c["id"] if c else None for c in payload["clues"]]
-            bank = [b["id"] for b in payload["bank"]]
+            self.assertEqual(payload.get("mode"), "team_labels")
+            row_t = [t["key"] for t in payload["row_teams"]]
+            col_t = [t["key"] for t in payload["col_teams"]]
+            box_t = [t["key"] for t in payload["box_teams"]]
             solution = [s["id"] for s in payload["solution"]]
+            bank = [b["id"] for b in payload["bank"]]
             self.assertEqual(len(solution), 16)
-            self.assertTrue(self.engine.valid_partial_ids(solution))
-            self.assertEqual(self.engine.count_solutions(clues, bank, limit=2), 1)
-            # Every group in the solution is a teammate clique
-            for group in GROUPS:
-                self.assertTrue(self.graph.is_clique(solution[i] for i in group))
+            self.assertEqual(set(solution), set(bank))
+
+            # Solution satisfies every cell's three labels
+            for i, pid in enumerate(solution):
+                r, c = divmod(i, 4)
+                self.assertTrue(self.engine.fits(pid, r, c, row_t, col_t, box_t), path.name)
+
+            n, sol = self.engine.count_solutions(row_t, col_t, box_t, bank, limit=2)
+            self.assertEqual(n, 1, path.name)
+            self.assertEqual(sol, solution)
+
+    def test_generate_easy_unique(self) -> None:
+        puzzle = self.engine.generate("easy", seed=123)
+        n, _ = self.engine.count_solutions(
+            puzzle.row_teams, puzzle.col_teams, puzzle.box_teams, puzzle.bank, limit=2
+        )
+        self.assertEqual(n, 1)
+        self.assertEqual(len(puzzle.row_teams), 4)
+        self.assertEqual(box_index(3, 3), 3)
 
 
 if __name__ == "__main__":

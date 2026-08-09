@@ -1,290 +1,611 @@
 {
   "difficulty": "medium",
-  "seed": 20340809,
-  "clue_count": 6,
+  "seed": 20348090,
   "grid_size": 4,
   "box_size": 2,
+  "mode": "team_labels",
+  "row_teams": [
+    {
+      "key": "LAL",
+      "name": "Los Angeles Lakers",
+      "abbr": "LAL"
+    },
+    {
+      "key": "SAC",
+      "name": "Sacramento Kings",
+      "abbr": "SAC"
+    },
+    {
+      "key": "BOS",
+      "name": "Boston Celtics",
+      "abbr": "BOS"
+    },
+    {
+      "key": "NYK",
+      "name": "New York Knicks",
+      "abbr": "NYK"
+    }
+  ],
+  "col_teams": [
+    {
+      "key": "PHI",
+      "name": "Philadelphia 76ers",
+      "abbr": "PHI"
+    },
+    {
+      "key": "CHI",
+      "name": "Chicago Bulls",
+      "abbr": "CHI"
+    },
+    {
+      "key": "BKN",
+      "name": "Brooklyn Nets",
+      "abbr": "BKN"
+    },
+    {
+      "key": "ATL",
+      "name": "Atlanta Hawks",
+      "abbr": "ATL"
+    }
+  ],
+  "box_teams": [
+    {
+      "key": "PHX",
+      "name": "Phoenix Suns",
+      "abbr": "PHX"
+    },
+    {
+      "key": "DEN",
+      "name": "Denver Nuggets",
+      "abbr": "DEN"
+    },
+    {
+      "key": "HOU",
+      "name": "Houston Rockets",
+      "abbr": "HOU"
+    },
+    {
+      "key": "DAL",
+      "name": "Dallas Mavericks",
+      "abbr": "DAL"
+    }
+  ],
   "clues": [
     null,
     null,
-    {
-      "id": "humphkr01",
-      "name": "Kris Humphries",
-      "team_count": 8,
-      "first_season": "2004-05",
-      "last_season": "2016-17"
-    },
-    null,
-    {
-      "id": "redicjj01",
-      "name": "JJ Redick",
-      "team_count": 6,
-      "first_season": "2006-07",
-      "last_season": "2020-21"
-    },
     null,
     null,
     null,
     null,
-    {
-      "id": "princta01",
-      "name": "Tayshaun Prince",
-      "team_count": 4,
-      "first_season": "2002-03",
-      "last_season": "2015-16"
-    },
-    {
-      "id": "rondora01",
-      "name": "Rajon Rondo",
-      "team_count": 9,
-      "first_season": "2006-07",
-      "last_season": "2021-22"
-    },
-    {
-      "id": "garneke01",
-      "name": "Kevin Garnett",
-      "team_count": 3,
-      "first_season": "1995-96",
-      "last_season": "2015-16"
-    },
     null,
-    {
-      "id": "randosh01",
-      "name": "Shavlik Randolph",
-      "team_count": 5,
-      "first_season": "2005-06",
-      "last_season": "2014-15"
-    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
     null,
     null
   ],
   "solution": [
     {
+      "id": "jonesju01",
+      "name": "Jumaine Jones",
+      "team_count": 6,
+      "first_season": "1999-00",
+      "last_season": "2006-07",
+      "teams": [
+        "BOS",
+        "CHA",
+        "CLE",
+        "LAL",
+        "PHI",
+        "PHX"
+      ]
+    },
+    {
+      "id": "bennema01",
+      "name": "Mario Bennett",
+      "team_count": 4,
+      "first_season": "1995-96",
+      "last_season": "1999-00",
+      "teams": [
+        "CHI",
+        "LAC",
+        "LAL",
+        "PHX"
+      ]
+    },
+    {
+      "id": "mozgoti01",
+      "name": "Timofey Mozgov",
+      "team_count": 5,
+      "first_season": "2010-11",
+      "last_season": "2017-18",
+      "teams": [
+        "BKN",
+        "CLE",
+        "DEN",
+        "LAL",
+        "NYK"
+      ]
+    },
+    {
+      "id": "willish01",
+      "name": "Shammond Williams",
+      "team_count": 7,
+      "first_season": "1998-99",
+      "last_season": "2006-07",
+      "teams": [
+        "ATL",
+        "BOS",
+        "DEN",
+        "LAL",
+        "NOP",
+        "OKC",
+        "ORL"
+      ]
+    },
+    {
+      "id": "pincked01",
+      "name": "Ed Pinckney",
+      "team_count": 7,
+      "first_season": "1985-86",
+      "last_season": "1996-97",
+      "teams": [
+        "BOS",
+        "MIA",
+        "MIL",
+        "PHI",
+        "PHX",
+        "SAC",
+        "TOR"
+      ]
+    },
+    {
+      "id": "brownra02",
+      "name": "Randy Brown",
+      "team_count": 4,
+      "first_season": "1991-92",
+      "last_season": "2002-03",
+      "teams": [
+        "BOS",
+        "CHI",
+        "PHX",
+        "SAC"
+      ]
+    },
+    {
+      "id": "kelleri01",
+      "name": "Rich Kelley",
+      "team_count": 5,
+      "first_season": "1979-80",
+      "last_season": "1985-86",
+      "teams": [
+        "BKN",
+        "DEN",
+        "PHX",
+        "SAC",
+        "UTA"
+      ]
+    },
+    {
+      "id": "jonesda02",
+      "name": "Dahntay Jones",
+      "team_count": 8,
+      "first_season": "2003-04",
+      "last_season": "2016-17",
+      "teams": [
+        "ATL",
+        "CLE",
+        "DAL",
+        "DEN",
+        "IND",
+        "LAC",
+        "MEM",
+        "SAC"
+      ]
+    },
+    {
+      "id": "masseto01",
+      "name": "Tony Massenburg",
+      "team_count": 12,
+      "first_season": "1990-91",
+      "last_season": "2004-05",
+      "teams": [
+        "BKN",
+        "BOS",
+        "CHA",
+        "GSW",
+        "HOU",
+        "LAC",
+        "MEM",
+        "PHI",
+        "SAC",
+        "SAS",
+        "TOR",
+        "UTA"
+      ]
+    },
+    {
       "id": "boganke01",
       "name": "Keith Bogans",
       "team_count": 8,
       "first_season": "2003-04",
-      "last_season": "2013-14"
+      "last_season": "2013-14",
+      "teams": [
+        "BKN",
+        "BOS",
+        "CHA",
+        "CHI",
+        "HOU",
+        "MIL",
+        "ORL",
+        "SAS"
+      ]
     },
     {
-      "id": "bayleje01",
-      "name": "Jerryd Bayless",
+      "id": "greenge01",
+      "name": "Gerald Green",
       "team_count": 8,
-      "first_season": "2008-09",
-      "last_season": "2018-19"
+      "first_season": "2005-06",
+      "last_season": "2018-19",
+      "teams": [
+        "BKN",
+        "BOS",
+        "DAL",
+        "HOU",
+        "IND",
+        "MIA",
+        "MIN",
+        "PHX"
+      ]
     },
     {
-      "id": "humphkr01",
-      "name": "Kris Humphries",
+      "id": "delkto01",
+      "name": "Tony Delk",
       "team_count": 8,
-      "first_season": "2004-05",
-      "last_season": "2016-17"
+      "first_season": "1996-97",
+      "last_season": "2005-06",
+      "teams": [
+        "ATL",
+        "BOS",
+        "CHA",
+        "DAL",
+        "DET",
+        "GSW",
+        "PHX",
+        "SAC"
+      ]
     },
     {
-      "id": "evansre01",
-      "name": "Reggie Evans",
-      "team_count": 7,
-      "first_season": "2002-03",
-      "last_season": "2014-15"
-    },
-    {
-      "id": "redicjj01",
-      "name": "JJ Redick",
+      "id": "weathcl01",
+      "name": "Clarence Weatherspoon",
       "team_count": 6,
-      "first_season": "2006-07",
-      "last_season": "2020-21"
+      "first_season": "1992-93",
+      "last_season": "2004-05",
+      "teams": [
+        "CLE",
+        "GSW",
+        "HOU",
+        "MIA",
+        "NYK",
+        "PHI"
+      ]
     },
     {
-      "id": "bassbr01",
-      "name": "Brandon Bass",
-      "team_count": 6,
-      "first_season": "2005-06",
-      "last_season": "2016-17"
+      "id": "oldhaja01",
+      "name": "Jawann Oldham",
+      "team_count": 8,
+      "first_season": "1980-81",
+      "last_season": "1990-91",
+      "teams": [
+        "CHI",
+        "DEN",
+        "HOU",
+        "IND",
+        "LAL",
+        "NYK",
+        "ORL",
+        "SAC"
+      ]
     },
     {
-      "id": "holliry01",
-      "name": "Ryan Hollins",
+      "id": "ellinwa01",
+      "name": "Wayne Ellington",
       "team_count": 9,
-      "first_season": "2006-07",
-      "last_season": "2015-16"
+      "first_season": "2009-10",
+      "last_season": "2021-22",
+      "teams": [
+        "BKN",
+        "CLE",
+        "DAL",
+        "DET",
+        "LAL",
+        "MEM",
+        "MIA",
+        "MIN",
+        "NYK"
+      ]
     },
     {
-      "id": "piercpa01",
-      "name": "Paul Pierce",
-      "team_count": 4,
-      "first_season": "1998-99",
-      "last_season": "2016-17"
-    },
-    {
-      "id": "arroyca01",
-      "name": "Carlos Arroyo",
-      "team_count": 7,
-      "first_season": "2001-02",
-      "last_season": "2010-11"
-    },
-    {
-      "id": "princta01",
-      "name": "Tayshaun Prince",
-      "team_count": 4,
-      "first_season": "2002-03",
-      "last_season": "2015-16"
-    },
-    {
-      "id": "rondora01",
-      "name": "Rajon Rondo",
-      "team_count": 9,
-      "first_season": "2006-07",
-      "last_season": "2021-22"
-    },
-    {
-      "id": "garneke01",
-      "name": "Kevin Garnett",
-      "team_count": 3,
-      "first_season": "1995-96",
-      "last_season": "2015-16"
-    },
-    {
-      "id": "milicda01",
-      "name": "Darko Mili\u010di\u0107",
-      "team_count": 6,
-      "first_season": "2003-04",
-      "last_season": "2012-13"
-    },
-    {
-      "id": "randosh01",
-      "name": "Shavlik Randolph",
-      "team_count": 5,
-      "first_season": "2005-06",
-      "last_season": "2014-15"
-    },
-    {
-      "id": "terryja01",
-      "name": "Jason Terry",
-      "team_count": 6,
-      "first_season": "1999-00",
-      "last_season": "2017-18"
-    },
-    {
-      "id": "barbole01",
-      "name": "Leandro Barbosa",
-      "team_count": 5,
-      "first_season": "2003-04",
-      "last_season": "2016-17"
+      "id": "matthwe02",
+      "name": "Wesley Matthews",
+      "team_count": 8,
+      "first_season": "2009-10",
+      "last_season": "2023-24",
+      "teams": [
+        "ATL",
+        "DAL",
+        "IND",
+        "LAL",
+        "MIL",
+        "NYK",
+        "POR",
+        "UTA"
+      ]
     }
   ],
   "bank": [
     {
-      "id": "holliry01",
-      "name": "Ryan Hollins",
-      "team_count": 9,
-      "first_season": "2006-07",
-      "last_season": "2015-16"
-    },
-    {
-      "id": "milicda01",
-      "name": "Darko Mili\u010di\u0107",
-      "team_count": 6,
-      "first_season": "2003-04",
-      "last_season": "2012-13"
-    },
-    {
-      "id": "randosh01",
-      "name": "Shavlik Randolph",
-      "team_count": 5,
-      "first_season": "2005-06",
-      "last_season": "2014-15"
-    },
-    {
-      "id": "garneke01",
-      "name": "Kevin Garnett",
-      "team_count": 3,
-      "first_season": "1995-96",
-      "last_season": "2015-16"
-    },
-    {
-      "id": "bayleje01",
-      "name": "Jerryd Bayless",
-      "team_count": 8,
-      "first_season": "2008-09",
-      "last_season": "2018-19"
-    },
-    {
-      "id": "terryja01",
-      "name": "Jason Terry",
+      "id": "jonesju01",
+      "name": "Jumaine Jones",
       "team_count": 6,
       "first_season": "1999-00",
-      "last_season": "2017-18"
+      "last_season": "2006-07",
+      "teams": [
+        "BOS",
+        "CHA",
+        "CLE",
+        "LAL",
+        "PHI",
+        "PHX"
+      ]
     },
     {
-      "id": "rondora01",
-      "name": "Rajon Rondo",
-      "team_count": 9,
-      "first_season": "2006-07",
-      "last_season": "2021-22"
+      "id": "kelleri01",
+      "name": "Rich Kelley",
+      "team_count": 5,
+      "first_season": "1979-80",
+      "last_season": "1985-86",
+      "teams": [
+        "BKN",
+        "DEN",
+        "PHX",
+        "SAC",
+        "UTA"
+      ]
     },
     {
-      "id": "redicjj01",
-      "name": "JJ Redick",
-      "team_count": 6,
-      "first_season": "2006-07",
-      "last_season": "2020-21"
-    },
-    {
-      "id": "piercpa01",
-      "name": "Paul Pierce",
-      "team_count": 4,
+      "id": "willish01",
+      "name": "Shammond Williams",
+      "team_count": 7,
       "first_season": "1998-99",
-      "last_season": "2016-17"
+      "last_season": "2006-07",
+      "teams": [
+        "ATL",
+        "BOS",
+        "DEN",
+        "LAL",
+        "NOP",
+        "OKC",
+        "ORL"
+      ]
+    },
+    {
+      "id": "oldhaja01",
+      "name": "Jawann Oldham",
+      "team_count": 8,
+      "first_season": "1980-81",
+      "last_season": "1990-91",
+      "teams": [
+        "CHI",
+        "DEN",
+        "HOU",
+        "IND",
+        "LAL",
+        "NYK",
+        "ORL",
+        "SAC"
+      ]
+    },
+    {
+      "id": "ellinwa01",
+      "name": "Wayne Ellington",
+      "team_count": 9,
+      "first_season": "2009-10",
+      "last_season": "2021-22",
+      "teams": [
+        "BKN",
+        "CLE",
+        "DAL",
+        "DET",
+        "LAL",
+        "MEM",
+        "MIA",
+        "MIN",
+        "NYK"
+      ]
+    },
+    {
+      "id": "weathcl01",
+      "name": "Clarence Weatherspoon",
+      "team_count": 6,
+      "first_season": "1992-93",
+      "last_season": "2004-05",
+      "teams": [
+        "CLE",
+        "GSW",
+        "HOU",
+        "MIA",
+        "NYK",
+        "PHI"
+      ]
+    },
+    {
+      "id": "masseto01",
+      "name": "Tony Massenburg",
+      "team_count": 12,
+      "first_season": "1990-91",
+      "last_season": "2004-05",
+      "teams": [
+        "BKN",
+        "BOS",
+        "CHA",
+        "GSW",
+        "HOU",
+        "LAC",
+        "MEM",
+        "PHI",
+        "SAC",
+        "SAS",
+        "TOR",
+        "UTA"
+      ]
     },
     {
       "id": "boganke01",
       "name": "Keith Bogans",
       "team_count": 8,
       "first_season": "2003-04",
-      "last_season": "2013-14"
+      "last_season": "2013-14",
+      "teams": [
+        "BKN",
+        "BOS",
+        "CHA",
+        "CHI",
+        "HOU",
+        "MIL",
+        "ORL",
+        "SAS"
+      ]
     },
     {
-      "id": "princta01",
-      "name": "Tayshaun Prince",
-      "team_count": 4,
-      "first_season": "2002-03",
-      "last_season": "2015-16"
+      "id": "pincked01",
+      "name": "Ed Pinckney",
+      "team_count": 7,
+      "first_season": "1985-86",
+      "last_season": "1996-97",
+      "teams": [
+        "BOS",
+        "MIA",
+        "MIL",
+        "PHI",
+        "PHX",
+        "SAC",
+        "TOR"
+      ]
     },
     {
-      "id": "humphkr01",
-      "name": "Kris Humphries",
+      "id": "matthwe02",
+      "name": "Wesley Matthews",
       "team_count": 8,
-      "first_season": "2004-05",
-      "last_season": "2016-17"
+      "first_season": "2009-10",
+      "last_season": "2023-24",
+      "teams": [
+        "ATL",
+        "DAL",
+        "IND",
+        "LAL",
+        "MIL",
+        "NYK",
+        "POR",
+        "UTA"
+      ]
     },
     {
-      "id": "evansre01",
-      "name": "Reggie Evans",
-      "team_count": 7,
-      "first_season": "2002-03",
-      "last_season": "2014-15"
-    },
-    {
-      "id": "bassbr01",
-      "name": "Brandon Bass",
-      "team_count": 6,
+      "id": "greenge01",
+      "name": "Gerald Green",
+      "team_count": 8,
       "first_season": "2005-06",
-      "last_season": "2016-17"
+      "last_season": "2018-19",
+      "teams": [
+        "BKN",
+        "BOS",
+        "DAL",
+        "HOU",
+        "IND",
+        "MIA",
+        "MIN",
+        "PHX"
+      ]
     },
     {
-      "id": "arroyca01",
-      "name": "Carlos Arroyo",
-      "team_count": 7,
-      "first_season": "2001-02",
-      "last_season": "2010-11"
+      "id": "brownra02",
+      "name": "Randy Brown",
+      "team_count": 4,
+      "first_season": "1991-92",
+      "last_season": "2002-03",
+      "teams": [
+        "BOS",
+        "CHI",
+        "PHX",
+        "SAC"
+      ]
     },
     {
-      "id": "barbole01",
-      "name": "Leandro Barbosa",
-      "team_count": 5,
+      "id": "bennema01",
+      "name": "Mario Bennett",
+      "team_count": 4,
+      "first_season": "1995-96",
+      "last_season": "1999-00",
+      "teams": [
+        "CHI",
+        "LAC",
+        "LAL",
+        "PHX"
+      ]
+    },
+    {
+      "id": "delkto01",
+      "name": "Tony Delk",
+      "team_count": 8,
+      "first_season": "1996-97",
+      "last_season": "2005-06",
+      "teams": [
+        "ATL",
+        "BOS",
+        "CHA",
+        "DAL",
+        "DET",
+        "GSW",
+        "PHX",
+        "SAC"
+      ]
+    },
+    {
+      "id": "jonesda02",
+      "name": "Dahntay Jones",
+      "team_count": 8,
       "first_season": "2003-04",
-      "last_season": "2016-17"
+      "last_season": "2016-17",
+      "teams": [
+        "ATL",
+        "CLE",
+        "DAL",
+        "DEN",
+        "IND",
+        "LAC",
+        "MEM",
+        "SAC"
+      ]
+    },
+    {
+      "id": "mozgoti01",
+      "name": "Timofey Mozgov",
+      "team_count": 5,
+      "first_season": "2010-11",
+      "last_season": "2017-18",
+      "teams": [
+        "BKN",
+        "CLE",
+        "DEN",
+        "LAL",
+        "NYK"
+      ]
     }
   ],
-  "rules": "Place each bank player once. Every pair of players in the same row, column, or 2\u00d72 box must have been NBA teammates (same franchise, same season) at least once."
+  "mean_flexibility": 1.0,
+  "rules": "Team labels on each row, column, and 2\u00d72 box are the only clues. A player belongs in a cell only if they played for that cell's row team, column team, and box team. Use each bank player once. Each puzzle has exactly one solution."
 }

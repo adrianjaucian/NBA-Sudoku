@@ -17,7 +17,7 @@
       <p class="eyebrow">NBA logic puzzle</p>
       <h1 class="brand">TEAMMATE</h1>
     </div>
-    <p class="tagline">Every pair in a row, column, or box must have been NBA teammates.</p>
+    <p class="tagline">Each cell must match its row team, column team, and 2×2 box team. Those labels are the only clues.</p>
   </header>
 
   <main class="layout">
@@ -40,31 +40,39 @@
       </div>
 
       <div id="status" class="status" role="status"></div>
-      <div id="board" class="board" role="grid" aria-label="4 by 4 teammate grid"></div>
+
+      <div class="board-wrap">
+        <div class="col-labels" id="col-labels" aria-label="Column team labels"></div>
+        <div class="board-row">
+          <div class="row-labels" id="row-labels" aria-label="Row team labels"></div>
+          <div id="board" class="board" role="grid" aria-label="4 by 4 team grid"></div>
+        </div>
+        <div class="box-labels" id="box-labels" aria-label="Box team labels"></div>
+      </div>
     </section>
 
     <aside class="side-panel">
       <section class="bank-section">
         <h2>Player bank</h2>
-        <p class="side-copy">Place each name once. Click a cell, then a player — or click a bank chip to auto-place.</p>
+        <p class="side-copy">Place each name once. A player fits a cell only if they played for that cell’s row, column, and box teams.</p>
         <div id="bank" class="bank"></div>
       </section>
 
       <section class="rules-section">
         <h2>Rules</h2>
         <ul class="rules">
-          <li>Fill the <strong>4×4</strong> grid using every bank player exactly once.</li>
-          <li>In every <strong>row</strong>, <strong>column</strong>, and <strong>2×2 box</strong>, each pair must have been teammates (same franchise, same season).</li>
-          <li>Only players with <strong>3+ franchises</strong> appear — no one-team lifers.</li>
-          <li>Each puzzle has <strong>exactly one</strong> solution.</li>
+          <li><strong>No starting players</strong> — only the team labels are clues.</li>
+          <li>Every <strong>row</strong>, <strong>column</strong>, and <strong>2×2 box</strong> has a franchise label.</li>
+          <li>A player in a cell must have played for <strong>all three</strong> labels that cover that cell.</li>
+          <li>Use each bank player exactly once. Each puzzle has <strong>exactly one</strong> solution.</li>
         </ul>
         <p id="diff-blurb" class="diff-blurb"></p>
       </section>
 
       <section class="inspect-section">
-        <h2>Teammate check</h2>
-        <p class="side-copy">Select two filled cells to see shared seasons.</p>
-        <div id="inspect" class="inspect">Pick two players on the board.</div>
+        <h2>Cell requirements</h2>
+        <p class="side-copy">Select a cell to see the three teams it must satisfy.</p>
+        <div id="inspect" class="inspect">Select a cell.</div>
       </section>
     </aside>
   </main>

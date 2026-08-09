@@ -191,6 +191,83 @@ body {
 .status.ok { color: var(--good); }
 .status.bad { color: var(--bad); }
 
+.board-wrap {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.col-labels {
+  display: grid;
+  grid-template-columns: 88px repeat(4, minmax(0, 1fr));
+  gap: 0.35rem;
+  margin-bottom: 0.4rem;
+  align-items: end;
+}
+
+.board-row {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  gap: 0.4rem;
+  align-items: stretch;
+}
+
+.row-labels {
+  display: grid;
+  grid-template-rows: repeat(4, minmax(0, 1fr));
+  gap: 0.25rem;
+}
+
+.box-labels {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  margin-left: 88px;
+}
+
+.axis-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.1rem;
+  padding: 0.35rem 0.4rem;
+  background: rgba(20, 32, 51, 0.06);
+  border: 1px solid var(--line);
+  min-height: 3.2rem;
+}
+
+.axis-label .abbr {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  color: var(--accent-deep);
+}
+
+.axis-label .full {
+  font-size: 0.68rem;
+  color: var(--ink-soft);
+  line-height: 1.2;
+}
+
+.axis-label .tag {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.axis-label.row {
+  text-align: right;
+}
+
+.axis-label.box {
+  background: rgba(212, 85, 26, 0.08);
+  border-color: rgba(212, 85, 26, 0.28);
+}
+
 .board {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -198,9 +275,7 @@ body {
   border: 3px solid var(--ink);
   background: var(--ink);
   width: 100%;
-  max-width: 560px;
   aspect-ratio: 1;
-  margin: 0 auto;
 }
 
 .cell {
@@ -300,6 +375,17 @@ body {
   text-transform: uppercase;
 }
 
+.box-watermark {
+  position: absolute;
+  top: 0.2rem;
+  left: 0.3rem;
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  color: rgba(158, 58, 13, 0.45);
+  pointer-events: none;
+}
+
 .side-panel {
   display: grid;
   gap: 1rem;
@@ -361,6 +447,18 @@ body {
   box-shadow: inset 0 0 0 1px var(--accent);
 }
 
+.chip.fits {
+  border-color: var(--good);
+  background: #e7f3ec;
+}
+
+.chip.nofit {
+  opacity: 0.42;
+}
+
+.inspect .ok { color: var(--good); margin-top: 0.45rem; }
+.inspect .bad { color: var(--bad); margin-top: 0.45rem; }
+
 .rules {
   margin: 0;
   padding-left: 1.1rem;
@@ -419,7 +517,20 @@ body {
     width: 100%;
   }
 
-  .board {
-    max-width: 100%;
+  .col-labels,
+  .board-row {
+    grid-template-columns: 64px minmax(0, 1fr);
+  }
+
+  .col-labels {
+    grid-template-columns: 64px repeat(4, minmax(0, 1fr));
+  }
+
+  .box-labels {
+    margin-left: 64px;
+  }
+
+  .axis-label .full {
+    display: none;
   }
 }
