@@ -6,9 +6,13 @@ Drag players from the bank onto the grid. Each drop is a **guess** — solve in 
 
 ## Play
 
-**Live (iPad / phone):** [https://adrianjaucian.github.io/NBA-Sudoku/](https://adrianjaucian.github.io/NBA-Sudoku/)
+**Live demo (Netlify):** [https://chic-tanuki-f73cc0.netlify.app](https://chic-tanuki-f73cc0.netlify.app)
 
-> **One-time setup:** In the repo go to **Settings → Pages → Build and deployment → Source** and choose **GitHub Actions**. Then re-run the “Deploy GitHub Pages” workflow (or push any commit). Until that is done, the link above will 404.
+Password (Netlify drop protection): `My-Drop-Site` — enter once per browser/device.
+
+To keep this URL permanently, [claim the site on Netlify](https://app.netlify.com/drop/chic-tanuki-f73cc0) (free account) within 60 minutes of deploy.
+
+**GitHub Pages (optional):** [https://adrianjaucian.github.io/NBA-Sudoku/](https://adrianjaucian.github.io/NBA-Sudoku/) — requires [enabling Pages with GitHub Actions](https://github.com/adrianjaucian/NBA-Sudoku/settings/pages) once.
 
 Do **not** open the jsDelivr `index.html` link — that CDN serves HTML as `text/plain`, so the browser shows source code instead of running the game.
 
