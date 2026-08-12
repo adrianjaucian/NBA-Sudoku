@@ -1,0 +1,207 @@
+{
+  "seed": 20530085,
+  "tier": 3,
+  "grid_size": 4,
+  "box_size": 2,
+  "mode": "team_labels",
+  "row_teams": [
+    {
+      "key": "BOS",
+      "name": "Boston Celtics",
+      "abbr": "BOS"
+    },
+    {
+      "key": "GSW",
+      "name": "Golden State Warriors",
+      "abbr": "GSW"
+    },
+    {
+      "key": "MIL",
+      "name": "Milwaukee Bucks",
+      "abbr": "MIL"
+    },
+    {
+      "key": "WAS",
+      "name": "Washington Wizards",
+      "abbr": "WAS"
+    }
+  ],
+  "col_teams": [
+    {
+      "key": "PHX",
+      "name": "Phoenix Suns",
+      "abbr": "PHX"
+    },
+    {
+      "key": "DET",
+      "name": "Detroit Pistons",
+      "abbr": "DET"
+    },
+    {
+      "key": "BKN",
+      "name": "Brooklyn Nets",
+      "abbr": "BKN"
+    },
+    {
+      "key": "SAS",
+      "name": "San Antonio Spurs",
+      "abbr": "SAS"
+    }
+  ],
+  "box_teams": [
+    {
+      "key": "ATL",
+      "name": "Atlanta Hawks",
+      "abbr": "ATL"
+    },
+    {
+      "key": "DAL",
+      "name": "Dallas Mavericks",
+      "abbr": "DAL"
+    },
+    {
+      "key": "PHI",
+      "name": "Philadelphia 76ers",
+      "abbr": "PHI"
+    },
+    {
+      "key": "CLE",
+      "name": "Cleveland Cavaliers",
+      "abbr": "CLE"
+    }
+  ],
+  "bank": [
+    {
+      "id": "crawfja01",
+      "name": "Jamal Crawford"
+    },
+    {
+      "id": "mcinnje01",
+      "name": "Jeff McInnis"
+    },
+    {
+      "id": "hillge01",
+      "name": "George Hill"
+    },
+    {
+      "id": "cassesa01",
+      "name": "Sam Cassell"
+    },
+    {
+      "id": "willike02",
+      "name": "Kevin Willis"
+    },
+    {
+      "id": "millean02",
+      "name": "Andre Miller"
+    },
+    {
+      "id": "boykiea01",
+      "name": "Earl Boykins"
+    },
+    {
+      "id": "tollian01",
+      "name": "Anthony Tolliver"
+    },
+    {
+      "id": "mcgeeja01",
+      "name": "JaVale McGee"
+    },
+    {
+      "id": "smithjo02",
+      "name": "Joe Smith"
+    },
+    {
+      "id": "johnsjo02",
+      "name": "Joe Johnson"
+    },
+    {
+      "id": "finlemi01",
+      "name": "Michael Finley"
+    },
+    {
+      "id": "muscami01",
+      "name": "Mike Muscala"
+    },
+    {
+      "id": "wallara01",
+      "name": "Rasheed Wallace"
+    },
+    {
+      "id": "jacksji01",
+      "name": "Jim Jackson"
+    },
+    {
+      "id": "smithis01",
+      "name": "Ish Smith"
+    }
+  ],
+  "solution_hash": "0ac54e6a77cd5dc29ad2556eddf4f947ee7f84ec4ec5c4adaaa22ea8315a7ec1",
+  "notable_count": 16,
+  "solution": [
+    {
+      "id": "johnsjo02",
+      "name": "Joe Johnson"
+    },
+    {
+      "id": "wallara01",
+      "name": "Rasheed Wallace"
+    },
+    {
+      "id": "cassesa01",
+      "name": "Sam Cassell"
+    },
+    {
+      "id": "finlemi01",
+      "name": "Michael Finley"
+    },
+    {
+      "id": "crawfja01",
+      "name": "Jamal Crawford"
+    },
+    {
+      "id": "tollian01",
+      "name": "Anthony Tolliver"
+    },
+    {
+      "id": "jacksji01",
+      "name": "Jim Jackson"
+    },
+    {
+      "id": "willike02",
+      "name": "Kevin Willis"
+    },
+    {
+      "id": "smithis01",
+      "name": "Ish Smith"
+    },
+    {
+      "id": "smithjo02",
+      "name": "Joe Smith"
+    },
+    {
+      "id": "boykiea01",
+      "name": "Earl Boykins"
+    },
+    {
+      "id": "hillge01",
+      "name": "George Hill"
+    },
+    {
+      "id": "mcgeeja01",
+      "name": "JaVale McGee"
+    },
+    {
+      "id": "muscami01",
+      "name": "Mike Muscala"
+    },
+    {
+      "id": "mcinnje01",
+      "name": "Jeff McInnis"
+    },
+    {
+      "id": "millean02",
+      "name": "Andre Miller"
+    }
+  ]
+}

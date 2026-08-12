@@ -1,0 +1,207 @@
+{
+  "seed": 20430358,
+  "tier": 1,
+  "grid_size": 4,
+  "box_size": 2,
+  "mode": "team_labels",
+  "row_teams": [
+    {
+      "key": "LAC",
+      "name": "LA Clippers",
+      "abbr": "LAC"
+    },
+    {
+      "key": "WAS",
+      "name": "Washington Wizards",
+      "abbr": "WAS"
+    },
+    {
+      "key": "GSW",
+      "name": "Golden State Warriors",
+      "abbr": "GSW"
+    },
+    {
+      "key": "PHI",
+      "name": "Philadelphia 76ers",
+      "abbr": "PHI"
+    }
+  ],
+  "col_teams": [
+    {
+      "key": "BOS",
+      "name": "Boston Celtics",
+      "abbr": "BOS"
+    },
+    {
+      "key": "DET",
+      "name": "Detroit Pistons",
+      "abbr": "DET"
+    },
+    {
+      "key": "HOU",
+      "name": "Houston Rockets",
+      "abbr": "HOU"
+    },
+    {
+      "key": "LAL",
+      "name": "Los Angeles Lakers",
+      "abbr": "LAL"
+    }
+  ],
+  "box_teams": [
+    {
+      "key": "PHX",
+      "name": "Phoenix Suns",
+      "abbr": "PHX"
+    },
+    {
+      "key": "BKN",
+      "name": "Brooklyn Nets",
+      "abbr": "BKN"
+    },
+    {
+      "key": "CHI",
+      "name": "Chicago Bulls",
+      "abbr": "CHI"
+    },
+    {
+      "key": "SAC",
+      "name": "Sacramento Kings",
+      "abbr": "SAC"
+    }
+  ],
+  "bank": [
+    {
+      "id": "parisro01",
+      "name": "Robert Parish"
+    },
+    {
+      "id": "jordade01",
+      "name": "DeAndre Jordan"
+    },
+    {
+      "id": "cassesa01",
+      "name": "Sam Cassell"
+    },
+    {
+      "id": "landrca01",
+      "name": "Carl Landry"
+    },
+    {
+      "id": "varnaja01",
+      "name": "Jarvis Varnado"
+    },
+    {
+      "id": "smithis01",
+      "name": "Ish Smith"
+    },
+    {
+      "id": "mohamna01",
+      "name": "Nazr Mohammed"
+    },
+    {
+      "id": "smithjo02",
+      "name": "Joe Smith"
+    },
+    {
+      "id": "thomais02",
+      "name": "Isaiah Thomas"
+    },
+    {
+      "id": "morrima03",
+      "name": "Marcus Morris"
+    },
+    {
+      "id": "hardeja01",
+      "name": "James Harden"
+    },
+    {
+      "id": "dudleja01",
+      "name": "Jared Dudley"
+    },
+    {
+      "id": "mcgeeja01",
+      "name": "JaVale McGee"
+    },
+    {
+      "id": "templga01",
+      "name": "Garrett Temple"
+    },
+    {
+      "id": "couside01",
+      "name": "DeMarcus Cousins"
+    },
+    {
+      "id": "richmmi01",
+      "name": "Mitch Richmond"
+    }
+  ],
+  "solution_hash": "db87996424d3cbc4ec5be5c4e49ab35839b746ddce826b0d2fd818b723ba74b8",
+  "notable_count": 15,
+  "solution": [
+    {
+      "id": "cassesa01",
+      "name": "Sam Cassell"
+    },
+    {
+      "id": "morrima03",
+      "name": "Marcus Morris"
+    },
+    {
+      "id": "hardeja01",
+      "name": "James Harden"
+    },
+    {
+      "id": "jordade01",
+      "name": "DeAndre Jordan"
+    },
+    {
+      "id": "thomais02",
+      "name": "Isaiah Thomas"
+    },
+    {
+      "id": "smithis01",
+      "name": "Ish Smith"
+    },
+    {
+      "id": "templga01",
+      "name": "Garrett Temple"
+    },
+    {
+      "id": "dudleja01",
+      "name": "Jared Dudley"
+    },
+    {
+      "id": "parisro01",
+      "name": "Robert Parish"
+    },
+    {
+      "id": "smithjo02",
+      "name": "Joe Smith"
+    },
+    {
+      "id": "couside01",
+      "name": "DeMarcus Cousins"
+    },
+    {
+      "id": "richmmi01",
+      "name": "Mitch Richmond"
+    },
+    {
+      "id": "varnaja01",
+      "name": "Jarvis Varnado"
+    },
+    {
+      "id": "mohamna01",
+      "name": "Nazr Mohammed"
+    },
+    {
+      "id": "landrca01",
+      "name": "Carl Landry"
+    },
+    {
+      "id": "mcgeeja01",
+      "name": "JaVale McGee"
+    }
+  ]
+}

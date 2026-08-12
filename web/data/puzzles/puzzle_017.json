@@ -1,0 +1,141 @@
+{
+  "seed": 20420402,
+  "tier": 0,
+  "grid_size": 4,
+  "box_size": 2,
+  "mode": "team_labels",
+  "row_teams": [
+    {
+      "key": "LAL",
+      "name": "Los Angeles Lakers",
+      "abbr": "LAL"
+    },
+    {
+      "key": "SAC",
+      "name": "Sacramento Kings",
+      "abbr": "SAC"
+    },
+    {
+      "key": "ATL",
+      "name": "Atlanta Hawks",
+      "abbr": "ATL"
+    },
+    {
+      "key": "LAC",
+      "name": "LA Clippers",
+      "abbr": "LAC"
+    }
+  ],
+  "col_teams": [
+    {
+      "key": "BKN",
+      "name": "Brooklyn Nets",
+      "abbr": "BKN"
+    },
+    {
+      "key": "GSW",
+      "name": "Golden State Warriors",
+      "abbr": "GSW"
+    },
+    {
+      "key": "PHX",
+      "name": "Phoenix Suns",
+      "abbr": "PHX"
+    },
+    {
+      "key": "PHI",
+      "name": "Philadelphia 76ers",
+      "abbr": "PHI"
+    }
+  ],
+  "box_teams": [
+    {
+      "key": "NYK",
+      "name": "New York Knicks",
+      "abbr": "NYK"
+    },
+    {
+      "key": "WAS",
+      "name": "Washington Wizards",
+      "abbr": "WAS"
+    },
+    {
+      "key": "HOU",
+      "name": "Houston Rockets",
+      "abbr": "HOU"
+    },
+    {
+      "key": "CHI",
+      "name": "Chicago Bulls",
+      "abbr": "CHI"
+    }
+  ],
+  "bank": [
+    {
+      "id": "holidju01",
+      "name": "Justin Holiday"
+    },
+    {
+      "id": "paulch01",
+      "name": "Chris Paul"
+    },
+    {
+      "id": "howardw01",
+      "name": "Dwight Howard"
+    },
+    {
+      "id": "johnsjo02",
+      "name": "Joe Johnson"
+    },
+    {
+      "id": "thornma01",
+      "name": "Marcus Thornton"
+    },
+    {
+      "id": "beverpa01",
+      "name": "Patrick Beverley"
+    },
+    {
+      "id": "dudleja01",
+      "name": "Jared Dudley"
+    },
+    {
+      "id": "bennema01",
+      "name": "Mario Bennett"
+    },
+    {
+      "id": "crawfja01",
+      "name": "Jamal Crawford"
+    },
+    {
+      "id": "jordade01",
+      "name": "DeAndre Jordan"
+    },
+    {
+      "id": "mohamna01",
+      "name": "Nazr Mohammed"
+    },
+    {
+      "id": "willike02",
+      "name": "Kevin Willis"
+    },
+    {
+      "id": "linje01",
+      "name": "Jeremy Lin"
+    },
+    {
+      "id": "millean02",
+      "name": "Andre Miller"
+    },
+    {
+      "id": "hardeja01",
+      "name": "James Harden"
+    },
+    {
+      "id": "gallola01",
+      "name": "Langston Galloway"
+    }
+  ],
+  "solution_hash": "31524e4dc1bddb15d46a6751974664b809f986d29a1b36e12f9488a0707c214a",
+  "notable_count": 15
+}

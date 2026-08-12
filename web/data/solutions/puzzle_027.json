@@ -1,0 +1,207 @@
+{
+  "seed": 20520113,
+  "tier": 2,
+  "grid_size": 4,
+  "box_size": 2,
+  "mode": "team_labels",
+  "row_teams": [
+    {
+      "key": "LAL",
+      "name": "Los Angeles Lakers",
+      "abbr": "LAL"
+    },
+    {
+      "key": "DET",
+      "name": "Detroit Pistons",
+      "abbr": "DET"
+    },
+    {
+      "key": "SAS",
+      "name": "San Antonio Spurs",
+      "abbr": "SAS"
+    },
+    {
+      "key": "WAS",
+      "name": "Washington Wizards",
+      "abbr": "WAS"
+    }
+  ],
+  "col_teams": [
+    {
+      "key": "PHX",
+      "name": "Phoenix Suns",
+      "abbr": "PHX"
+    },
+    {
+      "key": "NYK",
+      "name": "New York Knicks",
+      "abbr": "NYK"
+    },
+    {
+      "key": "LAC",
+      "name": "LA Clippers",
+      "abbr": "LAC"
+    },
+    {
+      "key": "GSW",
+      "name": "Golden State Warriors",
+      "abbr": "GSW"
+    }
+  ],
+  "box_teams": [
+    {
+      "key": "PHI",
+      "name": "Philadelphia 76ers",
+      "abbr": "PHI"
+    },
+    {
+      "key": "CLE",
+      "name": "Cleveland Cavaliers",
+      "abbr": "CLE"
+    },
+    {
+      "key": "BOS",
+      "name": "Boston Celtics",
+      "abbr": "BOS"
+    },
+    {
+      "key": "SAC",
+      "name": "Sacramento Kings",
+      "abbr": "SAC"
+    }
+  ],
+  "bank": [
+    {
+      "id": "cookqu01",
+      "name": "Quinn Cook"
+    },
+    {
+      "id": "finlemi01",
+      "name": "Michael Finley"
+    },
+    {
+      "id": "wallara01",
+      "name": "Rasheed Wallace"
+    },
+    {
+      "id": "josepco01",
+      "name": "Cory Joseph"
+    },
+    {
+      "id": "kornelu01",
+      "name": "Luke Kornet"
+    },
+    {
+      "id": "morrima03",
+      "name": "Marcus Morris"
+    },
+    {
+      "id": "rondora01",
+      "name": "Rajon Rondo"
+    },
+    {
+      "id": "jacksji01",
+      "name": "Jim Jackson"
+    },
+    {
+      "id": "mohamna01",
+      "name": "Nazr Mohammed"
+    },
+    {
+      "id": "jordade01",
+      "name": "DeAndre Jordan"
+    },
+    {
+      "id": "westbru01",
+      "name": "Russell Westbrook"
+    },
+    {
+      "id": "thomais02",
+      "name": "Isaiah Thomas"
+    },
+    {
+      "id": "templga01",
+      "name": "Garrett Temple"
+    },
+    {
+      "id": "smithis01",
+      "name": "Ish Smith"
+    },
+    {
+      "id": "schrode01",
+      "name": "Dennis Schr\u00f6der"
+    },
+    {
+      "id": "richmmi01",
+      "name": "Mitch Richmond"
+    }
+  ],
+  "solution_hash": "1aec9f2e6a2878a7de1222ba598a3a5a728480a15858d6ebf104d2025af13a06",
+  "notable_count": 15,
+  "solution": [
+    {
+      "id": "jacksji01",
+      "name": "Jim Jackson"
+    },
+    {
+      "id": "jordade01",
+      "name": "DeAndre Jordan"
+    },
+    {
+      "id": "rondora01",
+      "name": "Rajon Rondo"
+    },
+    {
+      "id": "cookqu01",
+      "name": "Quinn Cook"
+    },
+    {
+      "id": "smithis01",
+      "name": "Ish Smith"
+    },
+    {
+      "id": "mohamna01",
+      "name": "Nazr Mohammed"
+    },
+    {
+      "id": "morrima03",
+      "name": "Marcus Morris"
+    },
+    {
+      "id": "schrode01",
+      "name": "Dennis Schr\u00f6der"
+    },
+    {
+      "id": "finlemi01",
+      "name": "Michael Finley"
+    },
+    {
+      "id": "kornelu01",
+      "name": "Luke Kornet"
+    },
+    {
+      "id": "templga01",
+      "name": "Garrett Temple"
+    },
+    {
+      "id": "josepco01",
+      "name": "Cory Joseph"
+    },
+    {
+      "id": "thomais02",
+      "name": "Isaiah Thomas"
+    },
+    {
+      "id": "wallara01",
+      "name": "Rasheed Wallace"
+    },
+    {
+      "id": "westbru01",
+      "name": "Russell Westbrook"
+    },
+    {
+      "id": "richmmi01",
+      "name": "Mitch Richmond"
+    }
+  ]
+}

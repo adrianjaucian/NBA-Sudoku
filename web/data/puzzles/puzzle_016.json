@@ -1,0 +1,141 @@
+{
+  "seed": 20410434,
+  "tier": 3,
+  "grid_size": 4,
+  "box_size": 2,
+  "mode": "team_labels",
+  "row_teams": [
+    {
+      "key": "LAL",
+      "name": "Los Angeles Lakers",
+      "abbr": "LAL"
+    },
+    {
+      "key": "MIL",
+      "name": "Milwaukee Bucks",
+      "abbr": "MIL"
+    },
+    {
+      "key": "NYK",
+      "name": "New York Knicks",
+      "abbr": "NYK"
+    },
+    {
+      "key": "DAL",
+      "name": "Dallas Mavericks",
+      "abbr": "DAL"
+    }
+  ],
+  "col_teams": [
+    {
+      "key": "PHI",
+      "name": "Philadelphia 76ers",
+      "abbr": "PHI"
+    },
+    {
+      "key": "BOS",
+      "name": "Boston Celtics",
+      "abbr": "BOS"
+    },
+    {
+      "key": "DET",
+      "name": "Detroit Pistons",
+      "abbr": "DET"
+    },
+    {
+      "key": "SAC",
+      "name": "Sacramento Kings",
+      "abbr": "SAC"
+    }
+  ],
+  "box_teams": [
+    {
+      "key": "CLE",
+      "name": "Cleveland Cavaliers",
+      "abbr": "CLE"
+    },
+    {
+      "key": "CHI",
+      "name": "Chicago Bulls",
+      "abbr": "CHI"
+    },
+    {
+      "key": "HOU",
+      "name": "Houston Rockets",
+      "abbr": "HOU"
+    },
+    {
+      "key": "LAC",
+      "name": "LA Clippers",
+      "abbr": "LAC"
+    }
+  ],
+  "bank": [
+    {
+      "id": "greenge01",
+      "name": "Gerald Green"
+    },
+    {
+      "id": "mcgeeja01",
+      "name": "JaVale McGee"
+    },
+    {
+      "id": "morrima03",
+      "name": "Marcus Morris"
+    },
+    {
+      "id": "rodmade01",
+      "name": "Dennis Rodman"
+    },
+    {
+      "id": "chrisdo01",
+      "name": "Doug Christie"
+    },
+    {
+      "id": "augusdj01",
+      "name": "D.J. Augustin"
+    },
+    {
+      "id": "jonesda01",
+      "name": "Damon Jones"
+    },
+    {
+      "id": "mutomdi01",
+      "name": "Dikembe Mutombo"
+    },
+    {
+      "id": "korveky01",
+      "name": "Kyle Korver"
+    },
+    {
+      "id": "jacksji01",
+      "name": "Jim Jackson"
+    },
+    {
+      "id": "butleca01",
+      "name": "Caron Butler"
+    },
+    {
+      "id": "thomais02",
+      "name": "Isaiah Thomas"
+    },
+    {
+      "id": "goodedr01",
+      "name": "Drew Gooden"
+    },
+    {
+      "id": "templga01",
+      "name": "Garrett Temple"
+    },
+    {
+      "id": "billuch01",
+      "name": "Chauncey Billups"
+    },
+    {
+      "id": "artesro01",
+      "name": "Metta World Peace"
+    }
+  ],
+  "solution_hash": "73adb68e1eca5454b1e0efb2bd03b55c201d42f8cd934df57b952a476c2f43fe",
+  "notable_count": 15
+}

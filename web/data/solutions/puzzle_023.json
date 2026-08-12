@@ -1,0 +1,207 @@
+{
+  "seed": 20480227,
+  "tier": 2,
+  "grid_size": 4,
+  "box_size": 2,
+  "mode": "team_labels",
+  "row_teams": [
+    {
+      "key": "SAC",
+      "name": "Sacramento Kings",
+      "abbr": "SAC"
+    },
+    {
+      "key": "PHX",
+      "name": "Phoenix Suns",
+      "abbr": "PHX"
+    },
+    {
+      "key": "DAL",
+      "name": "Dallas Mavericks",
+      "abbr": "DAL"
+    },
+    {
+      "key": "ATL",
+      "name": "Atlanta Hawks",
+      "abbr": "ATL"
+    }
+  ],
+  "col_teams": [
+    {
+      "key": "LAC",
+      "name": "LA Clippers",
+      "abbr": "LAC"
+    },
+    {
+      "key": "SAS",
+      "name": "San Antonio Spurs",
+      "abbr": "SAS"
+    },
+    {
+      "key": "DET",
+      "name": "Detroit Pistons",
+      "abbr": "DET"
+    },
+    {
+      "key": "NYK",
+      "name": "New York Knicks",
+      "abbr": "NYK"
+    }
+  ],
+  "box_teams": [
+    {
+      "key": "CLE",
+      "name": "Cleveland Cavaliers",
+      "abbr": "CLE"
+    },
+    {
+      "key": "MIL",
+      "name": "Milwaukee Bucks",
+      "abbr": "MIL"
+    },
+    {
+      "key": "HOU",
+      "name": "Houston Rockets",
+      "abbr": "HOU"
+    },
+    {
+      "key": "BKN",
+      "name": "Brooklyn Nets",
+      "abbr": "BKN"
+    }
+  ],
+  "bank": [
+    {
+      "id": "willilo02",
+      "name": "Lou Williams"
+    },
+    {
+      "id": "morrima03",
+      "name": "Marcus Morris"
+    },
+    {
+      "id": "smithde03",
+      "name": "Dennis Smith Jr."
+    },
+    {
+      "id": "gallola01",
+      "name": "Langston Galloway"
+    },
+    {
+      "id": "butleca01",
+      "name": "Caron Butler"
+    },
+    {
+      "id": "schrode01",
+      "name": "Dennis Schr\u00f6der"
+    },
+    {
+      "id": "tuckepj01",
+      "name": "P.J. Tucker"
+    },
+    {
+      "id": "malonmo01",
+      "name": "Moses Malone"
+    },
+    {
+      "id": "kiddja01",
+      "name": "Jason Kidd"
+    },
+    {
+      "id": "hillge01",
+      "name": "George Hill"
+    },
+    {
+      "id": "willike02",
+      "name": "Kevin Willis"
+    },
+    {
+      "id": "cassesa01",
+      "name": "Sam Cassell"
+    },
+    {
+      "id": "crawfja01",
+      "name": "Jamal Crawford"
+    },
+    {
+      "id": "brownch01",
+      "name": "Chucky Brown"
+    },
+    {
+      "id": "smithis01",
+      "name": "Ish Smith"
+    },
+    {
+      "id": "rondora01",
+      "name": "Rajon Rondo"
+    }
+  ],
+  "solution_hash": "a8f60f886d5f85914edb709c216755913fca713afec3292de94e9a370b2f217d",
+  "notable_count": 15,
+  "solution": [
+    {
+      "id": "rondora01",
+      "name": "Rajon Rondo"
+    },
+    {
+      "id": "hillge01",
+      "name": "George Hill"
+    },
+    {
+      "id": "butleca01",
+      "name": "Caron Butler"
+    },
+    {
+      "id": "gallola01",
+      "name": "Langston Galloway"
+    },
+    {
+      "id": "morrima03",
+      "name": "Marcus Morris"
+    },
+    {
+      "id": "brownch01",
+      "name": "Chucky Brown"
+    },
+    {
+      "id": "smithis01",
+      "name": "Ish Smith"
+    },
+    {
+      "id": "tuckepj01",
+      "name": "P.J. Tucker"
+    },
+    {
+      "id": "cassesa01",
+      "name": "Sam Cassell"
+    },
+    {
+      "id": "willike02",
+      "name": "Kevin Willis"
+    },
+    {
+      "id": "smithde03",
+      "name": "Dennis Smith Jr."
+    },
+    {
+      "id": "kiddja01",
+      "name": "Jason Kidd"
+    },
+    {
+      "id": "willilo02",
+      "name": "Lou Williams"
+    },
+    {
+      "id": "malonmo01",
+      "name": "Moses Malone"
+    },
+    {
+      "id": "schrode01",
+      "name": "Dennis Schr\u00f6der"
+    },
+    {
+      "id": "crawfja01",
+      "name": "Jamal Crawford"
+    }
+  ]
+}

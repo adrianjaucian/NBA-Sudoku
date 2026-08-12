@@ -1,0 +1,207 @@
+{
+  "seed": 20450301,
+  "tier": 3,
+  "grid_size": 4,
+  "box_size": 2,
+  "mode": "team_labels",
+  "row_teams": [
+    {
+      "key": "WAS",
+      "name": "Washington Wizards",
+      "abbr": "WAS"
+    },
+    {
+      "key": "CHI",
+      "name": "Chicago Bulls",
+      "abbr": "CHI"
+    },
+    {
+      "key": "DAL",
+      "name": "Dallas Mavericks",
+      "abbr": "DAL"
+    },
+    {
+      "key": "PHX",
+      "name": "Phoenix Suns",
+      "abbr": "PHX"
+    }
+  ],
+  "col_teams": [
+    {
+      "key": "HOU",
+      "name": "Houston Rockets",
+      "abbr": "HOU"
+    },
+    {
+      "key": "BKN",
+      "name": "Brooklyn Nets",
+      "abbr": "BKN"
+    },
+    {
+      "key": "SAC",
+      "name": "Sacramento Kings",
+      "abbr": "SAC"
+    },
+    {
+      "key": "DET",
+      "name": "Detroit Pistons",
+      "abbr": "DET"
+    }
+  ],
+  "box_teams": [
+    {
+      "key": "GSW",
+      "name": "Golden State Warriors",
+      "abbr": "GSW"
+    },
+    {
+      "key": "NYK",
+      "name": "New York Knicks",
+      "abbr": "NYK"
+    },
+    {
+      "key": "ATL",
+      "name": "Atlanta Hawks",
+      "abbr": "ATL"
+    },
+    {
+      "key": "SAS",
+      "name": "San Antonio Spurs",
+      "abbr": "SAS"
+    }
+  ],
+  "bank": [
+    {
+      "id": "tollian01",
+      "name": "Anthony Tolliver"
+    },
+    {
+      "id": "crawfja01",
+      "name": "Jamal Crawford"
+    },
+    {
+      "id": "wallara01",
+      "name": "Rasheed Wallace"
+    },
+    {
+      "id": "mcdyean01",
+      "name": "Antonio McDyess"
+    },
+    {
+      "id": "bibbymi01",
+      "name": "Mike Bibby"
+    },
+    {
+      "id": "boykiea01",
+      "name": "Earl Boykins"
+    },
+    {
+      "id": "rodmade01",
+      "name": "Dennis Rodman"
+    },
+    {
+      "id": "artesro01",
+      "name": "Metta World Peace"
+    },
+    {
+      "id": "smithis01",
+      "name": "Ish Smith"
+    },
+    {
+      "id": "johnsjo02",
+      "name": "Joe Johnson"
+    },
+    {
+      "id": "smithjo02",
+      "name": "Joe Smith"
+    },
+    {
+      "id": "livinra01",
+      "name": "Randy Livingston"
+    },
+    {
+      "id": "rosede01",
+      "name": "Derrick Rose"
+    },
+    {
+      "id": "cartevi01",
+      "name": "Vince Carter"
+    },
+    {
+      "id": "goodedr01",
+      "name": "Drew Gooden"
+    },
+    {
+      "id": "willike02",
+      "name": "Kevin Willis"
+    }
+  ],
+  "solution_hash": "8b1c089743b8f28136b8ac0cfedfe169bcbc8bbeadffb045729974c1f11b1f2a",
+  "notable_count": 15,
+  "solution": [
+    {
+      "id": "smithis01",
+      "name": "Ish Smith"
+    },
+    {
+      "id": "boykiea01",
+      "name": "Earl Boykins"
+    },
+    {
+      "id": "bibbymi01",
+      "name": "Mike Bibby"
+    },
+    {
+      "id": "wallara01",
+      "name": "Rasheed Wallace"
+    },
+    {
+      "id": "livinra01",
+      "name": "Randy Livingston"
+    },
+    {
+      "id": "smithjo02",
+      "name": "Joe Smith"
+    },
+    {
+      "id": "artesro01",
+      "name": "Metta World Peace"
+    },
+    {
+      "id": "rosede01",
+      "name": "Derrick Rose"
+    },
+    {
+      "id": "willike02",
+      "name": "Kevin Willis"
+    },
+    {
+      "id": "cartevi01",
+      "name": "Vince Carter"
+    },
+    {
+      "id": "goodedr01",
+      "name": "Drew Gooden"
+    },
+    {
+      "id": "rodmade01",
+      "name": "Dennis Rodman"
+    },
+    {
+      "id": "johnsjo02",
+      "name": "Joe Johnson"
+    },
+    {
+      "id": "crawfja01",
+      "name": "Jamal Crawford"
+    },
+    {
+      "id": "tollian01",
+      "name": "Anthony Tolliver"
+    },
+    {
+      "id": "mcdyean01",
+      "name": "Antonio McDyess"
+    }
+  ]
+}

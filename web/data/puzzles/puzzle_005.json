@@ -1,0 +1,141 @@
+{
+  "seed": 20300714,
+  "tier": 0,
+  "grid_size": 4,
+  "box_size": 2,
+  "mode": "team_labels",
+  "row_teams": [
+    {
+      "key": "WAS",
+      "name": "Washington Wizards",
+      "abbr": "WAS"
+    },
+    {
+      "key": "CLE",
+      "name": "Cleveland Cavaliers",
+      "abbr": "CLE"
+    },
+    {
+      "key": "SAS",
+      "name": "San Antonio Spurs",
+      "abbr": "SAS"
+    },
+    {
+      "key": "BKN",
+      "name": "Brooklyn Nets",
+      "abbr": "BKN"
+    }
+  ],
+  "col_teams": [
+    {
+      "key": "BOS",
+      "name": "Boston Celtics",
+      "abbr": "BOS"
+    },
+    {
+      "key": "GSW",
+      "name": "Golden State Warriors",
+      "abbr": "GSW"
+    },
+    {
+      "key": "NYK",
+      "name": "New York Knicks",
+      "abbr": "NYK"
+    },
+    {
+      "key": "ATL",
+      "name": "Atlanta Hawks",
+      "abbr": "ATL"
+    }
+  ],
+  "box_teams": [
+    {
+      "key": "LAC",
+      "name": "LA Clippers",
+      "abbr": "LAC"
+    },
+    {
+      "key": "LAL",
+      "name": "Los Angeles Lakers",
+      "abbr": "LAL"
+    },
+    {
+      "key": "DAL",
+      "name": "Dallas Mavericks",
+      "abbr": "DAL"
+    },
+    {
+      "key": "CHI",
+      "name": "Chicago Bulls",
+      "abbr": "CHI"
+    }
+  ],
+  "bank": [
+    {
+      "id": "finlemi01",
+      "name": "Michael Finley"
+    },
+    {
+      "id": "mohamna01",
+      "name": "Nazr Mohammed"
+    },
+    {
+      "id": "smithjr01",
+      "name": "J.R. Smith"
+    },
+    {
+      "id": "davisba01",
+      "name": "Baron Davis"
+    },
+    {
+      "id": "smithjo02",
+      "name": "Joe Smith"
+    },
+    {
+      "id": "crawfja01",
+      "name": "Jamal Crawford"
+    },
+    {
+      "id": "morrima03",
+      "name": "Marcus Morris"
+    },
+    {
+      "id": "belinma01",
+      "name": "Marco Belinelli"
+    },
+    {
+      "id": "vanexni01",
+      "name": "Nick Van Exel"
+    },
+    {
+      "id": "schrode01",
+      "name": "Dennis Schr\u00f6der"
+    },
+    {
+      "id": "jamisan01",
+      "name": "Antawn Jamison"
+    },
+    {
+      "id": "howardw01",
+      "name": "Dwight Howard"
+    },
+    {
+      "id": "arizatr01",
+      "name": "Trevor Ariza"
+    },
+    {
+      "id": "greenge01",
+      "name": "Gerald Green"
+    },
+    {
+      "id": "piercpa01",
+      "name": "Paul Pierce"
+    },
+    {
+      "id": "jacksji01",
+      "name": "Jim Jackson"
+    }
+  ],
+  "solution_hash": "dff28f02cdc2f7bbc724d73d6e9b521327d91f5cd16095a59841e37776836cd2",
+  "notable_count": 15
+}
