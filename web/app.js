@@ -283,8 +283,25 @@ function resetBoard() {
   renderAll();
 }
 
+function puzzlePool(catalog) {
+  if (!catalog) return [];
+  if (Array.isArray(catalog.puzzles) && catalog.puzzles.length) {
+    return catalog.puzzles;
+  }
+  // Legacy catalog with difficulty buckets
+  if (catalog.difficulties && typeof catalog.difficulties === "object") {
+    return Object.values(catalog.difficulties).flatMap(
+      (d) => d.puzzles || []
+    );
+  }
+  return [];
+}
+
 function pickRandomPuzzle() {
-  const pool = state.catalog.puzzles;
+  const pool = puzzlePool(state.catalog);
+  if (!pool.length) {
+    throw new Error("No puzzles found in catalog.json");
+  }
   const idx = Math.floor(Math.random() * pool.length);
   return pool[idx];
 }
@@ -296,7 +313,6 @@ async function loadPuzzle(path) {
 }
 
 async function loadNewPuzzle() {
-  if (!state.catalog?.puzzles?.length) return;
   const path = pickRandomPuzzle();
   await loadPuzzle(path);
 }
@@ -304,6 +320,11 @@ async function loadNewPuzzle() {
 async function boot() {
   setStatus("Loading…");
   state.catalog = await loadJson("data/catalog.json");
+  if (!puzzlePool(state.catalog).length) {
+    throw new Error(
+      "Puzzle catalog is empty or outdated. Hard-refresh the page (Shift+Reload)."
+    );
+  }
   await loadNewPuzzle();
 
   els.btnCheck.addEventListener("click", () => checkPuzzle());
