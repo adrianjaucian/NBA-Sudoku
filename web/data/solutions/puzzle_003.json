@@ -1,0 +1,207 @@
+{
+  "seed": 20280758,
+  "tier": 2,
+  "grid_size": 4,
+  "box_size": 2,
+  "mode": "team_labels",
+  "row_teams": [
+    {
+      "key": "WAS",
+      "name": "Washington Wizards",
+      "abbr": "WAS"
+    },
+    {
+      "key": "LAL",
+      "name": "Los Angeles Lakers",
+      "abbr": "LAL"
+    },
+    {
+      "key": "CLE",
+      "name": "Cleveland Cavaliers",
+      "abbr": "CLE"
+    },
+    {
+      "key": "PHI",
+      "name": "Philadelphia 76ers",
+      "abbr": "PHI"
+    }
+  ],
+  "col_teams": [
+    {
+      "key": "CHI",
+      "name": "Chicago Bulls",
+      "abbr": "CHI"
+    },
+    {
+      "key": "BOS",
+      "name": "Boston Celtics",
+      "abbr": "BOS"
+    },
+    {
+      "key": "LAC",
+      "name": "LA Clippers",
+      "abbr": "LAC"
+    },
+    {
+      "key": "HOU",
+      "name": "Houston Rockets",
+      "abbr": "HOU"
+    }
+  ],
+  "box_teams": [
+    {
+      "key": "DAL",
+      "name": "Dallas Mavericks",
+      "abbr": "DAL"
+    },
+    {
+      "key": "ATL",
+      "name": "Atlanta Hawks",
+      "abbr": "ATL"
+    },
+    {
+      "key": "GSW",
+      "name": "Golden State Warriors",
+      "abbr": "GSW"
+    },
+    {
+      "key": "MIL",
+      "name": "Milwaukee Bucks",
+      "abbr": "MIL"
+    }
+  ],
+  "bank": [
+    {
+      "id": "horfoal01",
+      "name": "Al Horford"
+    },
+    {
+      "id": "rondora01",
+      "name": "Rajon Rondo"
+    },
+    {
+      "id": "beverpa01",
+      "name": "Patrick Beverley"
+    },
+    {
+      "id": "boykiea01",
+      "name": "Earl Boykins"
+    },
+    {
+      "id": "goodedr01",
+      "name": "Drew Gooden"
+    },
+    {
+      "id": "whatlen01",
+      "name": "Ennis Whatley"
+    },
+    {
+      "id": "smithjo02",
+      "name": "Joe Smith"
+    },
+    {
+      "id": "brownch01",
+      "name": "Chucky Brown"
+    },
+    {
+      "id": "butleji01",
+      "name": "Jimmy Butler"
+    },
+    {
+      "id": "smithis01",
+      "name": "Ish Smith"
+    },
+    {
+      "id": "willilo02",
+      "name": "Lou Williams"
+    },
+    {
+      "id": "schrode01",
+      "name": "Dennis Schr\u00f6der"
+    },
+    {
+      "id": "howardw01",
+      "name": "Dwight Howard"
+    },
+    {
+      "id": "thomais02",
+      "name": "Isaiah Thomas"
+    },
+    {
+      "id": "rodmade01",
+      "name": "Dennis Rodman"
+    },
+    {
+      "id": "linje01",
+      "name": "Jeremy Lin"
+    }
+  ],
+  "solution_hash": "68ea7085981a1ec2c9a0089d85d30f6d150c4cc58d430ee5df133da0b497130d",
+  "notable_count": 15,
+  "solution": [
+    {
+      "id": "goodedr01",
+      "name": "Drew Gooden"
+    },
+    {
+      "id": "thomais02",
+      "name": "Isaiah Thomas"
+    },
+    {
+      "id": "whatlen01",
+      "name": "Ennis Whatley"
+    },
+    {
+      "id": "howardw01",
+      "name": "Dwight Howard"
+    },
+    {
+      "id": "rodmade01",
+      "name": "Dennis Rodman"
+    },
+    {
+      "id": "rondora01",
+      "name": "Rajon Rondo"
+    },
+    {
+      "id": "willilo02",
+      "name": "Lou Williams"
+    },
+    {
+      "id": "linje01",
+      "name": "Jeremy Lin"
+    },
+    {
+      "id": "smithjo02",
+      "name": "Joe Smith"
+    },
+    {
+      "id": "schrode01",
+      "name": "Dennis Schr\u00f6der"
+    },
+    {
+      "id": "boykiea01",
+      "name": "Earl Boykins"
+    },
+    {
+      "id": "brownch01",
+      "name": "Chucky Brown"
+    },
+    {
+      "id": "butleji01",
+      "name": "Jimmy Butler"
+    },
+    {
+      "id": "horfoal01",
+      "name": "Al Horford"
+    },
+    {
+      "id": "beverpa01",
+      "name": "Patrick Beverley"
+    },
+    {
+      "id": "smithis01",
+      "name": "Ish Smith"
+    }
+  ]
+}

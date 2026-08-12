@@ -1,0 +1,141 @@
+{
+  "seed": 20460278,
+  "tier": 0,
+  "grid_size": 4,
+  "box_size": 2,
+  "mode": "team_labels",
+  "row_teams": [
+    {
+      "key": "NYK",
+      "name": "New York Knicks",
+      "abbr": "NYK"
+    },
+    {
+      "key": "BOS",
+      "name": "Boston Celtics",
+      "abbr": "BOS"
+    },
+    {
+      "key": "SAS",
+      "name": "San Antonio Spurs",
+      "abbr": "SAS"
+    },
+    {
+      "key": "DET",
+      "name": "Detroit Pistons",
+      "abbr": "DET"
+    }
+  ],
+  "col_teams": [
+    {
+      "key": "GSW",
+      "name": "Golden State Warriors",
+      "abbr": "GSW"
+    },
+    {
+      "key": "SAC",
+      "name": "Sacramento Kings",
+      "abbr": "SAC"
+    },
+    {
+      "key": "PHI",
+      "name": "Philadelphia 76ers",
+      "abbr": "PHI"
+    },
+    {
+      "key": "BKN",
+      "name": "Brooklyn Nets",
+      "abbr": "BKN"
+    }
+  ],
+  "box_teams": [
+    {
+      "key": "ATL",
+      "name": "Atlanta Hawks",
+      "abbr": "ATL"
+    },
+    {
+      "key": "LAL",
+      "name": "Los Angeles Lakers",
+      "abbr": "LAL"
+    },
+    {
+      "key": "LAC",
+      "name": "LA Clippers",
+      "abbr": "LAC"
+    },
+    {
+      "key": "CLE",
+      "name": "Cleveland Cavaliers",
+      "abbr": "CLE"
+    }
+  ],
+  "bank": [
+    {
+      "id": "brownch01",
+      "name": "Chucky Brown"
+    },
+    {
+      "id": "templga01",
+      "name": "Garrett Temple"
+    },
+    {
+      "id": "maggeco01",
+      "name": "Corey Maggette"
+    },
+    {
+      "id": "crawfja01",
+      "name": "Jamal Crawford"
+    },
+    {
+      "id": "rondora01",
+      "name": "Rajon Rondo"
+    },
+    {
+      "id": "schrode01",
+      "name": "Dennis Schr\u00f6der"
+    },
+    {
+      "id": "paulch01",
+      "name": "Chris Paul"
+    },
+    {
+      "id": "harrijo01",
+      "name": "Joe Harris"
+    },
+    {
+      "id": "morrima03",
+      "name": "Marcus Morris"
+    },
+    {
+      "id": "bibbymi01",
+      "name": "Mike Bibby"
+    },
+    {
+      "id": "linje01",
+      "name": "Jeremy Lin"
+    },
+    {
+      "id": "muscami01",
+      "name": "Mike Muscala"
+    },
+    {
+      "id": "hillge01",
+      "name": "George Hill"
+    },
+    {
+      "id": "horfoal01",
+      "name": "Al Horford"
+    },
+    {
+      "id": "jordade01",
+      "name": "DeAndre Jordan"
+    },
+    {
+      "id": "butleca01",
+      "name": "Caron Butler"
+    }
+  ],
+  "solution_hash": "cddcca74e0a4f8b3f7c36c3c94cd47331c91be10f8695e27dbc2c0bf0846b87e",
+  "notable_count": 16
+}

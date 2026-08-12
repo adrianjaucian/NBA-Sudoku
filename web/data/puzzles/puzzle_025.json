@@ -1,0 +1,141 @@
+{
+  "seed": 20500192,
+  "tier": 0,
+  "grid_size": 4,
+  "box_size": 2,
+  "mode": "team_labels",
+  "row_teams": [
+    {
+      "key": "NYK",
+      "name": "New York Knicks",
+      "abbr": "NYK"
+    },
+    {
+      "key": "CLE",
+      "name": "Cleveland Cavaliers",
+      "abbr": "CLE"
+    },
+    {
+      "key": "PHX",
+      "name": "Phoenix Suns",
+      "abbr": "PHX"
+    },
+    {
+      "key": "MIL",
+      "name": "Milwaukee Bucks",
+      "abbr": "MIL"
+    }
+  ],
+  "col_teams": [
+    {
+      "key": "LAC",
+      "name": "LA Clippers",
+      "abbr": "LAC"
+    },
+    {
+      "key": "WAS",
+      "name": "Washington Wizards",
+      "abbr": "WAS"
+    },
+    {
+      "key": "SAS",
+      "name": "San Antonio Spurs",
+      "abbr": "SAS"
+    },
+    {
+      "key": "ATL",
+      "name": "Atlanta Hawks",
+      "abbr": "ATL"
+    }
+  ],
+  "box_teams": [
+    {
+      "key": "LAL",
+      "name": "Los Angeles Lakers",
+      "abbr": "LAL"
+    },
+    {
+      "key": "DAL",
+      "name": "Dallas Mavericks",
+      "abbr": "DAL"
+    },
+    {
+      "key": "PHI",
+      "name": "Philadelphia 76ers",
+      "abbr": "PHI"
+    },
+    {
+      "key": "GSW",
+      "name": "Golden State Warriors",
+      "abbr": "GSW"
+    }
+  ],
+  "bank": [
+    {
+      "id": "arizatr01",
+      "name": "Trevor Ariza"
+    },
+    {
+      "id": "morrima03",
+      "name": "Marcus Morris"
+    },
+    {
+      "id": "holidju01",
+      "name": "Justin Holiday"
+    },
+    {
+      "id": "jacksji01",
+      "name": "Jim Jackson"
+    },
+    {
+      "id": "jacksst02",
+      "name": "Stephen Jackson"
+    },
+    {
+      "id": "paulch01",
+      "name": "Chris Paul"
+    },
+    {
+      "id": "boothca01",
+      "name": "Calvin Booth"
+    },
+    {
+      "id": "chrisdo01",
+      "name": "Doug Christie"
+    },
+    {
+      "id": "smithjo02",
+      "name": "Joe Smith"
+    },
+    {
+      "id": "goodedr01",
+      "name": "Drew Gooden"
+    },
+    {
+      "id": "rondora01",
+      "name": "Rajon Rondo"
+    },
+    {
+      "id": "houseda01",
+      "name": "Danuel House Jr."
+    },
+    {
+      "id": "beverpa01",
+      "name": "Patrick Beverley"
+    },
+    {
+      "id": "eisleho01",
+      "name": "Howard Eisley"
+    },
+    {
+      "id": "thomais02",
+      "name": "Isaiah Thomas"
+    },
+    {
+      "id": "crawfja01",
+      "name": "Jamal Crawford"
+    }
+  ],
+  "solution_hash": "6e5d0f2178ff5c64c488ad919b5fe116ead279cbcf470cc08e52a03b89b70c36",
+  "notable_count": 15
+}

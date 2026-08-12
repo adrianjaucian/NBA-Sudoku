@@ -1,0 +1,141 @@
+{
+  "seed": 20550031,
+  "tier": 1,
+  "grid_size": 4,
+  "box_size": 2,
+  "mode": "team_labels",
+  "row_teams": [
+    {
+      "key": "LAC",
+      "name": "LA Clippers",
+      "abbr": "LAC"
+    },
+    {
+      "key": "DET",
+      "name": "Detroit Pistons",
+      "abbr": "DET"
+    },
+    {
+      "key": "BOS",
+      "name": "Boston Celtics",
+      "abbr": "BOS"
+    },
+    {
+      "key": "ATL",
+      "name": "Atlanta Hawks",
+      "abbr": "ATL"
+    }
+  ],
+  "col_teams": [
+    {
+      "key": "PHX",
+      "name": "Phoenix Suns",
+      "abbr": "PHX"
+    },
+    {
+      "key": "BKN",
+      "name": "Brooklyn Nets",
+      "abbr": "BKN"
+    },
+    {
+      "key": "LAL",
+      "name": "Los Angeles Lakers",
+      "abbr": "LAL"
+    },
+    {
+      "key": "WAS",
+      "name": "Washington Wizards",
+      "abbr": "WAS"
+    }
+  ],
+  "box_teams": [
+    {
+      "key": "HOU",
+      "name": "Houston Rockets",
+      "abbr": "HOU"
+    },
+    {
+      "key": "CLE",
+      "name": "Cleveland Cavaliers",
+      "abbr": "CLE"
+    },
+    {
+      "key": "SAC",
+      "name": "Sacramento Kings",
+      "abbr": "SAC"
+    },
+    {
+      "key": "PHI",
+      "name": "Philadelphia 76ers",
+      "abbr": "PHI"
+    }
+  ],
+  "bank": [
+    {
+      "id": "turnean01",
+      "name": "Andre Turner"
+    },
+    {
+      "id": "smithis01",
+      "name": "Ish Smith"
+    },
+    {
+      "id": "rondora01",
+      "name": "Rajon Rondo"
+    },
+    {
+      "id": "wallage01",
+      "name": "Gerald Wallace"
+    },
+    {
+      "id": "paulch01",
+      "name": "Chris Paul"
+    },
+    {
+      "id": "wallabe01",
+      "name": "Ben Wallace"
+    },
+    {
+      "id": "mcinnje01",
+      "name": "Jeff McInnis"
+    },
+    {
+      "id": "hardeja01",
+      "name": "James Harden"
+    },
+    {
+      "id": "smithjo02",
+      "name": "Joe Smith"
+    },
+    {
+      "id": "schrode01",
+      "name": "Dennis Schr\u00f6der"
+    },
+    {
+      "id": "brownch01",
+      "name": "Chucky Brown"
+    },
+    {
+      "id": "muscami01",
+      "name": "Mike Muscala"
+    },
+    {
+      "id": "thomais02",
+      "name": "Isaiah Thomas"
+    },
+    {
+      "id": "malonmo01",
+      "name": "Moses Malone"
+    },
+    {
+      "id": "willilo02",
+      "name": "Lou Williams"
+    },
+    {
+      "id": "tollian01",
+      "name": "Anthony Tolliver"
+    }
+  ],
+  "solution_hash": "33432eb83305270a7c9e1c367f080c697db21f3cf4ec1530c6fdde97e8fd23b7",
+  "notable_count": 15
+}

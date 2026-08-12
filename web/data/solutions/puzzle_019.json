@@ -1,0 +1,207 @@
+{
+  "seed": 20440339,
+  "tier": 2,
+  "grid_size": 4,
+  "box_size": 2,
+  "mode": "team_labels",
+  "row_teams": [
+    {
+      "key": "SAC",
+      "name": "Sacramento Kings",
+      "abbr": "SAC"
+    },
+    {
+      "key": "LAL",
+      "name": "Los Angeles Lakers",
+      "abbr": "LAL"
+    },
+    {
+      "key": "BKN",
+      "name": "Brooklyn Nets",
+      "abbr": "BKN"
+    },
+    {
+      "key": "MIL",
+      "name": "Milwaukee Bucks",
+      "abbr": "MIL"
+    }
+  ],
+  "col_teams": [
+    {
+      "key": "ATL",
+      "name": "Atlanta Hawks",
+      "abbr": "ATL"
+    },
+    {
+      "key": "WAS",
+      "name": "Washington Wizards",
+      "abbr": "WAS"
+    },
+    {
+      "key": "PHI",
+      "name": "Philadelphia 76ers",
+      "abbr": "PHI"
+    },
+    {
+      "key": "DAL",
+      "name": "Dallas Mavericks",
+      "abbr": "DAL"
+    }
+  ],
+  "box_teams": [
+    {
+      "key": "PHX",
+      "name": "Phoenix Suns",
+      "abbr": "PHX"
+    },
+    {
+      "key": "DET",
+      "name": "Detroit Pistons",
+      "abbr": "DET"
+    },
+    {
+      "key": "GSW",
+      "name": "Golden State Warriors",
+      "abbr": "GSW"
+    },
+    {
+      "key": "SAS",
+      "name": "San Antonio Spurs",
+      "abbr": "SAS"
+    }
+  ],
+  "bank": [
+    {
+      "id": "crawfja01",
+      "name": "Jamal Crawford"
+    },
+    {
+      "id": "cartevi01",
+      "name": "Vince Carter"
+    },
+    {
+      "id": "rodmade01",
+      "name": "Dennis Rodman"
+    },
+    {
+      "id": "muscami01",
+      "name": "Mike Muscala"
+    },
+    {
+      "id": "hillge01",
+      "name": "George Hill"
+    },
+    {
+      "id": "butleca01",
+      "name": "Caron Butler"
+    },
+    {
+      "id": "goodedr01",
+      "name": "Drew Gooden"
+    },
+    {
+      "id": "jacksst02",
+      "name": "Stephen Jackson"
+    },
+    {
+      "id": "higgise01",
+      "name": "Sean Higgins"
+    },
+    {
+      "id": "tollian01",
+      "name": "Anthony Tolliver"
+    },
+    {
+      "id": "brownch01",
+      "name": "Chucky Brown"
+    },
+    {
+      "id": "dudleja01",
+      "name": "Jared Dudley"
+    },
+    {
+      "id": "smithis01",
+      "name": "Ish Smith"
+    },
+    {
+      "id": "thornma01",
+      "name": "Marcus Thornton"
+    },
+    {
+      "id": "boykiea01",
+      "name": "Earl Boykins"
+    },
+    {
+      "id": "jacksji01",
+      "name": "Jim Jackson"
+    }
+  ],
+  "solution_hash": "ce959b12699402e80aadedd7f0a0cf7ff6012b0eaf0646df3af5c1c112467d28",
+  "notable_count": 15,
+  "solution": [
+    {
+      "id": "cartevi01",
+      "name": "Vince Carter"
+    },
+    {
+      "id": "thornma01",
+      "name": "Marcus Thornton"
+    },
+    {
+      "id": "tollian01",
+      "name": "Anthony Tolliver"
+    },
+    {
+      "id": "butleca01",
+      "name": "Caron Butler"
+    },
+    {
+      "id": "jacksji01",
+      "name": "Jim Jackson"
+    },
+    {
+      "id": "dudleja01",
+      "name": "Jared Dudley"
+    },
+    {
+      "id": "muscami01",
+      "name": "Mike Muscala"
+    },
+    {
+      "id": "rodmade01",
+      "name": "Dennis Rodman"
+    },
+    {
+      "id": "crawfja01",
+      "name": "Jamal Crawford"
+    },
+    {
+      "id": "boykiea01",
+      "name": "Earl Boykins"
+    },
+    {
+      "id": "higgise01",
+      "name": "Sean Higgins"
+    },
+    {
+      "id": "brownch01",
+      "name": "Chucky Brown"
+    },
+    {
+      "id": "jacksst02",
+      "name": "Stephen Jackson"
+    },
+    {
+      "id": "smithis01",
+      "name": "Ish Smith"
+    },
+    {
+      "id": "hillge01",
+      "name": "George Hill"
+    },
+    {
+      "id": "goodedr01",
+      "name": "Drew Gooden"
+    }
+  ]
+}

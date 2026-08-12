@@ -1,0 +1,207 @@
+{
+  "seed": 20400436,
+  "tier": 2,
+  "grid_size": 4,
+  "box_size": 2,
+  "mode": "team_labels",
+  "row_teams": [
+    {
+      "key": "BKN",
+      "name": "Brooklyn Nets",
+      "abbr": "BKN"
+    },
+    {
+      "key": "LAC",
+      "name": "LA Clippers",
+      "abbr": "LAC"
+    },
+    {
+      "key": "GSW",
+      "name": "Golden State Warriors",
+      "abbr": "GSW"
+    },
+    {
+      "key": "HOU",
+      "name": "Houston Rockets",
+      "abbr": "HOU"
+    }
+  ],
+  "col_teams": [
+    {
+      "key": "MIL",
+      "name": "Milwaukee Bucks",
+      "abbr": "MIL"
+    },
+    {
+      "key": "WAS",
+      "name": "Washington Wizards",
+      "abbr": "WAS"
+    },
+    {
+      "key": "DET",
+      "name": "Detroit Pistons",
+      "abbr": "DET"
+    },
+    {
+      "key": "NYK",
+      "name": "New York Knicks",
+      "abbr": "NYK"
+    }
+  ],
+  "box_teams": [
+    {
+      "key": "LAL",
+      "name": "Los Angeles Lakers",
+      "abbr": "LAL"
+    },
+    {
+      "key": "ATL",
+      "name": "Atlanta Hawks",
+      "abbr": "ATL"
+    },
+    {
+      "key": "DAL",
+      "name": "Dallas Mavericks",
+      "abbr": "DAL"
+    },
+    {
+      "key": "SAC",
+      "name": "Sacramento Kings",
+      "abbr": "SAC"
+    }
+  ],
+  "bank": [
+    {
+      "id": "thorpot01",
+      "name": "Otis Thorpe"
+    },
+    {
+      "id": "mutomdi01",
+      "name": "Dikembe Mutombo"
+    },
+    {
+      "id": "artesro01",
+      "name": "Metta World Peace"
+    },
+    {
+      "id": "westbru01",
+      "name": "Russell Westbrook"
+    },
+    {
+      "id": "schrode01",
+      "name": "Dennis Schr\u00f6der"
+    },
+    {
+      "id": "mcgeeja01",
+      "name": "JaVale McGee"
+    },
+    {
+      "id": "smithjo02",
+      "name": "Joe Smith"
+    },
+    {
+      "id": "holidju01",
+      "name": "Justin Holiday"
+    },
+    {
+      "id": "crawfja01",
+      "name": "Jamal Crawford"
+    },
+    {
+      "id": "brownch01",
+      "name": "Chucky Brown"
+    },
+    {
+      "id": "kennalu01",
+      "name": "Luke Kennard"
+    },
+    {
+      "id": "dudleja01",
+      "name": "Jared Dudley"
+    },
+    {
+      "id": "beverpa01",
+      "name": "Patrick Beverley"
+    },
+    {
+      "id": "howarju01",
+      "name": "Juwan Howard"
+    },
+    {
+      "id": "tollian01",
+      "name": "Anthony Tolliver"
+    },
+    {
+      "id": "cassesa01",
+      "name": "Sam Cassell"
+    }
+  ],
+  "solution_hash": "fd935bd923be38b8b7f75f0743d53e29034868f03ce941125bb60e4d9d60901a",
+  "notable_count": 15,
+  "solution": [
+    {
+      "id": "smithjo02",
+      "name": "Joe Smith"
+    },
+    {
+      "id": "dudleja01",
+      "name": "Jared Dudley"
+    },
+    {
+      "id": "schrode01",
+      "name": "Dennis Schr\u00f6der"
+    },
+    {
+      "id": "mutomdi01",
+      "name": "Dikembe Mutombo"
+    },
+    {
+      "id": "beverpa01",
+      "name": "Patrick Beverley"
+    },
+    {
+      "id": "westbru01",
+      "name": "Russell Westbrook"
+    },
+    {
+      "id": "kennalu01",
+      "name": "Luke Kennard"
+    },
+    {
+      "id": "crawfja01",
+      "name": "Jamal Crawford"
+    },
+    {
+      "id": "brownch01",
+      "name": "Chucky Brown"
+    },
+    {
+      "id": "mcgeeja01",
+      "name": "JaVale McGee"
+    },
+    {
+      "id": "tollian01",
+      "name": "Anthony Tolliver"
+    },
+    {
+      "id": "holidju01",
+      "name": "Justin Holiday"
+    },
+    {
+      "id": "cassesa01",
+      "name": "Sam Cassell"
+    },
+    {
+      "id": "howarju01",
+      "name": "Juwan Howard"
+    },
+    {
+      "id": "thorpot01",
+      "name": "Otis Thorpe"
+    },
+    {
+      "id": "artesro01",
+      "name": "Metta World Peace"
+    }
+  ]
+}

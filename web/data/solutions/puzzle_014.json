@@ -1,0 +1,207 @@
+{
+  "seed": 20390464,
+  "tier": 1,
+  "grid_size": 4,
+  "box_size": 2,
+  "mode": "team_labels",
+  "row_teams": [
+    {
+      "key": "SAS",
+      "name": "San Antonio Spurs",
+      "abbr": "SAS"
+    },
+    {
+      "key": "HOU",
+      "name": "Houston Rockets",
+      "abbr": "HOU"
+    },
+    {
+      "key": "LAL",
+      "name": "Los Angeles Lakers",
+      "abbr": "LAL"
+    },
+    {
+      "key": "NYK",
+      "name": "New York Knicks",
+      "abbr": "NYK"
+    }
+  ],
+  "col_teams": [
+    {
+      "key": "DET",
+      "name": "Detroit Pistons",
+      "abbr": "DET"
+    },
+    {
+      "key": "GSW",
+      "name": "Golden State Warriors",
+      "abbr": "GSW"
+    },
+    {
+      "key": "ATL",
+      "name": "Atlanta Hawks",
+      "abbr": "ATL"
+    },
+    {
+      "key": "LAC",
+      "name": "LA Clippers",
+      "abbr": "LAC"
+    }
+  ],
+  "box_teams": [
+    {
+      "key": "BKN",
+      "name": "Brooklyn Nets",
+      "abbr": "BKN"
+    },
+    {
+      "key": "SAC",
+      "name": "Sacramento Kings",
+      "abbr": "SAC"
+    },
+    {
+      "key": "PHI",
+      "name": "Philadelphia 76ers",
+      "abbr": "PHI"
+    },
+    {
+      "key": "WAS",
+      "name": "Washington Wizards",
+      "abbr": "WAS"
+    }
+  ],
+  "bank": [
+    {
+      "id": "jacksji01",
+      "name": "Jim Jackson"
+    },
+    {
+      "id": "butleca01",
+      "name": "Caron Butler"
+    },
+    {
+      "id": "morrima03",
+      "name": "Marcus Morris"
+    },
+    {
+      "id": "riverau01",
+      "name": "Austin Rivers"
+    },
+    {
+      "id": "smithjo02",
+      "name": "Joe Smith"
+    },
+    {
+      "id": "mcgeeja01",
+      "name": "JaVale McGee"
+    },
+    {
+      "id": "hughela01",
+      "name": "Larry Hughes"
+    },
+    {
+      "id": "linje01",
+      "name": "Jeremy Lin"
+    },
+    {
+      "id": "schrode01",
+      "name": "Dennis Schr\u00f6der"
+    },
+    {
+      "id": "jacksst02",
+      "name": "Stephen Jackson"
+    },
+    {
+      "id": "bibbymi01",
+      "name": "Mike Bibby"
+    },
+    {
+      "id": "howardw01",
+      "name": "Dwight Howard"
+    },
+    {
+      "id": "millean02",
+      "name": "Andre Miller"
+    },
+    {
+      "id": "couside01",
+      "name": "DeMarcus Cousins"
+    },
+    {
+      "id": "andergr01",
+      "name": "Greg Anderson"
+    },
+    {
+      "id": "tollian01",
+      "name": "Anthony Tolliver"
+    }
+  ],
+  "solution_hash": "7646cbd66e492ee61a9ad2f3bc285195fa1d291fd1ff6477368c2cea8d861c1c",
+  "notable_count": 15,
+  "solution": [
+    {
+      "id": "andergr01",
+      "name": "Greg Anderson"
+    },
+    {
+      "id": "jacksst02",
+      "name": "Stephen Jackson"
+    },
+    {
+      "id": "tollian01",
+      "name": "Anthony Tolliver"
+    },
+    {
+      "id": "millean02",
+      "name": "Andre Miller"
+    },
+    {
+      "id": "schrode01",
+      "name": "Dennis Schr\u00f6der"
+    },
+    {
+      "id": "linje01",
+      "name": "Jeremy Lin"
+    },
+    {
+      "id": "jacksji01",
+      "name": "Jim Jackson"
+    },
+    {
+      "id": "couside01",
+      "name": "DeMarcus Cousins"
+    },
+    {
+      "id": "smithjo02",
+      "name": "Joe Smith"
+    },
+    {
+      "id": "mcgeeja01",
+      "name": "JaVale McGee"
+    },
+    {
+      "id": "howardw01",
+      "name": "Dwight Howard"
+    },
+    {
+      "id": "butleca01",
+      "name": "Caron Butler"
+    },
+    {
+      "id": "morrima03",
+      "name": "Marcus Morris"
+    },
+    {
+      "id": "hughela01",
+      "name": "Larry Hughes"
+    },
+    {
+      "id": "bibbymi01",
+      "name": "Mike Bibby"
+    },
+    {
+      "id": "riverau01",
+      "name": "Austin Rivers"
+    }
+  ]
+}

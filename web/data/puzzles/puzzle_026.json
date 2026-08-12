@@ -1,0 +1,141 @@
+{
+  "seed": 20510152,
+  "tier": 1,
+  "grid_size": 4,
+  "box_size": 2,
+  "mode": "team_labels",
+  "row_teams": [
+    {
+      "key": "ATL",
+      "name": "Atlanta Hawks",
+      "abbr": "ATL"
+    },
+    {
+      "key": "WAS",
+      "name": "Washington Wizards",
+      "abbr": "WAS"
+    },
+    {
+      "key": "LAC",
+      "name": "LA Clippers",
+      "abbr": "LAC"
+    },
+    {
+      "key": "CHI",
+      "name": "Chicago Bulls",
+      "abbr": "CHI"
+    }
+  ],
+  "col_teams": [
+    {
+      "key": "BOS",
+      "name": "Boston Celtics",
+      "abbr": "BOS"
+    },
+    {
+      "key": "PHI",
+      "name": "Philadelphia 76ers",
+      "abbr": "PHI"
+    },
+    {
+      "key": "MIL",
+      "name": "Milwaukee Bucks",
+      "abbr": "MIL"
+    },
+    {
+      "key": "NYK",
+      "name": "New York Knicks",
+      "abbr": "NYK"
+    }
+  ],
+  "box_teams": [
+    {
+      "key": "CLE",
+      "name": "Cleveland Cavaliers",
+      "abbr": "CLE"
+    },
+    {
+      "key": "BKN",
+      "name": "Brooklyn Nets",
+      "abbr": "BKN"
+    },
+    {
+      "key": "DAL",
+      "name": "Dallas Mavericks",
+      "abbr": "DAL"
+    },
+    {
+      "key": "SAC",
+      "name": "Sacramento Kings",
+      "abbr": "SAC"
+    }
+  ],
+  "bank": [
+    {
+      "id": "cassesa01",
+      "name": "Sam Cassell"
+    },
+    {
+      "id": "artesro01",
+      "name": "Metta World Peace"
+    },
+    {
+      "id": "butleca01",
+      "name": "Caron Butler"
+    },
+    {
+      "id": "linje01",
+      "name": "Jeremy Lin"
+    },
+    {
+      "id": "jacksst02",
+      "name": "Stephen Jackson"
+    },
+    {
+      "id": "chrisdo01",
+      "name": "Doug Christie"
+    },
+    {
+      "id": "goodedr01",
+      "name": "Drew Gooden"
+    },
+    {
+      "id": "mcgeeja01",
+      "name": "JaVale McGee"
+    },
+    {
+      "id": "jordade01",
+      "name": "DeAndre Jordan"
+    },
+    {
+      "id": "schrode01",
+      "name": "Dennis Schr\u00f6der"
+    },
+    {
+      "id": "holidju01",
+      "name": "Justin Holiday"
+    },
+    {
+      "id": "korveky01",
+      "name": "Kyle Korver"
+    },
+    {
+      "id": "rondora01",
+      "name": "Rajon Rondo"
+    },
+    {
+      "id": "thomais02",
+      "name": "Isaiah Thomas"
+    },
+    {
+      "id": "boykiea01",
+      "name": "Earl Boykins"
+    },
+    {
+      "id": "bogdabo02",
+      "name": "Bojan Bogdanovi\u0107"
+    }
+  ],
+  "solution_hash": "e263718cba8eed329093d71ce512bb4296169f86caf5dca97180c3cfcfe508ec",
+  "notable_count": 15
+}

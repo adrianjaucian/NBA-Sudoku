@@ -1,0 +1,141 @@
+{
+  "seed": 20350581,
+  "tier": 1,
+  "grid_size": 4,
+  "box_size": 2,
+  "mode": "team_labels",
+  "row_teams": [
+    {
+      "key": "SAC",
+      "name": "Sacramento Kings",
+      "abbr": "SAC"
+    },
+    {
+      "key": "GSW",
+      "name": "Golden State Warriors",
+      "abbr": "GSW"
+    },
+    {
+      "key": "WAS",
+      "name": "Washington Wizards",
+      "abbr": "WAS"
+    },
+    {
+      "key": "DAL",
+      "name": "Dallas Mavericks",
+      "abbr": "DAL"
+    }
+  ],
+  "col_teams": [
+    {
+      "key": "LAC",
+      "name": "LA Clippers",
+      "abbr": "LAC"
+    },
+    {
+      "key": "HOU",
+      "name": "Houston Rockets",
+      "abbr": "HOU"
+    },
+    {
+      "key": "SAS",
+      "name": "San Antonio Spurs",
+      "abbr": "SAS"
+    },
+    {
+      "key": "PHX",
+      "name": "Phoenix Suns",
+      "abbr": "PHX"
+    }
+  ],
+  "box_teams": [
+    {
+      "key": "LAL",
+      "name": "Los Angeles Lakers",
+      "abbr": "LAL"
+    },
+    {
+      "key": "PHI",
+      "name": "Philadelphia 76ers",
+      "abbr": "PHI"
+    },
+    {
+      "key": "BKN",
+      "name": "Brooklyn Nets",
+      "abbr": "BKN"
+    },
+    {
+      "key": "NYK",
+      "name": "New York Knicks",
+      "abbr": "NYK"
+    }
+  ],
+  "bank": [
+    {
+      "id": "bellra01",
+      "name": "Raja Bell"
+    },
+    {
+      "id": "mcderdo01",
+      "name": "Doug McDermott"
+    },
+    {
+      "id": "linje01",
+      "name": "Jeremy Lin"
+    },
+    {
+      "id": "hillge01",
+      "name": "George Hill"
+    },
+    {
+      "id": "jamisan01",
+      "name": "Antawn Jamison"
+    },
+    {
+      "id": "mcgeeja01",
+      "name": "JaVale McGee"
+    },
+    {
+      "id": "mclembe01",
+      "name": "Ben McLemore"
+    },
+    {
+      "id": "chrisdo01",
+      "name": "Doug Christie"
+    },
+    {
+      "id": "houseda01",
+      "name": "Danuel House Jr."
+    },
+    {
+      "id": "stoudam01",
+      "name": "Amar'e Stoudemire"
+    },
+    {
+      "id": "dudleja01",
+      "name": "Jared Dudley"
+    },
+    {
+      "id": "tollian01",
+      "name": "Anthony Tolliver"
+    },
+    {
+      "id": "greenge01",
+      "name": "Gerald Green"
+    },
+    {
+      "id": "thornma01",
+      "name": "Marcus Thornton"
+    },
+    {
+      "id": "stricro02",
+      "name": "Rod Strickland"
+    },
+    {
+      "id": "jordade01",
+      "name": "DeAndre Jordan"
+    }
+  ],
+  "solution_hash": "b4eff7e143245fab3d31c1d76280f987658155cf754e73084a796fb56907d15b",
+  "notable_count": 15
+}

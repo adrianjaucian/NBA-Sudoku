@@ -1,0 +1,141 @@
+{
+  "seed": 20310678,
+  "tier": 1,
+  "grid_size": 4,
+  "box_size": 2,
+  "mode": "team_labels",
+  "row_teams": [
+    {
+      "key": "SAC",
+      "name": "Sacramento Kings",
+      "abbr": "SAC"
+    },
+    {
+      "key": "DAL",
+      "name": "Dallas Mavericks",
+      "abbr": "DAL"
+    },
+    {
+      "key": "MIL",
+      "name": "Milwaukee Bucks",
+      "abbr": "MIL"
+    },
+    {
+      "key": "LAC",
+      "name": "LA Clippers",
+      "abbr": "LAC"
+    }
+  ],
+  "col_teams": [
+    {
+      "key": "BKN",
+      "name": "Brooklyn Nets",
+      "abbr": "BKN"
+    },
+    {
+      "key": "HOU",
+      "name": "Houston Rockets",
+      "abbr": "HOU"
+    },
+    {
+      "key": "CHI",
+      "name": "Chicago Bulls",
+      "abbr": "CHI"
+    },
+    {
+      "key": "WAS",
+      "name": "Washington Wizards",
+      "abbr": "WAS"
+    }
+  ],
+  "box_teams": [
+    {
+      "key": "NYK",
+      "name": "New York Knicks",
+      "abbr": "NYK"
+    },
+    {
+      "key": "SAS",
+      "name": "San Antonio Spurs",
+      "abbr": "SAS"
+    },
+    {
+      "key": "PHI",
+      "name": "Philadelphia 76ers",
+      "abbr": "PHI"
+    },
+    {
+      "key": "LAL",
+      "name": "Los Angeles Lakers",
+      "abbr": "LAL"
+    }
+  ],
+  "bank": [
+    {
+      "id": "rondora01",
+      "name": "Rajon Rondo"
+    },
+    {
+      "id": "chandty01",
+      "name": "Tyson Chandler"
+    },
+    {
+      "id": "smithjo02",
+      "name": "Joe Smith"
+    },
+    {
+      "id": "dudleja01",
+      "name": "Jared Dudley"
+    },
+    {
+      "id": "millean02",
+      "name": "Andre Miller"
+    },
+    {
+      "id": "malonmo01",
+      "name": "Moses Malone"
+    },
+    {
+      "id": "goodedr01",
+      "name": "Drew Gooden"
+    },
+    {
+      "id": "rodmade01",
+      "name": "Dennis Rodman"
+    },
+    {
+      "id": "kiddja01",
+      "name": "Jason Kidd"
+    },
+    {
+      "id": "augusdj01",
+      "name": "D.J. Augustin"
+    },
+    {
+      "id": "arizatr01",
+      "name": "Trevor Ariza"
+    },
+    {
+      "id": "derozde01",
+      "name": "DeMar DeRozan"
+    },
+    {
+      "id": "westbru01",
+      "name": "Russell Westbrook"
+    },
+    {
+      "id": "evansre01",
+      "name": "Reggie Evans"
+    },
+    {
+      "id": "gallola01",
+      "name": "Langston Galloway"
+    },
+    {
+      "id": "morrima03",
+      "name": "Marcus Morris"
+    }
+  ],
+  "solution_hash": "ca098ba768702d34b1d61713ba62c25d89d1ba85f80e269dbe38ced25f5311dc",
+  "notable_count": 16
+}

@@ -1,0 +1,207 @@
+{
+  "seed": 20370524,
+  "tier": 3,
+  "grid_size": 4,
+  "box_size": 2,
+  "mode": "team_labels",
+  "row_teams": [
+    {
+      "key": "CHI",
+      "name": "Chicago Bulls",
+      "abbr": "CHI"
+    },
+    {
+      "key": "PHI",
+      "name": "Philadelphia 76ers",
+      "abbr": "PHI"
+    },
+    {
+      "key": "WAS",
+      "name": "Washington Wizards",
+      "abbr": "WAS"
+    },
+    {
+      "key": "BOS",
+      "name": "Boston Celtics",
+      "abbr": "BOS"
+    }
+  ],
+  "col_teams": [
+    {
+      "key": "BKN",
+      "name": "Brooklyn Nets",
+      "abbr": "BKN"
+    },
+    {
+      "key": "DAL",
+      "name": "Dallas Mavericks",
+      "abbr": "DAL"
+    },
+    {
+      "key": "PHX",
+      "name": "Phoenix Suns",
+      "abbr": "PHX"
+    },
+    {
+      "key": "DET",
+      "name": "Detroit Pistons",
+      "abbr": "DET"
+    }
+  ],
+  "box_teams": [
+    {
+      "key": "LAC",
+      "name": "LA Clippers",
+      "abbr": "LAC"
+    },
+    {
+      "key": "MIL",
+      "name": "Milwaukee Bucks",
+      "abbr": "MIL"
+    },
+    {
+      "key": "GSW",
+      "name": "Golden State Warriors",
+      "abbr": "GSW"
+    },
+    {
+      "key": "CLE",
+      "name": "Cleveland Cavaliers",
+      "abbr": "CLE"
+    }
+  ],
+  "bank": [
+    {
+      "id": "schrode01",
+      "name": "Dennis Schr\u00f6der"
+    },
+    {
+      "id": "wallabe01",
+      "name": "Ben Wallace"
+    },
+    {
+      "id": "leeda02",
+      "name": "David Lee"
+    },
+    {
+      "id": "jamisan01",
+      "name": "Antawn Jamison"
+    },
+    {
+      "id": "smithjo02",
+      "name": "Joe Smith"
+    },
+    {
+      "id": "onealsh01",
+      "name": "Shaquille O'Neal"
+    },
+    {
+      "id": "morrima03",
+      "name": "Marcus Morris"
+    },
+    {
+      "id": "smithis01",
+      "name": "Ish Smith"
+    },
+    {
+      "id": "mcgeeja01",
+      "name": "JaVale McGee"
+    },
+    {
+      "id": "rondora01",
+      "name": "Rajon Rondo"
+    },
+    {
+      "id": "templga01",
+      "name": "Garrett Temple"
+    },
+    {
+      "id": "jordade01",
+      "name": "DeAndre Jordan"
+    },
+    {
+      "id": "augusdj01",
+      "name": "D.J. Augustin"
+    },
+    {
+      "id": "boykiea01",
+      "name": "Earl Boykins"
+    },
+    {
+      "id": "evansre01",
+      "name": "Reggie Evans"
+    },
+    {
+      "id": "craigto01",
+      "name": "Torrey Craig"
+    }
+  ],
+  "solution_hash": "307fe54ff88603cb7b815d6ee0fc50c0205d79c8cfa12a642f21a82a1d34e6d4",
+  "notable_count": 15,
+  "solution": [
+    {
+      "id": "templga01",
+      "name": "Garrett Temple"
+    },
+    {
+      "id": "rondora01",
+      "name": "Rajon Rondo"
+    },
+    {
+      "id": "craigto01",
+      "name": "Torrey Craig"
+    },
+    {
+      "id": "augusdj01",
+      "name": "D.J. Augustin"
+    },
+    {
+      "id": "evansre01",
+      "name": "Reggie Evans"
+    },
+    {
+      "id": "jordade01",
+      "name": "DeAndre Jordan"
+    },
+    {
+      "id": "smithis01",
+      "name": "Ish Smith"
+    },
+    {
+      "id": "smithjo02",
+      "name": "Joe Smith"
+    },
+    {
+      "id": "boykiea01",
+      "name": "Earl Boykins"
+    },
+    {
+      "id": "jamisan01",
+      "name": "Antawn Jamison"
+    },
+    {
+      "id": "mcgeeja01",
+      "name": "JaVale McGee"
+    },
+    {
+      "id": "wallabe01",
+      "name": "Ben Wallace"
+    },
+    {
+      "id": "schrode01",
+      "name": "Dennis Schr\u00f6der"
+    },
+    {
+      "id": "leeda02",
+      "name": "David Lee"
+    },
+    {
+      "id": "onealsh01",
+      "name": "Shaquille O'Neal"
+    },
+    {
+      "id": "morrima03",
+      "name": "Marcus Morris"
+    }
+  ]
+}

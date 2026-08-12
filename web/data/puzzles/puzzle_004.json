@@ -1,0 +1,141 @@
+{
+  "seed": 20290740,
+  "tier": 3,
+  "grid_size": 4,
+  "box_size": 2,
+  "mode": "team_labels",
+  "row_teams": [
+    {
+      "key": "MIL",
+      "name": "Milwaukee Bucks",
+      "abbr": "MIL"
+    },
+    {
+      "key": "GSW",
+      "name": "Golden State Warriors",
+      "abbr": "GSW"
+    },
+    {
+      "key": "DET",
+      "name": "Detroit Pistons",
+      "abbr": "DET"
+    },
+    {
+      "key": "SAC",
+      "name": "Sacramento Kings",
+      "abbr": "SAC"
+    }
+  ],
+  "col_teams": [
+    {
+      "key": "PHI",
+      "name": "Philadelphia 76ers",
+      "abbr": "PHI"
+    },
+    {
+      "key": "DAL",
+      "name": "Dallas Mavericks",
+      "abbr": "DAL"
+    },
+    {
+      "key": "CLE",
+      "name": "Cleveland Cavaliers",
+      "abbr": "CLE"
+    },
+    {
+      "key": "NYK",
+      "name": "New York Knicks",
+      "abbr": "NYK"
+    }
+  ],
+  "box_teams": [
+    {
+      "key": "ATL",
+      "name": "Atlanta Hawks",
+      "abbr": "ATL"
+    },
+    {
+      "key": "PHX",
+      "name": "Phoenix Suns",
+      "abbr": "PHX"
+    },
+    {
+      "key": "CHI",
+      "name": "Chicago Bulls",
+      "abbr": "CHI"
+    },
+    {
+      "key": "LAC",
+      "name": "LA Clippers",
+      "abbr": "LAC"
+    }
+  ],
+  "bank": [
+    {
+      "id": "gallola01",
+      "name": "Langston Galloway"
+    },
+    {
+      "id": "mohamna01",
+      "name": "Nazr Mohammed"
+    },
+    {
+      "id": "horfoal01",
+      "name": "Al Horford"
+    },
+    {
+      "id": "millean02",
+      "name": "Andre Miller"
+    },
+    {
+      "id": "billuch01",
+      "name": "Chauncey Billups"
+    },
+    {
+      "id": "holidju01",
+      "name": "Justin Holiday"
+    },
+    {
+      "id": "chrisdo01",
+      "name": "Doug Christie"
+    },
+    {
+      "id": "brownch01",
+      "name": "Chucky Brown"
+    },
+    {
+      "id": "goodedr01",
+      "name": "Drew Gooden"
+    },
+    {
+      "id": "crawfja01",
+      "name": "Jamal Crawford"
+    },
+    {
+      "id": "knighbr01",
+      "name": "Brevin Knight"
+    },
+    {
+      "id": "mcgeeja01",
+      "name": "JaVale McGee"
+    },
+    {
+      "id": "rodmade01",
+      "name": "Dennis Rodman"
+    },
+    {
+      "id": "willike02",
+      "name": "Kevin Willis"
+    },
+    {
+      "id": "morrima03",
+      "name": "Marcus Morris"
+    },
+    {
+      "id": "malonmo01",
+      "name": "Moses Malone"
+    }
+  ],
+  "solution_hash": "eb570b36ca43974fe83dccaa3098f2410ebd2bdcb3df52c67edd6f189a118ad2",
+  "notable_count": 15
+}

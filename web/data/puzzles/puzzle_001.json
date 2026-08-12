@@ -1,0 +1,141 @@
+{
+  "seed": 20260846,
+  "tier": 0,
+  "grid_size": 4,
+  "box_size": 2,
+  "mode": "team_labels",
+  "row_teams": [
+    {
+      "key": "HOU",
+      "name": "Houston Rockets",
+      "abbr": "HOU"
+    },
+    {
+      "key": "CHI",
+      "name": "Chicago Bulls",
+      "abbr": "CHI"
+    },
+    {
+      "key": "BOS",
+      "name": "Boston Celtics",
+      "abbr": "BOS"
+    },
+    {
+      "key": "SAS",
+      "name": "San Antonio Spurs",
+      "abbr": "SAS"
+    }
+  ],
+  "col_teams": [
+    {
+      "key": "DAL",
+      "name": "Dallas Mavericks",
+      "abbr": "DAL"
+    },
+    {
+      "key": "LAC",
+      "name": "LA Clippers",
+      "abbr": "LAC"
+    },
+    {
+      "key": "NYK",
+      "name": "New York Knicks",
+      "abbr": "NYK"
+    },
+    {
+      "key": "MIL",
+      "name": "Milwaukee Bucks",
+      "abbr": "MIL"
+    }
+  ],
+  "box_teams": [
+    {
+      "key": "LAL",
+      "name": "Los Angeles Lakers",
+      "abbr": "LAL"
+    },
+    {
+      "key": "SAC",
+      "name": "Sacramento Kings",
+      "abbr": "SAC"
+    },
+    {
+      "key": "BKN",
+      "name": "Brooklyn Nets",
+      "abbr": "BKN"
+    },
+    {
+      "key": "PHI",
+      "name": "Philadelphia 76ers",
+      "abbr": "PHI"
+    }
+  ],
+  "bank": [
+    {
+      "id": "greenge01",
+      "name": "Gerald Green"
+    },
+    {
+      "id": "holidju01",
+      "name": "Justin Holiday"
+    },
+    {
+      "id": "goodedr01",
+      "name": "Drew Gooden"
+    },
+    {
+      "id": "arizatr01",
+      "name": "Trevor Ariza"
+    },
+    {
+      "id": "morrima03",
+      "name": "Marcus Morris"
+    },
+    {
+      "id": "couside01",
+      "name": "DeMarcus Cousins"
+    },
+    {
+      "id": "rodmade01",
+      "name": "Dennis Rodman"
+    },
+    {
+      "id": "malonmo01",
+      "name": "Moses Malone"
+    },
+    {
+      "id": "jacksji01",
+      "name": "Jim Jackson"
+    },
+    {
+      "id": "abdelal01",
+      "name": "Alaa Abdelnaby"
+    },
+    {
+      "id": "mohamna01",
+      "name": "Nazr Mohammed"
+    },
+    {
+      "id": "greenje02",
+      "name": "Jeff Green"
+    },
+    {
+      "id": "willilo02",
+      "name": "Lou Williams"
+    },
+    {
+      "id": "jacksst02",
+      "name": "Stephen Jackson"
+    },
+    {
+      "id": "beverpa01",
+      "name": "Patrick Beverley"
+    },
+    {
+      "id": "brownch01",
+      "name": "Chucky Brown"
+    }
+  ],
+  "solution_hash": "fb0d2947b1dc3a6e5efbf44325fe7b7b47fe3df95e0bc162abfcdd657db66f85",
+  "notable_count": 15
+}

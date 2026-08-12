@@ -2,38 +2,38 @@
   "grid_size": 4,
   "box_size": 2,
   "mode": "team_labels",
-  "difficulties": {
-    "easy": {
-      "puzzles": [
-        "puzzles/easy_01.json",
-        "puzzles/easy_02.json",
-        "puzzles/easy_03.json"
-      ],
-      "description": "Team labels only \u00b7 mostly modern players \u00b7 tighter cells"
-    },
-    "medium": {
-      "puzzles": [
-        "puzzles/medium_01.json",
-        "puzzles/medium_02.json",
-        "puzzles/medium_03.json"
-      ],
-      "description": "Team labels only \u00b7 mix of eras"
-    },
-    "hard": {
-      "puzzles": [
-        "puzzles/hard_01.json",
-        "puzzles/hard_02.json",
-        "puzzles/hard_03.json"
-      ],
-      "description": "Team labels only \u00b7 obscure teams \u00b7 journeymen"
-    },
-    "expert": {
-      "puzzles": [
-        "puzzles/expert_01.json",
-        "puzzles/expert_02.json",
-        "puzzles/expert_03.json"
-      ],
-      "description": "Team labels only \u00b7 highest ambiguity still unique"
-    }
-  }
+  "practice": true,
+  "puzzles": [
+    "puzzles/puzzle_001.json",
+    "puzzles/puzzle_002.json",
+    "puzzles/puzzle_003.json",
+    "puzzles/puzzle_004.json",
+    "puzzles/puzzle_005.json",
+    "puzzles/puzzle_006.json",
+    "puzzles/puzzle_007.json",
+    "puzzles/puzzle_008.json",
+    "puzzles/puzzle_009.json",
+    "puzzles/puzzle_010.json",
+    "puzzles/puzzle_011.json",
+    "puzzles/puzzle_012.json",
+    "puzzles/puzzle_013.json",
+    "puzzles/puzzle_014.json",
+    "puzzles/puzzle_015.json",
+    "puzzles/puzzle_016.json",
+    "puzzles/puzzle_017.json",
+    "puzzles/puzzle_018.json",
+    "puzzles/puzzle_019.json",
+    "puzzles/puzzle_020.json",
+    "puzzles/puzzle_021.json",
+    "puzzles/puzzle_022.json",
+    "puzzles/puzzle_023.json",
+    "puzzles/puzzle_024.json",
+    "puzzles/puzzle_025.json",
+    "puzzles/puzzle_026.json",
+    "puzzles/puzzle_027.json",
+    "puzzles/puzzle_028.json",
+    "puzzles/puzzle_029.json",
+    "puzzles/puzzle_030.json"
+  ],
+  "note": "Daily Wordle-style mode will pick one puzzle per calendar day. For testing, refresh loads a random puzzle from this pool."
 }

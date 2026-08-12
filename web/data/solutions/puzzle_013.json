@@ -1,0 +1,207 @@
+{
+  "seed": 20380507,
+  "tier": 0,
+  "grid_size": 4,
+  "box_size": 2,
+  "mode": "team_labels",
+  "row_teams": [
+    {
+      "key": "LAL",
+      "name": "Los Angeles Lakers",
+      "abbr": "LAL"
+    },
+    {
+      "key": "MIL",
+      "name": "Milwaukee Bucks",
+      "abbr": "MIL"
+    },
+    {
+      "key": "DET",
+      "name": "Detroit Pistons",
+      "abbr": "DET"
+    },
+    {
+      "key": "PHI",
+      "name": "Philadelphia 76ers",
+      "abbr": "PHI"
+    }
+  ],
+  "col_teams": [
+    {
+      "key": "BKN",
+      "name": "Brooklyn Nets",
+      "abbr": "BKN"
+    },
+    {
+      "key": "BOS",
+      "name": "Boston Celtics",
+      "abbr": "BOS"
+    },
+    {
+      "key": "CHI",
+      "name": "Chicago Bulls",
+      "abbr": "CHI"
+    },
+    {
+      "key": "HOU",
+      "name": "Houston Rockets",
+      "abbr": "HOU"
+    }
+  ],
+  "box_teams": [
+    {
+      "key": "PHX",
+      "name": "Phoenix Suns",
+      "abbr": "PHX"
+    },
+    {
+      "key": "ATL",
+      "name": "Atlanta Hawks",
+      "abbr": "ATL"
+    },
+    {
+      "key": "SAC",
+      "name": "Sacramento Kings",
+      "abbr": "SAC"
+    },
+    {
+      "key": "WAS",
+      "name": "Washington Wizards",
+      "abbr": "WAS"
+    }
+  ],
+  "bank": [
+    {
+      "id": "dudleja01",
+      "name": "Jared Dudley"
+    },
+    {
+      "id": "abdelal01",
+      "name": "Alaa Abdelnaby"
+    },
+    {
+      "id": "hughela01",
+      "name": "Larry Hughes"
+    },
+    {
+      "id": "malonmo01",
+      "name": "Moses Malone"
+    },
+    {
+      "id": "gallola01",
+      "name": "Langston Galloway"
+    },
+    {
+      "id": "wallabe01",
+      "name": "Ben Wallace"
+    },
+    {
+      "id": "rondora01",
+      "name": "Rajon Rondo"
+    },
+    {
+      "id": "thorpot01",
+      "name": "Otis Thorpe"
+    },
+    {
+      "id": "thomais02",
+      "name": "Isaiah Thomas"
+    },
+    {
+      "id": "houseda01",
+      "name": "Danuel House Jr."
+    },
+    {
+      "id": "willilo02",
+      "name": "Lou Williams"
+    },
+    {
+      "id": "dragigo01",
+      "name": "Goran Dragi\u0107"
+    },
+    {
+      "id": "craigto01",
+      "name": "Torrey Craig"
+    },
+    {
+      "id": "evansre01",
+      "name": "Reggie Evans"
+    },
+    {
+      "id": "korveky01",
+      "name": "Kyle Korver"
+    },
+    {
+      "id": "schrode01",
+      "name": "Dennis Schr\u00f6der"
+    }
+  ],
+  "solution_hash": "03b084cb059d7f1a1442b68c50e8f0a7fc2259f335914a180d88de3664de80fe",
+  "notable_count": 15,
+  "solution": [
+    {
+      "id": "dudleja01",
+      "name": "Jared Dudley"
+    },
+    {
+      "id": "thomais02",
+      "name": "Isaiah Thomas"
+    },
+    {
+      "id": "rondora01",
+      "name": "Rajon Rondo"
+    },
+    {
+      "id": "willilo02",
+      "name": "Lou Williams"
+    },
+    {
+      "id": "dragigo01",
+      "name": "Goran Dragi\u0107"
+    },
+    {
+      "id": "craigto01",
+      "name": "Torrey Craig"
+    },
+    {
+      "id": "korveky01",
+      "name": "Kyle Korver"
+    },
+    {
+      "id": "malonmo01",
+      "name": "Moses Malone"
+    },
+    {
+      "id": "gallola01",
+      "name": "Langston Galloway"
+    },
+    {
+      "id": "schrode01",
+      "name": "Dennis Schr\u00f6der"
+    },
+    {
+      "id": "wallabe01",
+      "name": "Ben Wallace"
+    },
+    {
+      "id": "thorpot01",
+      "name": "Otis Thorpe"
+    },
+    {
+      "id": "evansre01",
+      "name": "Reggie Evans"
+    },
+    {
+      "id": "abdelal01",
+      "name": "Alaa Abdelnaby"
+    },
+    {
+      "id": "hughela01",
+      "name": "Larry Hughes"
+    },
+    {
+      "id": "houseda01",
+      "name": "Danuel House Jr."
+    }
+  ]
+}

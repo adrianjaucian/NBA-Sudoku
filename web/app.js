@@ -8,26 +8,24 @@ function boxIndex(r, c) {
 const state = {
   catalog: null,
   puzzle: null,
-  grid: [], // (player|null)[]
-  selectedCell: null,
-  selectedBankId: null,
+  grid: [],
+  guesses: 0,
+  checked: false,
+  drag: null, // { player, fromCell: number|null }
 };
 
 const els = {
-  difficulty: document.getElementById("difficulty"),
-  puzzleSelect: document.getElementById("puzzle-select"),
   board: document.getElementById("board"),
   bank: document.getElementById("bank"),
   status: document.getElementById("status"),
-  diffBlurb: document.getElementById("diff-blurb"),
-  inspect: document.getElementById("inspect"),
   colLabels: document.getElementById("col-labels"),
   rowLabels: document.getElementById("row-labels"),
   boxLabels: document.getElementById("box-labels"),
   btnCheck: document.getElementById("btn-check"),
-  btnHint: document.getElementById("btn-hint"),
-  btnReset: document.getElementById("btn-reset"),
-  btnSolve: document.getElementById("btn-solve"),
+  btnNew: document.getElementById("btn-new"),
+  guessCount: document.getElementById("guess-count"),
+  filledCount: document.getElementById("filled-count"),
+  dragGhost: document.getElementById("drag-ghost"),
 };
 
 async function loadJson(path) {
@@ -41,46 +39,23 @@ function setStatus(msg, kind = "") {
   els.status.className = `status ${kind}`.trim();
 }
 
+function filledCount() {
+  return state.grid.filter(Boolean).length;
+}
+
+function updateStats() {
+  els.guessCount.textContent = String(state.guesses);
+  els.filledCount.textContent = `${filledCount()}/16`;
+  els.btnCheck.disabled = filledCount() !== 16 || state.checked;
+}
+
 function usedIds() {
   return new Set(state.grid.filter(Boolean).map((p) => p.id));
 }
 
-function cellTeams(index) {
-  const r = Math.floor(index / SIZE);
-  const c = index % SIZE;
-  const b = boxIndex(r, c);
-  return {
-    row: state.puzzle.row_teams[r],
-    col: state.puzzle.col_teams[c],
-    box: state.puzzle.box_teams[b],
-  };
-}
-
-function playerFits(player, index) {
-  const t = cellTeams(index);
-  const teams = new Set(player.teams || []);
-  return teams.has(t.row.key) && teams.has(t.col.key) && teams.has(t.box.key);
-}
-
-function conflictIndices() {
-  const bad = new Set();
-  const used = new Map();
-  state.grid.forEach((p, i) => {
-    if (!p) return;
-    if (used.has(p.id)) {
-      bad.add(i);
-      bad.add(used.get(p.id));
-    } else {
-      used.set(p.id, i);
-    }
-    if (!playerFits(p, i)) bad.add(i);
-  });
-  return bad;
-}
-
 function renderLabels() {
   els.colLabels.innerHTML = "";
-  els.colLabels.appendChild(document.createElement("div")); // corner spacer
+  els.colLabels.appendChild(document.createElement("div"));
   for (const team of state.puzzle.col_teams) {
     const el = document.createElement("div");
     el.className = "axis-label col";
@@ -107,19 +82,26 @@ function renderLabels() {
   });
 }
 
+function makeDraggable(el, player, fromCell) {
+  el.dataset.playerId = player.id;
+  if (fromCell != null) el.dataset.fromCell = String(fromCell);
+
+  el.addEventListener("pointerdown", (e) => {
+    if (state.checked) return;
+    e.preventDefault();
+    startDrag(e, player, fromCell);
+  });
+}
+
 function renderBoard() {
-  const conflicts = conflictIndices();
   els.board.innerHTML = "";
   state.grid.forEach((player, i) => {
-    const cell = document.createElement("button");
-    cell.type = "button";
+    const cell = document.createElement("div");
     cell.className = "cell";
     cell.dataset.index = String(i);
+    cell.setAttribute("role", "gridcell");
     if (!player) cell.classList.add("empty");
-    if (state.selectedCell === i) cell.classList.add("selected");
-    if (conflicts.has(i)) cell.classList.add("conflict");
 
-    // Box label watermark on top-left of each 2x2
     const r = Math.floor(i / SIZE);
     const c = i % SIZE;
     if (r % BOX === 0 && c % BOX === 0) {
@@ -132,230 +114,200 @@ function renderBoard() {
 
     if (player) {
       const name = document.createElement("div");
-      name.className = "name";
+      name.className = "name draggable";
       name.textContent = player.name;
+      makeDraggable(name, player, i);
       cell.appendChild(name);
     } else {
       const ph = document.createElement("div");
       ph.className = "placeholder";
-      ph.textContent = "Empty";
+      ph.textContent = "Drop here";
       cell.appendChild(ph);
     }
 
-    cell.addEventListener("click", () => onCellClick(i));
+    cell.addEventListener("pointerenter", () => {
+      if (state.drag) cell.classList.add("drop-target");
+    });
+    cell.addEventListener("pointerleave", () => {
+      cell.classList.remove("drop-target");
+    });
+
     els.board.appendChild(cell);
   });
+  updateStats();
 }
 
 function renderBank() {
   const used = usedIds();
-  const selectedTeams =
-    state.selectedCell != null ? cellTeams(state.selectedCell) : null;
-
   els.bank.innerHTML = "";
   for (const player of state.puzzle.bank) {
-    const chip = document.createElement("button");
-    chip.type = "button";
-    chip.className = "chip";
+    if (used.has(player.id)) continue;
+    const chip = document.createElement("div");
+    chip.className = "chip draggable";
     chip.textContent = player.name;
-    chip.title = `${player.teams.join(", ")} · ${player.team_count} franchises`;
-
-    const placed = used.has(player.id);
-    if (placed) {
-      chip.disabled = true;
-      chip.classList.add("used");
-    } else if (selectedTeams) {
-      const fits = playerFits(player, state.selectedCell);
-      if (fits) chip.classList.add("fits");
-      else chip.classList.add("nofit");
-    }
-    if (state.selectedBankId === player.id) chip.classList.add("selected");
-
-    chip.addEventListener("click", () => onBankClick(player));
+    makeDraggable(chip, player, null);
     els.bank.appendChild(chip);
   }
-}
-
-function renderInspect() {
-  if (state.selectedCell == null) {
-    els.inspect.textContent = "Select a cell.";
-    return;
-  }
-  const t = cellTeams(state.selectedCell);
-  const player = state.grid[state.selectedCell];
-  const fits = player ? playerFits(player, state.selectedCell) : null;
-  els.inspect.innerHTML = `
-    <div><strong>Row:</strong> ${t.row.name} (${t.row.abbr})</div>
-    <div><strong>Column:</strong> ${t.col.name} (${t.col.abbr})</div>
-    <div><strong>Box:</strong> ${t.box.name} (${t.box.abbr})</div>
-    ${
-      player
-        ? `<div class="${fits ? "ok" : "bad"}">${player.name} ${
-            fits ? "satisfies all three." : "does not satisfy all three."
-          }</div>`
-        : "<div>Place a bank player who suited up for all three.</div>"
-    }
-  `;
 }
 
 function renderAll() {
   renderLabels();
   renderBoard();
   renderBank();
-  renderInspect();
 }
 
-function onCellClick(i) {
-  if (state.selectedBankId) {
-    placePlayer(i, state.selectedBankId);
+function recordGuess() {
+  state.guesses += 1;
+  updateStats();
+}
+
+function placePlayerAt(index, player, fromCell) {
+  if (state.checked) return;
+
+  const targetHad = state.grid[index];
+  const sameSpot = fromCell === index;
+  const movingExisting = fromCell != null;
+
+  if (sameSpot) return;
+
+  // Swap if dropping onto occupied cell
+  if (targetHad && movingExisting) {
+    state.grid[fromCell] = targetHad;
+    state.grid[index] = player;
+  } else if (targetHad && !movingExisting) {
+    // Can't drop bank player onto occupied — ignore
     return;
+  } else if (movingExisting) {
+    state.grid[fromCell] = null;
+    state.grid[index] = player;
+  } else {
+    state.grid[index] = player;
   }
-  state.selectedCell = i;
+
+  recordGuess();
   renderAll();
 }
 
-function onBankClick(player) {
-  const used = usedIds();
-  if (used.has(player.id)) return;
-
-  if (state.selectedCell != null) {
-    placePlayer(state.selectedCell, player.id);
-    return;
-  }
-  state.selectedBankId =
-    state.selectedBankId === player.id ? null : player.id;
-  setStatus(
-    state.selectedBankId
-      ? `Selected ${player.name} — tap a cell.`
-      : ""
-  );
+function returnToBank(fromCell) {
+  if (state.checked || fromCell == null) return;
+  if (!state.grid[fromCell]) return;
+  state.grid[fromCell] = null;
   renderAll();
 }
 
-function placePlayer(index, playerId) {
-  const player = state.puzzle.bank.find((p) => p.id === playerId);
-  if (!player) return;
-  state.grid = state.grid.map((p, i) => {
-    if (i === index) return player;
-    if (p?.id === playerId) return null;
-    return p;
+function startDrag(e, player, fromCell) {
+  state.drag = { player, fromCell };
+  els.dragGhost.textContent = player.name;
+  els.dragGhost.hidden = false;
+  moveGhost(e.clientX, e.clientY);
+  e.target.setPointerCapture?.(e.pointerId);
+
+  const onMove = (ev) => moveGhost(ev.clientX, ev.clientY);
+  const onUp = (ev) => {
+    document.removeEventListener("pointermove", onMove);
+    document.removeEventListener("pointerup", onUp);
+    document.removeEventListener("pointercancel", onUp);
+    finishDrag(ev);
+  };
+
+  document.addEventListener("pointermove", onMove);
+  document.addEventListener("pointerup", onUp);
+  document.addEventListener("pointercancel", onUp);
+}
+
+function moveGhost(x, y) {
+  els.dragGhost.style.transform = `translate(${x}px, ${y}px) translate(-50%, -50%)`;
+}
+
+function finishDrag(e) {
+  els.dragGhost.hidden = true;
+  const drag = state.drag;
+  state.drag = null;
+  if (!drag) return;
+
+  document.querySelectorAll(".drop-target").forEach((el) => {
+    el.classList.remove("drop-target");
   });
-  state.selectedBankId = null;
-  state.selectedCell = index;
-  setStatus(`Placed ${player.name}`);
-  renderAll();
-  if (state.grid.every(Boolean)) checkPuzzle(false);
+
+  const target = document.elementFromPoint(e.clientX, e.clientY);
+  const cellEl = target?.closest?.(".cell");
+  const bankEl = target?.closest?.("#bank");
+
+  if (cellEl && cellEl.dataset.index != null) {
+    placePlayerAt(Number(cellEl.dataset.index), drag.player, drag.fromCell);
+    return;
+  }
+
+  if (bankEl && drag.fromCell != null) {
+    returnToBank(drag.fromCell);
+  }
 }
 
-function checkPuzzle(announceEmpty = true) {
-  if (state.grid.some((p) => !p)) {
-    if (announceEmpty) setStatus("Fill every cell before checking.", "bad");
-    renderBoard();
-    return false;
-  }
-  const conflicts = conflictIndices();
-  if (conflicts.size) {
-    setStatus("Some players don’t match their row + column + box teams.", "bad");
-    renderBoard();
-    return false;
-  }
-  const solved = state.grid.every(
-    (p, i) => p.id === state.puzzle.solution[i].id
-  );
-  setStatus(
-    solved
-      ? "Solved — every cell matches its three team labels."
-      : "All placements are legal, but this isn’t the unique solution.",
-    solved ? "ok" : "bad"
-  );
-  renderBoard();
-  return solved;
+async function sha256Hex(text) {
+  const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(text));
+  return Array.from(new Uint8Array(buf))
+    .map((b) => b.toString(16).padStart(2, "0"))
+    .join("");
 }
 
-function resetPuzzle() {
+async function checkPuzzle() {
+  if (filledCount() !== 16) {
+    setStatus("Fill every cell before checking.", "bad");
+    return;
+  }
+
+  const ids = state.grid.map((p) => p.id);
+  const hash = await sha256Hex(ids.join(","));
+
+  state.checked = true;
+  els.btnCheck.disabled = true;
+
+  if (hash === state.puzzle.solution_hash) {
+    setStatus(`Solved in ${state.guesses} guess${state.guesses === 1 ? "" : "es"}.`, "ok");
+  } else {
+    setStatus(
+      `Not quite — ${state.guesses} guess${state.guesses === 1 ? "" : "es"} so far. Keep trying or start a new puzzle.`,
+      "bad"
+    );
+    state.checked = false;
+    els.btnCheck.disabled = false;
+  }
+  updateStats();
+}
+
+function resetBoard() {
   state.grid = Array(SIZE * SIZE).fill(null);
-  state.selectedCell = null;
-  state.selectedBankId = null;
-  setStatus("Team labels only — fill the grid from the bank.");
+  state.guesses = 0;
+  state.checked = false;
+  setStatus("Drag players from the bank onto the grid.");
   renderAll();
 }
 
-function hint() {
-  const empties = state.grid
-    .map((p, i) => ({ p, i }))
-    .filter(({ p }) => !p);
-  if (!empties.length) {
-    setStatus("No empty cells left.");
-    return;
-  }
-  // Prefer a cell with few remaining legal bank options
-  const used = usedIds();
-  empties.sort((a, b) => {
-    const ca = state.puzzle.bank.filter(
-      (p) => !used.has(p.id) && playerFits(p, a.i)
-    ).length;
-    const cb = state.puzzle.bank.filter(
-      (p) => !used.has(p.id) && playerFits(p, b.i)
-    ).length;
-    return ca - cb;
-  });
-  const pick = empties[0];
-  const correct = state.puzzle.solution[pick.i];
-  state.grid[pick.i] = { ...correct };
-  setStatus(`Hint: ${correct.name}`);
-  state.selectedBankId = null;
-  state.selectedCell = pick.i;
-  renderAll();
-}
-
-function reveal() {
-  state.grid = state.puzzle.solution.map((p) => ({ ...p }));
-  setStatus("Solution revealed.", "ok");
-  renderAll();
+function pickRandomPuzzle() {
+  const pool = state.catalog.puzzles;
+  const idx = Math.floor(Math.random() * pool.length);
+  return pool[idx];
 }
 
 async function loadPuzzle(path) {
   const puzzle = await loadJson(`data/${path}`);
   state.puzzle = puzzle;
-  resetPuzzle();
+  resetBoard();
 }
 
-function fillDifficultySelect() {
-  const diffs = Object.keys(state.catalog.difficulties);
-  els.difficulty.innerHTML = diffs
-    .map((d) => `<option value="${d}">${d}</option>`)
-    .join("");
-}
-
-function fillPuzzleSelect() {
-  const diff = els.difficulty.value;
-  const info = state.catalog.difficulties[diff];
-  els.diffBlurb.textContent = info.description;
-  els.puzzleSelect.innerHTML = info.puzzles
-    .map((p, i) => `<option value="${p}">Puzzle ${i + 1}</option>`)
-    .join("");
-}
-
-async function onDifficultyChange() {
-  fillPuzzleSelect();
-  await loadPuzzle(els.puzzleSelect.value);
+async function loadNewPuzzle() {
+  if (!state.catalog?.puzzles?.length) return;
+  const path = pickRandomPuzzle();
+  await loadPuzzle(path);
 }
 
 async function boot() {
-  setStatus("Loading puzzles…");
+  setStatus("Loading…");
   state.catalog = await loadJson("data/catalog.json");
-  fillDifficultySelect();
-  fillPuzzleSelect();
-  await loadPuzzle(els.puzzleSelect.value);
+  await loadNewPuzzle();
 
-  els.difficulty.addEventListener("change", onDifficultyChange);
-  els.puzzleSelect.addEventListener("change", () =>
-    loadPuzzle(els.puzzleSelect.value)
-  );
-  els.btnCheck.addEventListener("click", () => checkPuzzle(true));
-  els.btnHint.addEventListener("click", hint);
-  els.btnReset.addEventListener("click", resetPuzzle);
-  els.btnSolve.addEventListener("click", reveal);
+  els.btnCheck.addEventListener("click", () => checkPuzzle());
+  els.btnNew.addEventListener("click", () => loadNewPuzzle());
 }
 
 boot().catch((err) => {

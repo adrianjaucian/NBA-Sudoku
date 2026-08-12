@@ -2,55 +2,27 @@
 
 from __future__ import annotations
 
+import hashlib
 import random
 import sqlite3
 from collections import defaultdict
 from dataclasses import dataclass
 from itertools import product
 from pathlib import Path
-from typing import Literal
 
+from nba_db.notable import resolve_notable_ids
 from nba_db.teams import FRANCHISE_NAMES
 
 GRID_SIZE = 4
 CELL_COUNT = GRID_SIZE * GRID_SIZE
 BOX_SIZE = 2
 
-Difficulty = Literal["easy", "medium", "hard", "expert"]
-
-DIFFICULTY_CONFIG: dict[Difficulty, dict] = {
-    "easy": {
-        "modern_only": True,
-        "modern_year": 2000,
-        "prefer_journeymen": False,
-        "prefer_obscure_teams": False,
-        "max_mean_flexibility": 2.2,
-    },
-    "medium": {
-        "modern_only": False,
-        "modern_year": 2000,
-        "prefer_journeymen": False,
-        "prefer_obscure_teams": False,
-        "require_era_mix": True,
-        "max_mean_flexibility": 3.0,
-    },
-    "hard": {
-        "modern_only": False,
-        "modern_year": 2000,
-        "prefer_journeymen": True,
-        "prefer_obscure_teams": True,
-        "min_journeymen": 6,
-        "max_mean_flexibility": 3.5,
-    },
-    "expert": {
-        "modern_only": False,
-        "modern_year": 2000,
-        "prefer_journeymen": False,
-        "prefer_obscure_teams": True,
-        "max_mean_flexibility": 6.0,
-        "min_mean_flexibility": 1.4,
-        "prefer_flexible_picks": True,
-    },
+# Internal difficulty tiers (not exposed in UI; used for daily rotation later).
+_TIER_FLEX: dict[int, tuple[float, float]] = {
+    0: (1.0, 1.35),  # easiest
+    1: (1.0, 1.55),
+    2: (1.0, 2.0),
+    3: (1.2, 3.5),  # hardest
 }
 
 
@@ -62,58 +34,56 @@ def pack_team(key: str) -> dict:
     return {"key": key, "name": FRANCHISE_NAMES.get(key, key), "abbr": key}
 
 
+def solution_hash(solution: list[str]) -> str:
+    payload = ",".join(solution).encode("utf-8")
+    return hashlib.sha256(payload).hexdigest()
+
+
 @dataclass
 class Puzzle:
-    difficulty: Difficulty
     solution: list[str]
     bank: list[str]
     row_teams: list[str]
     col_teams: list[str]
     box_teams: list[str]
     seed: int
+    tier: int
+    notable_count: int
     mean_flexibility: float
 
-    def to_dict(self, players: dict[str, dict]) -> dict:
+    def to_dict(self, players: dict[str, dict], *, include_solution: bool = False) -> dict:
         def pack_player(pid: str) -> dict:
             p = players[pid]
-            return {
-                "id": pid,
-                "name": p["name"],
-                "team_count": p["team_count"],
-                "first_season": p["first_season"],
-                "last_season": p["last_season"],
-                "teams": sorted(p["franchises"]),
-            }
+            return {"id": pid, "name": p["name"]}
 
-        return {
-            "difficulty": self.difficulty,
+        out: dict = {
             "seed": self.seed,
+            "tier": self.tier,
             "grid_size": GRID_SIZE,
             "box_size": BOX_SIZE,
             "mode": "team_labels",
             "row_teams": [pack_team(t) for t in self.row_teams],
             "col_teams": [pack_team(t) for t in self.col_teams],
             "box_teams": [pack_team(t) for t in self.box_teams],
-            "clues": [None] * CELL_COUNT,  # no pre-filled players
-            "solution": [pack_player(s) for s in self.solution],
             "bank": [pack_player(b) for b in self.bank],
-            "mean_flexibility": round(self.mean_flexibility, 3),
-            "rules": (
-                "Team labels on each row, column, and 2×2 box are the only clues. "
-                "A player belongs in a cell only if they played for that cell's "
-                "row team, column team, and box team. Use each bank player once. "
-                "Each puzzle has exactly one solution."
-            ),
+            "solution_hash": solution_hash(self.solution),
+            "notable_count": self.notable_count,
         }
+        if include_solution:
+            out["solution"] = [pack_player(s) for s in self.solution]
+        return out
 
 
 class PuzzleEngine:
     """Generate unique team-label puzzles from the SQLite player DB."""
 
+    MIN_NOTABLE = 15
+
     def __init__(self, db_path: Path | str) -> None:
         conn = sqlite3.connect(db_path)
         try:
             self.players: dict[str, dict] = {}
+            names_by_id: dict[str, str] = {}
             for pid, name, first, last, tc in conn.execute(
                 """
                 SELECT player_id, player_name, first_season, last_season, team_count
@@ -129,6 +99,7 @@ class PuzzleEngine:
                     "era_start": int(first.split("-")[0]),
                     "era_end": int(last.split("-")[0]),
                 }
+                names_by_id[pid] = name
             for pid, fk in conn.execute(
                 "SELECT player_id, franchise_key FROM player_teams"
             ):
@@ -137,14 +108,22 @@ class PuzzleEngine:
         finally:
             conn.close()
 
+        self.notable_ids = resolve_notable_ids(
+            {name: pid for pid, name in names_by_id.items()}
+        )
         self.by_team: dict[str, set[str]] = defaultdict(set)
         for pid, meta in self.players.items():
             for fk in meta["franchises"]:
                 self.by_team[fk].add(pid)
         self.teams = sorted(self.by_team)
-        self.teams_by_size = sorted(self.teams, key=lambda t: len(self.by_team[t]))
+        # Big-market / iconic franchises first for readable puzzles
+        self.popular_teams = sorted(
+            self.teams, key=lambda t: len(self.by_team[t]), reverse=True
+        )
 
-    def fits(self, pid: str, row: int, col: int, row_t: list[str], col_t: list[str], box_t: list[str]) -> bool:
+    def fits(
+        self, pid: str, row: int, col: int, row_t: list[str], col_t: list[str], box_t: list[str]
+    ) -> bool:
         f = self.players[pid]["franchises"]
         return (
             row_t[row] in f
@@ -226,25 +205,17 @@ class PuzzleEngine:
         bt()
         return found, solution
 
-    def _pick_teams(self, rng: random.Random, obscure: bool) -> list[str]:
-        if obscure:
-            # Bias toward smaller franchises in the DB (harder intersections)
-            pool = self.teams_by_size[:22] + self.teams_by_size[-10:]
-            pool = list(dict.fromkeys(pool))
-            return rng.sample(pool, 12)
-        # Prefer well-known / larger franchises
-        pool = self.teams_by_size[-20:]
+    def _pick_teams(self, rng: random.Random) -> list[str]:
+        pool = self.popular_teams[:18]
         return rng.sample(pool, 12)
 
     def _build_labeled_grid(
         self,
         rng: random.Random,
         *,
-        obscure: bool,
-        player_filter,
-        prefer_flexible_picks: bool = False,
+        prefer_notable: bool,
     ) -> tuple[list[str], list[str], list[str], list[str]] | None:
-        labels = self._pick_teams(rng, obscure=obscure)
+        labels = self._pick_teams(rng)
         row_t, col_t, box_t = labels[:4], labels[4:8], labels[8:]
         used: set[str] = set()
         sol: list[str] = []
@@ -253,23 +224,25 @@ class PuzzleEngine:
             cands = [
                 p
                 for p in self.cell_candidates(r, c, row_t, col_t, box_t)
-                if p not in used and player_filter(p)
+                if p not in used
             ]
             if not cands:
                 return None
 
-            def flex(pid: str) -> int:
-                return self.flexibility(pid, row_t, col_t, box_t)
+            if prefer_notable:
+                notable = [p for p in cands if p in self.notable_ids]
+                if notable:
+                    cands = notable
 
-            cands.sort(key=flex, reverse=prefer_flexible_picks)
-            if prefer_flexible_picks:
-                # Bias toward players who could fit multiple cells (harder)
-                top = cands[: max(3, min(8, len(cands)))]
-            else:
-                least = flex(cands[0])
-                top = [p for p in cands if flex(p) == least]
-                top = top[: max(1, min(4, len(top)))]
-            pick = rng.choice(top)
+            def score(pid: str) -> tuple[int, int]:
+                is_notable = 0 if pid in self.notable_ids else 1
+                flex = self.flexibility(pid, row_t, col_t, box_t)
+                return (is_notable, flex)
+
+            cands.sort(key=score)
+            least = score(cands[0])
+            top = [p for p in cands if score(p) == least]
+            pick = rng.choice(top[: max(1, min(5, len(top)))])
             sol.append(pick)
             used.add(pick)
 
@@ -277,65 +250,26 @@ class PuzzleEngine:
 
     def generate(
         self,
-        difficulty: Difficulty,
         *,
         seed: int | None = None,
-        max_attempts: int = 4000,
+        tier: int | None = None,
+        max_attempts: int = 6000,
     ) -> Puzzle:
-        cfg = DIFFICULTY_CONFIG[difficulty]
         seed = random.randrange(1 << 30) if seed is None else seed
+        tier = seed % 4 if tier is None else tier
+        min_flex, max_flex = _TIER_FLEX.get(tier, (1.0, 2.0))
         rng = random.Random(seed)
-
-        modern_only = bool(cfg.get("modern_only"))
-        modern_year = int(cfg.get("modern_year", 2000))
-        prefer_j = bool(cfg.get("prefer_journeymen"))
-        obscure = bool(cfg.get("prefer_obscure_teams"))
-        min_j = int(cfg.get("min_journeymen", 0))
-        require_era_mix = bool(cfg.get("require_era_mix"))
-        max_flex = float(cfg.get("max_mean_flexibility", 99))
-        min_flex = float(cfg.get("min_mean_flexibility", 0))
-        prefer_flexible = bool(cfg.get("prefer_flexible_picks"))
-
-        def player_filter(pid: str) -> bool:
-            p = self.players[pid]
-            if modern_only and p["era_end"] < modern_year and p["era_start"] < modern_year:
-                return False
-            return True
 
         for attempt in range(max_attempts):
             ar = random.Random(seed + attempt * 7919)
-            built = self._build_labeled_grid(
-                ar,
-                obscure=obscure,
-                player_filter=player_filter,
-                prefer_flexible_picks=prefer_flexible,
-            )
+            built = self._build_labeled_grid(ar, prefer_notable=True)
             if built is None:
                 continue
             sol, row_t, col_t, box_t = built
 
-            if prefer_j:
-                journey = sum(
-                    1 for pid in sol if 6 <= self.players[pid]["team_count"] <= 10
-                )
-                if journey < min_j:
-                    continue
-
-            if require_era_mix:
-                older = sum(1 for pid in sol if self.players[pid]["era_start"] < 2000)
-                newer = sum(1 for pid in sol if self.players[pid]["era_end"] >= 2010)
-                if older < 2 or newer < 2:
-                    continue
-
-            if modern_only:
-                if any(self.players[pid]["era_end"] < modern_year for pid in sol):
-                    # allow if they also started modern era games
-                    if any(
-                        self.players[pid]["era_start"] < modern_year
-                        and self.players[pid]["era_end"] < modern_year
-                        for pid in sol
-                    ):
-                        continue
+            notable_n = sum(1 for pid in sol if pid in self.notable_ids)
+            if notable_n < self.MIN_NOTABLE:
+                continue
 
             n, _ = self.count_solutions(row_t, col_t, box_t, sol, limit=2)
             if n != 1:
@@ -348,14 +282,15 @@ class PuzzleEngine:
             bank = sol[:]
             ar.shuffle(bank)
             return Puzzle(
-                difficulty=difficulty,
                 solution=sol,
                 bank=bank,
                 row_teams=row_t,
                 col_teams=col_t,
                 box_teams=box_t,
                 seed=seed + attempt,
+                tier=tier,
+                notable_count=notable_n,
                 mean_flexibility=mean_flex,
             )
 
-        raise RuntimeError(f"Could not generate {difficulty} team-label puzzle (seed={seed})")
+        raise RuntimeError(f"Could not generate notable puzzle (seed={seed}, tier={tier})")

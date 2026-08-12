@@ -117,8 +117,35 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem 1rem;
-  align-items: end;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 0.75rem;
+}
+
+.stats {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.stat {
+  display: grid;
+  gap: 0.1rem;
+}
+
+.stat-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.stat-value {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  color: var(--ink);
 }
 
 .field {
@@ -174,10 +201,20 @@ body {
   border-color: var(--line);
 }
 
-.btn-ghost:hover {
-  background: rgba(20, 32, 51, 0.05);
-  border-color: var(--ink-soft);
-  color: var(--ink);
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn:disabled:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  transform: none;
+}
+
+.btn-ghost:disabled:hover {
+  background: transparent;
 }
 
 .status {
@@ -288,10 +325,16 @@ body {
   padding: 0.35rem;
   background: #fffaf2;
   border: 1px solid var(--line);
-  cursor: pointer;
   text-align: center;
   transition: background 0.15s ease, box-shadow 0.15s ease;
   animation: cell-in 0.45s ease both;
+  touch-action: none;
+  user-select: none;
+}
+
+.cell.drop-target {
+  background: #ffe3cc;
+  box-shadow: inset 0 0 0 2px var(--accent);
 }
 
 .cell:nth-child(1) { animation-delay: 0.05s; }
@@ -330,31 +373,25 @@ body {
 }
 
 .cell:hover {
-  background: #fff3e4;
+  background: #fff8ee;
 }
 
-.cell.selected {
-  background: #ffe3cc;
-  box-shadow: inset 0 0 0 2px var(--accent);
-  z-index: 1;
-}
-
-.cell.clue {
-  background: #efe7d8;
-  cursor: default;
-}
-
-.cell.clue .name {
-  font-weight: 700;
-}
-
-.cell.conflict {
-  background: #f8d9d6;
-}
-
+.cell.selected,
+.cell.conflict,
+.cell.clue,
 .cell.inspect-a,
 .cell.inspect-b {
-  box-shadow: inset 0 0 0 2px var(--good);
+  /* legacy classes removed from gameplay */
+}
+
+.draggable {
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+}
+
+.draggable:active {
+  cursor: grabbing;
 }
 
 .cell .name {
@@ -424,40 +461,40 @@ body {
   background: var(--chip);
   color: var(--ink);
   padding: 0.35rem 0.55rem;
-  cursor: pointer;
-  transition: background 0.15s ease, transform 0.15s ease, opacity 0.15s ease;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  transition: background 0.15s ease, transform 0.15s ease;
 }
 
-.chip:hover:not(:disabled) {
+.chip:hover {
   background: #ffe3cc;
   border-color: var(--accent);
   transform: translateY(-1px);
 }
 
-.chip:disabled,
-.chip.used {
-  opacity: 0.35;
-  cursor: default;
-  transform: none;
-}
-
-.chip.selected {
-  background: #ffe3cc;
-  border-color: var(--accent);
-  box-shadow: inset 0 0 0 1px var(--accent);
-}
-
-.chip.fits {
-  border-color: var(--good);
-  background: #e7f3ec;
-}
-
+.chip.selected,
+.chip.used,
+.chip.fits,
 .chip.nofit {
-  opacity: 0.42;
+  /* removed */
 }
 
-.inspect .ok { color: var(--good); margin-top: 0.45rem; }
-.inspect .bad { color: var(--bad); margin-top: 0.45rem; }
+.drag-ghost {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  pointer-events: none;
+  padding: 0.45rem 0.75rem;
+  background: var(--accent);
+  color: #fffaf2;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  box-shadow: var(--shadow);
+  white-space: nowrap;
+}
 
 .rules {
   margin: 0;

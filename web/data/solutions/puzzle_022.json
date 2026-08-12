@@ -1,0 +1,207 @@
+{
+  "seed": 20470246,
+  "tier": 1,
+  "grid_size": 4,
+  "box_size": 2,
+  "mode": "team_labels",
+  "row_teams": [
+    {
+      "key": "NYK",
+      "name": "New York Knicks",
+      "abbr": "NYK"
+    },
+    {
+      "key": "GSW",
+      "name": "Golden State Warriors",
+      "abbr": "GSW"
+    },
+    {
+      "key": "ATL",
+      "name": "Atlanta Hawks",
+      "abbr": "ATL"
+    },
+    {
+      "key": "MIL",
+      "name": "Milwaukee Bucks",
+      "abbr": "MIL"
+    }
+  ],
+  "col_teams": [
+    {
+      "key": "CHI",
+      "name": "Chicago Bulls",
+      "abbr": "CHI"
+    },
+    {
+      "key": "DAL",
+      "name": "Dallas Mavericks",
+      "abbr": "DAL"
+    },
+    {
+      "key": "CLE",
+      "name": "Cleveland Cavaliers",
+      "abbr": "CLE"
+    },
+    {
+      "key": "PHX",
+      "name": "Phoenix Suns",
+      "abbr": "PHX"
+    }
+  ],
+  "box_teams": [
+    {
+      "key": "WAS",
+      "name": "Washington Wizards",
+      "abbr": "WAS"
+    },
+    {
+      "key": "HOU",
+      "name": "Houston Rockets",
+      "abbr": "HOU"
+    },
+    {
+      "key": "SAC",
+      "name": "Sacramento Kings",
+      "abbr": "SAC"
+    },
+    {
+      "key": "PHI",
+      "name": "Philadelphia 76ers",
+      "abbr": "PHI"
+    }
+  ],
+  "bank": [
+    {
+      "id": "tollian01",
+      "name": "Anthony Tolliver"
+    },
+    {
+      "id": "hughela01",
+      "name": "Larry Hughes"
+    },
+    {
+      "id": "hillge01",
+      "name": "George Hill"
+    },
+    {
+      "id": "burketr01",
+      "name": "Trey Burke"
+    },
+    {
+      "id": "houseda01",
+      "name": "Danuel House Jr."
+    },
+    {
+      "id": "schrode01",
+      "name": "Dennis Schr\u00f6der"
+    },
+    {
+      "id": "portibo01",
+      "name": "Bobby Portis"
+    },
+    {
+      "id": "cartevi01",
+      "name": "Vince Carter"
+    },
+    {
+      "id": "rondora01",
+      "name": "Rajon Rondo"
+    },
+    {
+      "id": "smithis01",
+      "name": "Ish Smith"
+    },
+    {
+      "id": "morrima03",
+      "name": "Marcus Morris"
+    },
+    {
+      "id": "boothca01",
+      "name": "Calvin Booth"
+    },
+    {
+      "id": "templga01",
+      "name": "Garrett Temple"
+    },
+    {
+      "id": "mcgeeja01",
+      "name": "JaVale McGee"
+    },
+    {
+      "id": "duranke01",
+      "name": "Kevin Durant"
+    },
+    {
+      "id": "korveky01",
+      "name": "Kyle Korver"
+    }
+  ],
+  "solution_hash": "57f911e3b360acc332f000e7fdbe9b7e0dfeed1622fa3d607bfc4ef41ea59347",
+  "notable_count": 15,
+  "solution": [
+    {
+      "id": "portibo01",
+      "name": "Bobby Portis"
+    },
+    {
+      "id": "burketr01",
+      "name": "Trey Burke"
+    },
+    {
+      "id": "morrima03",
+      "name": "Marcus Morris"
+    },
+    {
+      "id": "houseda01",
+      "name": "Danuel House Jr."
+    },
+    {
+      "id": "hughela01",
+      "name": "Larry Hughes"
+    },
+    {
+      "id": "mcgeeja01",
+      "name": "JaVale McGee"
+    },
+    {
+      "id": "schrode01",
+      "name": "Dennis Schr\u00f6der"
+    },
+    {
+      "id": "duranke01",
+      "name": "Kevin Durant"
+    },
+    {
+      "id": "rondora01",
+      "name": "Rajon Rondo"
+    },
+    {
+      "id": "cartevi01",
+      "name": "Vince Carter"
+    },
+    {
+      "id": "korveky01",
+      "name": "Kyle Korver"
+    },
+    {
+      "id": "tollian01",
+      "name": "Anthony Tolliver"
+    },
+    {
+      "id": "templga01",
+      "name": "Garrett Temple"
+    },
+    {
+      "id": "boothca01",
+      "name": "Calvin Booth"
+    },
+    {
+      "id": "hillge01",
+      "name": "George Hill"
+    },
+    {
+      "id": "smithis01",
+      "name": "Ish Smith"
+    }
+  ]
+}
