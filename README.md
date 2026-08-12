@@ -8,7 +8,9 @@ Drag players from the bank onto the grid. Each drop is a **guess** — solve in 
 
 **Live (iPad / phone):** [https://adrianjaucian.github.io/NBA-Sudoku/](https://adrianjaucian.github.io/NBA-Sudoku/)
 
-Do not open the jsDelivr `index.html` link — that CDN serves HTML as plain text, so you see source code instead of the game.
+> **One-time setup:** In the repo go to **Settings → Pages → Build and deployment → Source** and choose **GitHub Actions**. Then re-run the “Deploy GitHub Pages” workflow (or push any commit). Until that is done, the link above will 404.
+
+Do **not** open the jsDelivr `index.html` link — that CDN serves HTML as `text/plain`, so the browser shows source code instead of running the game.
 
 **Local dev:**
 
