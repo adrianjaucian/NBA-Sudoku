@@ -6,11 +6,19 @@ Drag players from the bank onto the grid. Each drop is a **guess** — solve in 
 
 ## Play
 
+**Live (iPad / phone):** [https://adrianjaucian.github.io/NBA-Sudoku/](https://adrianjaucian.github.io/NBA-Sudoku/)
+
+Do not open the jsDelivr `index.html` link — that CDN serves HTML as plain text, so you see source code instead of the game.
+
+**Local dev:**
+
 ```bash
 pip install -r requirements.txt
 python scripts/generate_puzzles.py --count 30
 cd web && python3 -m http.server 8080 --bind 0.0.0.0
 ```
+
+Then open `http://localhost:8080` on this machine, or `http://<your-lan-ip>:8080` on another device on the same Wi‑Fi.
 
 **Practice mode:** tap **New puzzle** anytime. **Daily mode** (Wordle-style, one play per day, rotating difficulty) is planned.
 

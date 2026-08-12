@@ -1,6 +1,9 @@
 const SIZE = 4;
 const BOX = 2;
 
+// Resolve puzzle JSON relative to this module (works on GitHub Pages).
+const WEB_ROOT = new URL("./", import.meta.url);
+
 function boxIndex(r, c) {
   return Math.floor(r / BOX) * (SIZE / BOX) + Math.floor(c / BOX);
 }
@@ -29,8 +32,9 @@ const els = {
 };
 
 async function loadJson(path) {
-  const res = await fetch(path);
-  if (!res.ok) throw new Error(`Failed to load ${path}`);
+  const url = new URL(path, WEB_ROOT);
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`Failed to load ${url}`);
   return res.json();
 }
 

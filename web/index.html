@@ -3,14 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
   <title>TEAMMATE — NBA Sudoku</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20260812c" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="atmosphere" aria-hidden="true"></div>
@@ -80,17 +77,6 @@
     <span>Memorable NBA players · 1980–present · 3+ franchises</span>
   </footer>
 
-  <script type="module">
-    const GAME_VERSION = "20260812c";
-    const status = document.getElementById("status");
-    try {
-      await import(`./game.js?v=${GAME_VERSION}`);
-    } catch (err) {
-      console.error(err);
-      status.textContent =
-        "Could not load the game (cached old version?). Open a private tab or use the jsDelivr link from the repo README.";
-      status.className = "status bad";
-    }
-  </script>
+  <script type="module" src="game.js"></script>
 </body>
 </html>
